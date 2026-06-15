@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
+  --background: #f7f3e8;
   --header: #ffffff;
   --foreground: #1b1a18;
   --muted: #676057;
@@ -47,7 +47,8 @@ img {
 }
 
 .site-header {
-  position: relative;
+  position: sticky;
+  top: 0;
   z-index: 40;
   display: flex;
   align-items: center;
@@ -55,7 +56,8 @@ img {
   gap: clamp(28px, 4vw, 64px);
   min-height: 138px;
   padding: 26px var(--space-inline);
-  background: var(--header);
+  background: #ffffff;
+  border-bottom: 1px solid var(--line);
 }
 
 .logo-mark {
@@ -100,12 +102,78 @@ img {
 
 .mobile-menu-plus {
   display: none;
+  border: 0;
+  padding: 0;
+  background: transparent;
   color: var(--foreground);
   font-family: Arial, sans-serif;
   font-size: 3.8rem;
   font-weight: 200;
   line-height: 0.8;
+  cursor: pointer;
+}
+
+.mobile-menu-panel {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  gap: 28px;
+  padding: 108px 28px 48px;
+  background: #ffffff;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 180ms ease, visibility 180ms ease;
+}
+
+.mobile-menu-panel.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.mobile-menu-nav {
+  display: grid;
+  gap: clamp(18px, 5vw, 28px);
+  width: 100%;
+  max-width: 320px;
+  text-align: center;
+}
+
+.mobile-menu-nav a {
+  color: var(--foreground);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.45rem, 5.8vw, 1.85rem);
+  font-weight: 400;
+  line-height: 1.1;
   text-decoration: none;
+  text-transform: uppercase;
+}
+
+.mobile-menu-nav a:hover {
+  color: var(--accent);
+}
+
+.mobile-menu-cta {
+  min-width: min(100%, 280px);
+  font-size: 0.92rem;
+}
+
+.mobile-menu-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 55;
+  border: 0;
+  padding: 0;
+  background: rgb(16 16 16 / 0.42);
+  cursor: pointer;
+}
+
+body.mobile-menu-open {
+  overflow: hidden;
 }
 
 .label {
@@ -141,7 +209,7 @@ img {
 
 .poster-section {
   padding: var(--space-section) var(--space-inline);
-  background: var(--surface);
+  background: #ffffff;
   display: grid;
   place-items: center;
   text-align: center;
@@ -237,6 +305,9 @@ img {
 .link-text:focus-visible,
 .nav-links a:focus-visible,
 .logo-mark:focus-visible,
+.logo-mark:focus-visible,
+.mobile-menu-plus:focus-visible,
+.mobile-menu-nav a:focus-visible,
 input:focus-visible,
 textarea:focus-visible,
 select:focus-visible {
@@ -248,7 +319,8 @@ select:focus-visible {
   position: relative;
   min-height: calc(100svh - 138px);
   display: grid;
-  align-items: end;
+  align-items: center;
+  justify-items: center;
   overflow: hidden;
   background: var(--dark);
 }
@@ -275,13 +347,14 @@ select:focus-visible {
 .hero-copy {
   position: relative;
   width: min(1180px, 100%);
-  padding: 0 var(--space-inline) clamp(52px, 7vw, 98px);
+  padding: clamp(48px, 8vw, 96px) var(--space-inline);
   color: var(--surface);
+  text-align: center;
 }
 
 .hero-copy .display {
   max-width: 1160px;
-  text-shadow: 0 5px 18px rgb(0 0 0 / 0.34);
+  margin: 0 auto;
 }
 
 .full-photo {
@@ -458,7 +531,7 @@ textarea {
   gap: 24px;
   padding: 34px var(--space-inline);
   border-top: 1px solid var(--line);
-  background: var(--header);
+  background: #ffffff;
 }
 
 .footer-links {
@@ -468,10 +541,20 @@ textarea {
 }
 
 @media (max-width: 860px) {
+  :root {
+    --space-section: clamp(56px, 14vw, 88px);
+    --space-stack-md: 22px;
+    --type-display: clamp(3.8rem, 14.5vw, 5.4rem);
+    --type-section-title: clamp(3.1rem, 13.2vw, 4.8rem);
+    --type-body: clamp(1.2rem, 4.6vw, 1.42rem);
+    --type-label: clamp(0.88rem, 3.2vw, 1rem);
+  }
+
   .site-header {
     align-items: center;
-    min-height: 136px;
-    padding: 28px 24px;
+    min-height: 96px;
+    padding: 16px 20px;
+    background: #ffffff;
   }
 
   .nav-links {
@@ -479,19 +562,23 @@ textarea {
   }
 
   .logo-main {
-    font-size: clamp(2.35rem, 13vw, 3.7rem);
+    font-size: clamp(2.5rem, 14vw, 3.9rem);
   }
 
   .logo-sub {
-    font-size: 0.64rem;
+    font-size: clamp(0.72rem, 2.8vw, 0.82rem);
   }
 
   .mobile-menu-plus {
     display: block;
+    min-width: 44px;
+    min-height: 44px;
   }
 
   .hero {
-    min-height: calc(100svh - 136px);
+    min-height: calc(100svh - 96px);
+    align-items: end;
+    justify-items: stretch;
   }
 
   .hero-image img {
@@ -499,26 +586,65 @@ textarea {
   }
 
   .hero-copy {
-    padding: 0 24px 36px;
-    background: linear-gradient(90deg, rgb(0 0 0 / 0.36), rgb(0 0 0 / 0.16), rgb(0 0 0 / 0));
+    padding: 0 20px clamp(40px, 10vw, 64px);
+    text-align: left;
   }
 
   .hero-copy .display {
-    max-width: 350px;
+    max-width: 100%;
+    line-height: 0.9;
   }
 
   .poster-section {
-    padding: clamp(70px, 18vw, 112px) 24px;
+    padding: var(--space-section) 20px;
+  }
+
+  .poster-section .body-copy {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(1.22rem, 4.8vw, 1.48rem);
+    line-height: 1.64;
+    max-width: 34ch;
+    margin-inline: auto;
+  }
+
+  .poster-title {
+    line-height: 0.9;
+  }
+
+  .label {
+    font-size: var(--type-label);
+    margin-bottom: 4px;
+  }
+
+  .btn-primary,
+  .btn-outline {
+    min-height: 48px;
+    padding: 14px 20px;
+    font-size: 0.94rem;
   }
 
   .full-photo img {
-    height: 360px;
+    height: clamp(380px, 62svh, 520px);
   }
 
   .split-proof,
   .seo-panel,
   .contact-grid {
     grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .split-proof .body-copy,
+  .contact-grid .body-copy {
+    text-align: center;
+  }
+
+  .fact strong {
+    font-size: clamp(2.6rem, 12vw, 3.8rem);
+  }
+
+  .fact {
+    text-align: center;
   }
 
   .review-grid,
@@ -527,8 +653,30 @@ textarea {
     grid-template-columns: 1fr;
   }
 
-  .site-footer {
-    grid-template-columns: 1fr;
+  .trust-row span {
+    min-height: 58px;
+    font-size: clamp(0.92rem, 3.6vw, 1.05rem);
   }
 
+  .field span {
+    font-size: clamp(0.88rem, 3.2vw, 0.96rem);
+  }
+
+  input,
+  textarea,
+  select {
+    font-size: 1.05rem;
+    padding: 15px 14px;
+  }
+
+  .site-footer {
+    grid-template-columns: 1fr;
+    text-align: left;
+    padding: 28px 20px;
+    background: #ffffff;
+  }
+
+  .footer-links {
+    font-size: clamp(0.88rem, 3.2vw, 0.96rem);
+  }
 }

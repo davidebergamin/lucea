@@ -1,42 +1,13 @@
 import Image, { type StaticImageData } from "next/image";
+import { SiteHeader } from "../components/SiteHeader";
 import heroImage from "../public/photos/coppia-reportage.webp";
 import festaImage from "../public/photos/festa-lancio-sposa.webp";
 import camminoImage from "../public/photos/uscita-chiesa-festa.webp";
-import bnImage from "../public/photos/uscita-chiesa-bn.webp";
-import dettagliImage from "../public/photos/rito-famiglia-bn.webp";
 import aboutImage from "../public/photos/ritratto-famiglia-bn.webp";
-import partyImage from "../public/photos/festa-sposa-alzata.webp";
 
 const matrimonioUrl = "https://www.matrimonio.com/fotografo-matrimonio/lucea--e155161";
 const whatsappUrl =
   "https://wa.me/393495799243?text=Ciao%20Andrea%2C%20vorrei%20informazioni%20per%20il%20mio%20matrimonio.";
-
-const fullPhotos: Array<{
-  src: StaticImageData;
-  alt: string;
-  label: string;
-}> = [
-  {
-    src: festaImage,
-    alt: "Sposa lanciata dagli amici durante una festa di matrimonio fotografata da Lucea",
-    label: "Festa vera, non recitata"
-  },
-  {
-    src: camminoImage,
-    alt: "Sposi e invitati all'uscita dalla cerimonia in una fotografia di reportage Lucea",
-    label: "Persone prima delle pose"
-  },
-  {
-    src: bnImage,
-    alt: "Momento spontaneo in bianco e nero durante un matrimonio fotografato da Lucea",
-    label: "Vicini, ma leggeri"
-  },
-  {
-    src: dettagliImage,
-    alt: "Ritratto in bianco e nero di famiglia e sposi durante la firma del matrimonio",
-    label: "Le cose piccole contano"
-  }
-];
 
 const faq = [
   {
@@ -61,31 +32,13 @@ const faq = [
   }
 ];
 
-function SiteHeader() {
-  return (
-    <header className="site-header">
-      <a className="logo-mark" href="#top" aria-label="Lucea homepage">
-        <span className="logo-main">Lucea</span>
-        <span className="logo-sub">Andrea Mauri / Milano</span>
-      </a>
-      <nav className="nav-links" aria-label="Navigazione principale">
-        <a href="#metodo">Il metodo</a>
-        <a href="#about">Andrea</a>
-        <a href="#storie">Storie</a>
-        <a href="#servizi">Prezzi</a>
-        <a href="#recensioni">Recensioni</a>
-        <a href="#contatti">Contatto</a>
-      </nav>
-      <a className="mobile-menu-plus" href="#contatti" aria-label="Vai ai contatti">
-        +
-      </a>
-    </header>
-  );
-}
-
 function FullPhoto({ src, alt, label }: { src: StaticImageData; alt: string; label: string }) {
   return (
-    <figure className="full-photo">
+    <figure
+      className="full-photo"
+      data-liquid-capture-section="section"
+      data-liquid-capture-name="full-width-photo"
+    >
       <Image src={src} alt={alt} sizes="100vw" loading="eager" unoptimized />
       <figcaption className="sr-only">{label}</figcaption>
     </figure>
@@ -157,7 +110,12 @@ export default function Home() {
       <JsonLd />
       <SiteHeader />
       <main id="top">
-        <section className="hero" aria-labelledby="hero-title">
+        <section
+          className="hero"
+          aria-labelledby="hero-title"
+          data-liquid-capture-section="section"
+          data-liquid-capture-name="Storie vere"
+        >
           <div className="hero-image">
             <Image
               src={heroImage}
@@ -171,14 +129,19 @@ export default function Home() {
           <div className="hero-overlay" />
           <div className="hero-copy">
             <h1 id="hero-title" className="display">
-              <span className="accent">Momenti</span> veri
+              <span className="accent">Storie</span> vere
               <br />
-              Niente posato.
+              Zero posa.
             </h1>
           </div>
         </section>
 
-        <section className="poster-section" aria-labelledby="manifesto">
+        <section
+          className="poster-section"
+          aria-labelledby="manifesto"
+          data-liquid-capture-section="section"
+          data-liquid-capture-name="DOCUMENTARY"
+        >
           <div className="poster-inner">
             <p className="label">Lucea / Andrea Mauri</p>
             <h2 id="manifesto" className="poster-title">
@@ -189,35 +152,27 @@ export default function Home() {
               a Milano
             </h2>
             <p className="body-copy stack-after-title">
-              Per coppie che non vogliono recitare. Per famiglie che vogliono riconoscersi nelle foto.
-              Per matrimoni dove la festa, gli amici e i momenti storti contano quanto quelli perfetti.
+              Per coppie che non vogliono recitare. Per chi vuole ritrovare nelle foto la giornata
+              com&apos;è stata: festa, amici, caos buono e momenti storti inclusi.
             </p>
           </div>
         </section>
 
         <div id="storie">
-          <FullPhoto {...fullPhotos[0]} />
+          <FullPhoto
+            src={festaImage}
+            alt="Sposa lanciata dagli amici durante una festa di matrimonio fotografata da Lucea"
+            label="Festa vera, non recitata"
+          />
         </div>
 
-        <section className="poster-section" aria-labelledby="dance-floor">
-          <div className="poster-inner">
-            <h2 id="dance-floor" className="poster-title">
-              Dalla preparazione
-              <br />
-              alla pista,
-              <br />
-              conta <span className="accent">come succede.</span>
-            </h2>
-            <p className="body-copy stack-after-title">
-              La giornata non viene fermata per farla sembrare piu ordinata. Andrea resta dentro al flusso:
-              casa, rito, brindisi, parenti, amici, caos buono, festa.
-            </p>
-          </div>
-        </section>
-
-        <FullPhoto {...fullPhotos[1]} />
-
-        <section id="metodo" className="poster-section dark-band" aria-labelledby="metodo-title">
+        <section
+          id="metodo"
+          className="poster-section dark-band"
+          aria-labelledby="metodo-title"
+          data-liquid-capture-section="section"
+          data-liquid-capture-name="We stay close"
+        >
           <div className="poster-inner">
             <h2 id="metodo-title" className="poster-title">
               Restiamo <span className="accent">vicini.</span>
@@ -233,25 +188,19 @@ export default function Home() {
           </div>
         </section>
 
-        <FullPhoto {...fullPhotos[2]} />
+        <FullPhoto
+          src={camminoImage}
+          alt="Sposi e invitati all'uscita dalla cerimonia in una fotografia di reportage Lucea"
+          label="Persone prima delle pose"
+        />
 
-        <section className="poster-section" aria-labelledby="notice">
-          <div className="poster-inner">
-            <h2 id="notice" className="poster-title">
-              Notiamo
-              <br />
-              le cose <span className="accent">piccole.</span>
-            </h2>
-            <p className="body-copy stack-after-title">
-              La mano sul tavolo. Una faccia prima di ridere. La nonna che controlla tutto.
-              Un abito che vola male, quindi bene. Sono dettagli, ma spesso sono la memoria.
-            </p>
-          </div>
-        </section>
-
-        <FullPhoto {...fullPhotos[3]} />
-
-        <section id="recensioni" className="poster-section" aria-labelledby="legends">
+        <section
+          id="recensioni"
+          className="poster-section"
+          aria-labelledby="legends"
+          data-liquid-capture-section="section"
+          data-liquid-capture-name="WHAT OUR"
+        >
           <div className="poster-inner split-proof">
             <div>
               <p className="label">Matrimonio.com</p>
@@ -285,61 +234,24 @@ export default function Home() {
                   Leggi su Matrimonio.com
                 </a>
               </p>
-            </div>
-          </div>
-        </section>
-
-        <section id="servizi" className="poster-section dark-band" aria-labelledby="sicurezza">
-          <div className="poster-inner">
-            <h2 id="sicurezza" className="poster-title">
-              Fresco per voi.
-              <br />
-              Chiaro per chi <span className="accent">vi aiuta</span> a scegliere.
-            </h2>
-            <p className="body-copy stack-after-title">
-              Agli sposi servono immagini vive. Ai genitori spesso servono conferme: esperienza,
-              puntualita, famiglia fotografata bene, servizi chiari, contatti semplici.
-            </p>
-            <div className="trust-row" aria-label="Aree e segnali di fiducia">
-              <span>Milano</span>
-              <span>Lombardia</span>
-              <span>Italia</span>
-              <span>Estero</span>
-              <span>15 anni</span>
-            </div>
-          </div>
-        </section>
-
-        <section className="poster-section" aria-labelledby="ai-search">
-          <div className="poster-inner">
-            <h2 id="ai-search" className="poster-title">
-              In breve,
-              <br />
-              per chi cerca <span className="accent">Lucea.</span>
-            </h2>
-            <div className="seo-panel">
-              <div>
-                <p className="body-copy">
-                  Lucea e il progetto wedding di Andrea Mauri, fotografo matrimonio a Milano.
-                  Lavora con uno stile reportage spontaneo, documentario e poco invasivo.
-                </p>
-                <p className="body-copy stack-after-title">
-                  E adatto a coppie che cercano foto naturali, festa vera, video matrimonio,
-                  album, prematrimonio, postmatrimonio e gallery privata.
-                </p>
+              <div className="trust-row" aria-label="Aree e segnali di fiducia">
+                <span>Milano</span>
+                <span>Lombardia</span>
+                <span>Italia</span>
+                <span>Estero</span>
+                <span>15 anni</span>
               </div>
-              <ul className="body-copy">
-                <li>Base: Milano, Via Arzaga 11.</li>
-                <li>Area: Lombardia, Italia, estero.</li>
-                <li>Recensioni: 171 su Matrimonio.com, 5.0/5.</li>
-                <li>Servizi matrimonio pubblici: da 900 a 2.300 euro.</li>
-                <li>Contatto: eamauri@gmail.com, 349 579 9243.</li>
-              </ul>
             </div>
           </div>
         </section>
 
-        <section className="poster-section" aria-labelledby="about">
+        <section
+          id="about"
+          className="poster-section"
+          aria-labelledby="about"
+          data-liquid-capture-section="section"
+          data-liquid-capture-name="Hi Andrea"
+        >
           <div className="poster-inner split-proof">
             <div>
               <Image
@@ -352,10 +264,10 @@ export default function Home() {
             </div>
             <div>
               <p className="label">Hi, sono Andrea</p>
-              <h2 id="about" className="poster-title">
+              <h2 className="poster-title">
                 Dietro Lucea
                 <br />
-                c'e una presenza
+                c&apos;e una presenza
                 <br />
                 <span className="accent">leggera.</span>
               </h2>
@@ -363,25 +275,17 @@ export default function Home() {
                 Da circa 15 anni fotografo matrimoni. Non mi interessa trasformare una coppia in
                 due attori. Mi interessa stare abbastanza vicino da vedere, abbastanza lontano da non rovinare.
               </p>
-              <p className="body-copy stack-after-title">
-                Il risultato deve assomigliare a voi: alle persone che c'erano, alla festa che avete scelto,
-                al modo in cui vi siete mossi dentro quella giornata.
-              </p>
             </div>
           </div>
         </section>
 
-        <figure className="full-photo">
-          <Image
-            src={partyImage}
-            alt="Sposa sollevata dagli invitati durante la festa di matrimonio"
-            sizes="100vw"
-            loading="eager"
-            unoptimized
-          />
-        </figure>
-
-        <section id="contatti" className="poster-section" aria-labelledby="say-hello">
+        <section
+          id="contatti"
+          className="poster-section"
+          aria-labelledby="say-hello"
+          data-liquid-capture-section="section"
+          data-liquid-capture-name="IF IT FEELS RIGHT"
+        >
           <div className="poster-inner contact-grid">
             <div>
               <p className="label">Se ti sembra giusto</p>
@@ -429,18 +333,6 @@ export default function Home() {
                 <input name="location" placeholder="Milano, Brianza, lago, estero..." />
               </label>
               <label className="field">
-                <span>Che atmosfera volete?</span>
-                <select name="atmosfera" defaultValue="">
-                  <option value="" disabled>
-                    Scegli una traccia
-                  </option>
-                  <option>Spontanea e familiare</option>
-                  <option>Festa, amici, pista</option>
-                  <option>Elegante ma non rigida</option>
-                  <option>Non lo so ancora</option>
-                </select>
-              </label>
-              <label className="field">
                 <span>Messaggio</span>
                 <textarea name="messaggio" required />
               </label>
@@ -451,7 +343,11 @@ export default function Home() {
           </div>
         </section>
       </main>
-      <footer className="site-footer">
+      <footer
+        className="site-footer"
+        data-liquid-capture-section="footer"
+        data-liquid-capture-name="footer"
+      >
         <div>
           <strong className="label">Lucea Fotografie / Andrea Mauri</strong>
           <p className="muted-copy">Fotografo matrimonio Milano. Reportage spontaneo, foto e video.</p>
