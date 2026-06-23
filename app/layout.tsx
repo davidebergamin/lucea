@@ -1,17 +1,18 @@
 import type { Metadata } from "next";
-import { Anton, Oswald } from "next/font/google";
+import { ScrollToTopOnNavigate } from "../components/ScrollToTopOnNavigate";
+import { Cabin, Lora } from "next/font/google";
 import "./globals.css";
 
-const display = Anton({
+const display = Cabin({
   subsets: ["latin"],
-  weight: "400",
+  weight: ["600", "700"],
   variable: "--font-display",
   display: "swap"
 });
 
-const body = Oswald({
+const body = Lora({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  weight: ["400", "600"],
   variable: "--font-body",
   display: "swap"
 });
@@ -19,16 +20,16 @@ const body = Oswald({
 export const metadata: Metadata = {
   metadataBase: new URL("https://luceafotografie.it"),
   title: {
-    default: "Lucea | Fotografo matrimonio Milano reportage vero",
+    default: "Lucea | Fotografia matrimonio Milano senza pose forzate",
     template: "%s | Lucea Fotografie"
   },
   description:
-    "Lucea e Andrea Mauri: fotografo matrimonio a Milano per coppie che vogliono reportage spontaneo, niente pose forzate, foto e video veri.",
+    "Lucea: fotografia di matrimonio a Milano per coppie che vogliono reportage spontaneo, niente pose forzate, foto e video veri.",
   alternates: {
     canonical: "/"
   },
   openGraph: {
-    title: "Lucea | Fotografo matrimonio Milano",
+    title: "Lucea | Fotografia matrimonio Milano",
     description:
       "Reportage di matrimonio a Milano, Lombardia, Italia ed estero. Momenti veri, niente posato.",
     type: "website",
@@ -55,6 +56,7 @@ export default function RootLayout({
   return (
     <html lang="it">
       <body className={`${display.variable} ${body.variable}`}>
+        <ScrollToTopOnNavigate />
         {children}
       </body>
     </html>

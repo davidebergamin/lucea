@@ -1,14 +1,7 @@
 "use client";
 
 import { useEffect, useId, useState } from "react";
-
-const navLinks = [
-  { href: "#metodo", label: "Il metodo" },
-  { href: "#about", label: "Andrea" },
-  { href: "#storie", label: "Storie" },
-  { href: "#recensioni", label: "Recensioni" },
-  { href: "#contatti", label: "Contatto" }
-];
+import { contact, navLinks } from "../lib/site-content";
 
 export function SiteHeader() {
   const [open, setOpen] = useState(false);
@@ -38,9 +31,8 @@ export function SiteHeader() {
         data-liquid-capture-section="header"
         data-liquid-capture-name="header"
       >
-        <a className="logo-mark" href="#top" aria-label="Lucea homepage" onClick={closeMenu}>
+        <a className="logo-mark" href="/" aria-label="Lucea homepage" onClick={closeMenu}>
           <span className="logo-main">Lucea</span>
-          <span className="logo-sub">Andrea Mauri / Milano</span>
         </a>
         <nav className="nav-links" aria-label="Navigazione principale">
           {navLinks.map((link) => (
@@ -76,8 +68,8 @@ export function SiteHeader() {
             </a>
           ))}
         </nav>
-        <a className="mobile-menu-cta btn-primary" href="#contatti" onClick={closeMenu}>
-          Scrivimi
+        <a className="mobile-menu-cta btn-primary" href={contact.whatsapp} target="_blank" rel="noreferrer" onClick={closeMenu}>
+          WhatsApp
         </a>
       </div>
       {open ? <button type="button" className="mobile-menu-backdrop" aria-label="Chiudi menu" onClick={closeMenu} /> : null}

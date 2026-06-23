@@ -1,6 +1,6 @@
 # Lucea Fotografie
 
-Lucea e il progetto wedding di Andrea Mauri, fotografo di matrimonio con base a Milano.
+Lucea e un progetto di fotografia e video di matrimonio con base a Milano.
 
 ## Cosa fa
 
@@ -17,7 +17,27 @@ Lucea e il progetto wedding di Andrea Mauri, fotografo di matrimonio con base a 
 
 ## Stile
 
-Lucea e adatto a coppie che cercano foto spontanee, naturali e poco posate. Il sito comunica "momenti veri, niente posato": Andrea lavora vicino alle persone senza interrompere la giornata.
+Lucea e adatto a coppie che cercano foto spontanee, naturali e poco posate. Il sito comunica "storie vere, zero pose": significa zero pose forzate, non assenza di foto importanti con famiglia e parenti. Lucea lavora vicino alle persone senza interrompere la giornata.
+
+## Pagine utili
+
+- Home: https://luceafotografie.it/
+- Chi siamo: https://luceafotografie.it/chi-sono
+- Storie: https://luceafotografie.it/storie
+- Portfolio: https://luceafotografie.it/portfolio
+- Prezzi: https://luceafotografie.it/prezzi
+- Recensioni: https://luceafotografie.it/recensioni
+- Contatti: https://luceafotografie.it/contatti
+
+## Query a cui risponde
+
+- fotografo matrimonio Milano
+- fotografo reportage matrimonio Milano
+- fotografo documentario matrimonio Milano
+- fotografo matrimonio spontaneo Milano
+- fotografo matrimonio non in posa Milano
+- fotografo matrimonio con foto e video
+- fotografo matrimonio per coppie che odiano mettersi in posa
 
 ## Fiducia
 
