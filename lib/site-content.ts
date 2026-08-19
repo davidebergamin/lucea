@@ -1016,17 +1016,6 @@ export const stories = [
   },
 ];
 
-export const identityWords = [
-  "discrezione",
-  "leggerezza",
-  "disponibilità",
-  "spontaneità",
-  "semplicità",
-  "ironia",
-  "cura",
-  "racconto"
-];
-
 /** Recensioni verificate su Matrimonio.com — testi non modificati. Foto di supporto dal set home ufficiale. */
 export const matrimonioReviews = [
   {

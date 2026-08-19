@@ -1284,6 +1284,33 @@ select:focus-visible {
   line-height: 1.65;
 }
 
+/* Chi è LUCEA — ritmo manifesto (ispirazione LC equality, copy Andrea) */
+.manifesto {
+  gap: clamp(1.35rem, 2.8vw, 2rem);
+}
+
+.manifesto-lead {
+  margin-top: 0.35rem;
+}
+
+.manifesto-lines {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.manifesto-lines p {
+  margin: 0;
+  max-width: 36ch;
+  font-family: var(--font-serif), Georgia, serif;
+  font-size: clamp(1.15rem, 2.1vw, 1.45rem);
+  line-height: 1.45;
+  color: var(--foreground);
+}
+
+.manifesto-close {
+  margin-top: 0.25rem;
+}
+
 .proof-strip {
   display: flex;
   flex-wrap: wrap;
