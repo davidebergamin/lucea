@@ -4,7 +4,7 @@ import { SiteHeader } from "../components/SiteHeader";
 import { SiteFooter } from "../components/SiteFooter";
 import { contact, faqs, matrimonioUrl } from "../lib/site-content";
 import heroImage from "../public/media/images/root/dsc02552.webp";
-import heroMobileImage from "../public/media/images/root/dsc07526.webp";
+import heroMobileImage from "../public/media/images/root/dsc07272.webp";
 import proofImage from "../public/media/images/root/dsc00317.webp";
 import festaImage from "../public/media/images/root/dsc0080.webp";
 import peakImage from "../public/media/images/root/dsc07067.webp";
@@ -109,7 +109,7 @@ export default function Home() {
           <div className="hero-image hero-image--mobile">
             <Image
               src={heroMobileImage}
-              alt="Sposa che lancia il bouquet, invitati a braccia alzate"
+              alt="Sposi che si guardano sorridendo, luce calda su un muro di pietra"
               width={heroMobileImage.width}
               height={heroMobileImage.height}
               priority
