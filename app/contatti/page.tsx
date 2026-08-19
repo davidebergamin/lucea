@@ -7,7 +7,7 @@ import { contact, fitList } from "../../lib/site-content";
 export const metadata: Metadata = {
   title: "Contatti",
   description:
-    "Contatta Lucea per fotografia e video di matrimonio a Milano, Lombardia, Italia ed estero. Form, email e WhatsApp.",
+    "Parlatemi di voi. Contatta Lucea per fotografia e video di matrimonio a Milano, Lombardia, Italia ed estero.",
   alternates: { canonical: "/contatti" }
 };
 
@@ -15,38 +15,36 @@ export default function ContattiPage() {
   return (
     <>
       <SiteHeader />
-      <main>
-        <section className="poster-section warm contact-page" aria-labelledby="contatti-title">
-          <div className="poster-inner home-contact-grid">
-            <p className="label">Contatti</p>
-            <h1 id="contatti-title" className="poster-title poster-title--wide">
-              Se siete arrivati fin qui,
-              <br />
-              parliamo di <span className="accent">voi.</span>
+      <main className="page-offset">
+        <section className="page-block">
+          <div className="page-block-inner page-block-inner--narrow stack align-start">
+            <h1 className="page-title">
+              Parlatemi di <span className="accent">voi</span>
             </h1>
-            <p className="home-contact-links">
-              <a className="btn-primary" href={contact.whatsapp} target="_blank" rel="noreferrer">
+            <p className="body-copy serif-lead">
+              Leggerò ogni vostra parola, vi risponderò al più presto, solitamente nel giro di poche ore.
+            </p>
+            <p className="body-copy">Niente di impegnativo, giusto uno scambio con me.</p>
+            <p className="andrea-sign">Andrea</p>
+            <p className="section-cta section-cta--start">
+              <a className="btn-whatsapp" href={contact.whatsapp} target="_blank" rel="noreferrer">
                 WhatsApp
               </a>
-              <a className="link-text" href={`mailto:${contact.email}`}>
-                {contact.email}
+              <a className="btn-outline" href={contact.phoneHref}>
+                {contact.phone}
               </a>
             </p>
             <ContactForm compact />
           </div>
         </section>
 
-        <section className="fit-band" aria-labelledby="fit-title">
-          <div className="fit-band-inner">
-            <p className="label">Potremmo essere i fotografi giusti per voi se...</p>
-            <h2 id="fit-title" className="poster-title">
-              Preferite
-              <br />
-              <span className="accent">ridere</span>
-              <br />
-              che recitare.
+        <section className="page-block page-block--tight" aria-labelledby="fit-title">
+          <div className="page-block-inner page-block-inner--narrow stack align-start">
+            <h2 id="fit-title" className="section-title">
+              Potremmo essere i fotografi giusti per voi se preferite{" "}
+              <span className="accent">ridere</span> che recitare
             </h2>
-            <ul className="fit-list stack-after-title">
+            <ul className="fit-list">
               {fitList.map((item) => (
                 <li key={item}>{item}</li>
               ))}

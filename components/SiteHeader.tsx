@@ -1,11 +1,17 @@
 "use client";
 
+import Image from "next/image";
+import { usePathname } from "next/navigation";
 import { useEffect, useId, useState } from "react";
 import { contact, navLinks } from "../lib/site-content";
 
 export function SiteHeader() {
   const [open, setOpen] = useState(false);
+  const [visible, setVisible] = useState(true);
+  const [scrolled, setScrolled] = useState(false);
   const menuId = useId();
+  const pathname = usePathname();
+  const isHome = pathname === "/";
 
   useEffect(() => {
     document.body.classList.toggle("mobile-menu-open", open);
@@ -20,19 +26,68 @@ export function SiteHeader() {
     return () => window.removeEventListener("keydown", onKey);
   }, []);
 
+  useEffect(() => {
+    setOpen(false);
+    setVisible(true);
+  }, [pathname]);
+
+  useEffect(() => {
+    let lastY = window.scrollY;
+    let ticking = false;
+
+    const onScroll = () => {
+      if (ticking) return;
+      ticking = true;
+      window.requestAnimationFrame(() => {
+        const y = window.scrollY;
+        setScrolled(y > 8);
+        if (open) {
+          setVisible(true);
+        } else if (y < 48) {
+          setVisible(true);
+        } else if (y > lastY + 6) {
+          setVisible(false);
+        } else if (y < lastY - 6) {
+          setVisible(true);
+        }
+        lastY = y;
+        ticking = false;
+      });
+    };
+
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, [open]);
+
   function closeMenu() {
     setOpen(false);
   }
 
+  const solid = !isHome || scrolled || open;
+  const hiddenClass = visible ? "" : " site-header--hidden";
+  const solidClass = solid ? " is-solid" : "";
+  const scrolledClass = scrolled ? " is-scrolled" : "";
+
   return (
     <>
       <header
-        className="site-header"
+        className={`site-header${solidClass}${scrolledClass}${hiddenClass}`}
         data-liquid-capture-section="header"
         data-liquid-capture-name="header"
       >
-        <a className="logo-mark" href="/" aria-label="Lucea homepage" onClick={closeMenu}>
-          <span className="logo-main">Lucea</span>
+        <a className="logo-mark" href="/" aria-label="Lucea fotografia, homepage" onClick={closeMenu}>
+          <Image
+            src="/logo/logo-lucea-320.png"
+            alt=""
+            width={108}
+            height={108}
+            priority
+            unoptimized
+          />
+          <span className="logo-word">
+            <span className="logo-sub">fotografia</span>
+          </span>
         </a>
         <nav className="nav-links" aria-label="Navigazione principale">
           {navLinks.map((link) => (
@@ -68,7 +123,7 @@ export function SiteHeader() {
             </a>
           ))}
         </nav>
-        <a className="mobile-menu-cta btn-primary" href={contact.whatsapp} target="_blank" rel="noreferrer" onClick={closeMenu}>
+        <a className="mobile-menu-cta btn-whatsapp" href={contact.whatsapp} target="_blank" rel="noreferrer" onClick={closeMenu}>
           WhatsApp
         </a>
       </div>

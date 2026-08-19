@@ -11,10 +11,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1
     },
     {
-      url: `${base}/chi-sono`,
+      url: `${base}/come-funziona`,
       lastModified: new Date(),
       changeFrequency: "monthly",
-      priority: 0.8
+      priority: 0.9
     },
     {
       url: `${base}/storie`,
@@ -29,16 +29,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9
     },
     {
-      url: `${base}/prezzi`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.85
-    },
-    {
       url: `${base}/recensioni`,
       lastModified: new Date(),
       changeFrequency: "monthly",
-      priority: 0.8
+      priority: 0.85
     },
     {
       url: `${base}/contatti`,
@@ -47,10 +41,34 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9
     },
     {
-      url: `${base}/come-funziona`,
+      url: `${base}/chi-sono`,
       lastModified: new Date(),
       changeFrequency: "monthly",
-      priority: 0.6
+      priority: 0.7
+    },
+    {
+      url: `${base}/prezzi`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.7
+    },
+    {
+      url: `${base}/dove-lavoriamo`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.65
+    },
+    {
+      url: `${base}/privacy`,
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 0.3
+    },
+    {
+      url: `${base}/cookie`,
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 0.3
     }
   ];
 

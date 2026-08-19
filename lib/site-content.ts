@@ -2,22 +2,38 @@ export const siteUrl = "https://luceafotografie.it";
 
 export const matrimonioUrl = "https://www.matrimonio.com/fotografo-matrimonio/lucea--e155161";
 
+const media = (name: string) => `/media/images/root/${name}`;
+
 export const contact = {
   email: "eamauri@gmail.com",
   phone: "+39 349 5799243",
   phoneHref: "tel:+393495799243",
   whatsapp:
     "https://wa.me/393495799243?text=Ciao%20Lucea%2C%20vorremmo%20raccontarvi%20il%20nostro%20matrimonio.",
-  address: "Via Arzaga, 11, 20146 Milano"
+  address: "Via Arzaga, 11, 20146 Milano",
+  vat: "09388090962"
 };
 
 export const navLinks = [
-  { href: "/chi-sono", label: "Chi siamo" },
+  { href: "/come-funziona", label: "Come funziona" },
   { href: "/storie", label: "Storie" },
   { href: "/portfolio", label: "Portfolio" },
-  { href: "/prezzi", label: "Prezzi" },
   { href: "/recensioni", label: "Recensioni" },
+  { href: "/chi-sono", label: "Chi è LUCEA" },
   { href: "/contatti", label: "Contatti" }
+];
+
+export const footerPlusItems = [
+  {
+    label: "Quanto può costare",
+    href: "/prezzi",
+    body: "I servizi matrimonio partono da 900 euro e arrivano fino a circa 2.300 euro, in base a durata, foto, video, album e trasferta. Ogni preventivo nasce dal vostro giorno, non da un listino rigido."
+  },
+  {
+    label: "Dove lavoriamo",
+    href: "/dove-lavoriamo",
+    body: "Con sede a Milano, vi raggiungiamo dove siete: Monza Brianza, Lombardia, Italia e all'estero quando il matrimonio lo richiede."
+  }
 ];
 
 export const trustStats = [
@@ -32,17 +48,28 @@ export const services = [
   "prematrimonio e postmatrimonio",
   "album, mini album e album digitali",
   "gallery privata online",
-  "drone, photocall e stampa foto sul posto quando concordati"
+  "stampa delle foto durante la festa, quando la volete",
+  "drone e photocall, solo se concordati insieme"
+];
+
+export const foundViaOptions = [
+  "Matrimonio.com",
+  "Instagram",
+  "Facebook",
+  "Ricerca in rete",
+  "Passaparola",
+  "Assistente AI (ChatGPT, Gemini, ecc.)",
+  "Altro"
 ];
 
 export const fitList = [
-  "vi sentite imbarazzati gia adesso all'idea di mettervi in posa",
-  "volete foto semplici, spontanee, naturali",
-  "pensate che nelle foto venite sempre male, e volete scoprire che non e vero",
-  "volete ricordarvi di quel giorno e di come lo avete vissuto, non solo di come eravate vestiti",
-  "durante l'aperitivo volete staccare un attimo, non andare a fare uno shooting",
-  "volete anche le foto di rito, ma senza catena di montaggio",
-  "vi chiedete anche voi a cosa serva la foto con l'anello in equilibrio tra le scarpe",
+  "vi sentite in imbarazzo già adesso all'idea di essere fotografati",
+  "volete una cosa semplice, spontanea, naturale",
+  "pensate che nelle foto venite sempre male",
+  "volete ricordarvi di quel giorno e di come vi siete emozionati, non solo di come eravate vestiti",
+  "durante l'aperitivo volete prendervi una piccola pausa per le foto, non «andare a fare uno shooting»",
+  "volete anche le foto di rito, ma poche e divertenti senza «catena di montaggio»",
+  "vi chiedete anche voi il senso della foto con l'anello in equilibrio tra le scarpe della sposa",
   "preferite farvi una risata per tutta la durata della giornata piuttosto che mettervi in posa"
 ];
 
@@ -50,22 +77,22 @@ export const faqs = [
   {
     question: "Lucea lavora solo a Milano?",
     answer:
-      "No. Lucea ha base a Milano e lavora in Lombardia, in Italia e anche all'estero quando il matrimonio lo richiede. Milano resta il punto di partenza naturale, con matrimoni anche tra Monza Brianza, colline, laghi e trasferte."
+      "No. Lucea ha base a Milano e lavora in Monza Brianza, in Lombardia, in Italia e anche all'estero quando il matrimonio lo richiede."
   },
   {
     question: "Dobbiamo saper posare?",
     answer:
-      "No. Il metodo Lucea e pensato per coppie che non vogliono recitare: poche pose forzate, molta presenza discreta e foto di rito fatte senza catena di montaggio."
+      "No. Poche pose, tanta spontaneità. Le foto di rito ci sono se le volete, senza catena di montaggio e senza trasformare il matrimonio in un set."
   },
   {
     question: "Fate anche foto con famiglia e parenti?",
     answer:
-      "Si. Le foto importanti con famiglia e parenti ci sono, ma vengono gestite con semplicità, senza rubare ore alla festa."
+      "Sì. Famiglie, colleghi, amiche: si fanno, se volete, con i vostri tempi. Ci divertiamo, senza una catena di montaggio."
   },
   {
     question: "Offrite anche foto e video?",
     answer:
-      "Si. Lucea offre fotografia, video, prematrimonio, postmatrimonio, album, gallery privata online e servizi extra come drone o photocall quando concordati."
+      "Sì. Fotografia, video, album, stampa sul posto, drone o photocall quando li concordiamo insieme. Ogni servizio nasce dalle vostre esigenze."
   },
   {
     question: "Quanto costa un servizio matrimonio?",
@@ -74,19 +101,85 @@ export const faqs = [
   }
 ];
 
+export const comeFunzionaSteps = [
+  {
+    title: "Primo contatto",
+    kicker: "Senza formalità",
+    text: "Raccontateci il vostro matrimonio: dove sarà, che atmosfera avrà, cosa vi piace e cosa vi preoccupa, cosa desiderate e cosa invece non volete proprio. Bastano poche parole per cominciare a conoscerci.",
+    cta: { href: "/contatti", label: "Contattateci" }
+  },
+  {
+    title: "L'incontro",
+    kicker: "Diciamoci tutto e immaginiamolo insieme",
+    text: "Parliamo del vostro matrimonio: raccontatemi quel sogno, vi mostro alcuni nostri lavori e costruiamo insieme la vostra proposta su misura. Incontriamoci di persona: un caffè, una chiacchierata da voi… Oppure una videochiamata sarà un ottimo punto di partenza.",
+    cta: { href: "/contatti", label: "Fissiamo un incontro" }
+  },
+  {
+    title: "Il vostro servizio",
+    kicker: "Ogni matrimonio è diverso",
+    text: "Un solo fotografo per un matrimonio intimo, oppure uno staff con più operatori per foto e video. La stampa delle foto durante la festa, un quadro o un album. Ogni servizio nasce dalle vostre esigenze, mai da una nostra forzatura. Scegliamo insieme, con calma, solo ciò che desiderate davvero. E se, quando confermate il servizio, avete ancora qualche dubbio, nessun problema: possiamo partire da un servizio essenziale e aggiungere il resto più avanti."
+  },
+  {
+    title: "Prima del matrimonio",
+    kicker: "Arriviamo preparati, ma leggeri",
+    text: "A pochi giorni dal matrimonio ci sentiamo ancora per definire tempi (i vostri!), luoghi, persone importanti e momenti da non perdere. Per dirci «ci vediamo prestissimo»."
+  },
+  {
+    title: "Durante la giornata",
+    kicker: "Restiamo vicini, senza occupare la scena",
+    text: "LUCEA è una presenza tranquilla dentro il matrimonio: abbastanza vicina da cogliere ciò che succede, abbastanza leggera da lasciare spazio alla giornata."
+  },
+  {
+    title: "Foto di coppia e foto di rito",
+    kicker: "Davvero zero pose?",
+    text: "No! E sarebbe anche un peccato. Faremo qualche foto soltanto a voi due, ma saranno quelle che vorrete, con i vostri tempi, i vostri sguardi e le vostre emozioni, senza trasformare il matrimonio in un set. Anche le foto di rito si faranno, se volete: le famiglie, i colleghi, le amiche… Ci divertiremo, senza fare una catena di montaggio."
+  },
+  {
+    title: "Dopo il matrimonio",
+    kicker: "E poi arrivano i ricordi",
+    text: "Non vi daremo 5.000 scatti senza averli guardati: noi selezioniamo e lavoriamo le immagini con cura. Vi consegneremo un racconto completo della giornata, fatto di momenti importanti, dettagli, persone, abbracci, festa, e di tutto ciò che, in una giornata così traboccante di ogni cosa, potrebbe esservi sfuggito."
+  },
+  {
+    title: "Chiusura",
+    kicker: "Se avete domande, è il momento giusto",
+    text: "Non dovete arrivare con le idee perfette. Basta iniziare a raccontarci qualcosa del vostro matrimonio.",
+    cta: { href: "/contatti", label: "Parliamo del vostro giorno" }
+  }
+];
+
 export const portfolioImages = [
-  { src: "/photos/uscita-coriandoli.webp", alt: "Uscita degli sposi tra coriandoli", tall: false },
-  { src: "/photos/bacio-cerimonia.webp", alt: "Momento intimo durante la cerimonia", tall: true },
-  { src: "/photos/festa-lancio-sposa.webp", alt: "Sposa lanciata dagli amici in festa", tall: false },
-  { src: "/photos/sposa-finestra.webp", alt: "Sposa davanti a una finestra", tall: true },
-  { src: "/photos/ballo-sala.webp", alt: "Coppia che balla in sala", tall: false },
-  { src: "/photos/gruppo-colorato.jpg", alt: "Gruppo di invitati colorato", tall: false },
-  { src: "/photos/aperitivo-sposi.webp", alt: "Sposi durante l'aperitivo", tall: true },
-  { src: "/photos/uscita-chiesa-festa.webp", alt: "Uscita di chiesa festosa", tall: false },
-  { src: "/photos/coppia-reportage.webp", alt: "Coppia in un momento spontaneo", tall: true },
-  { src: "/photos/invitati-panino.webp", alt: "Invitati durante l'aperitivo", tall: false },
-  { src: "/photos/ballo-collina.webp", alt: "Ballo all'aperto in collina", tall: false },
-  { src: "/photos/ritratto-famiglia-bn.webp", alt: "Ritratto di famiglia in bianco e nero", tall: true }
+  { src: media("dsc00317.webp"), alt: "Sposi che escono tra invitati e bolle, sorrisi spontanei", tall: false },
+  { src: media("dsc0080.webp"), alt: "Ingresso in sala: sposi di spalle e invitati che sventolano tovaglioli", tall: false },
+  { src: media("dsc00200.webp"), alt: "Festa in sala, invitati in piedi e coppia al centro", tall: false },
+  { src: media("dsc00556.webp"), alt: "Uomini in festa che ballano e ridono", tall: false },
+  { src: media("dsc00930.webp"), alt: "Preparativi dello sposo vicino a una finestra", tall: true },
+  { src: media("dsc01055.webp"), alt: "Invitati che ridono insieme durante l'aperitivo", tall: false },
+  { src: media("dsc01339.webp"), alt: "Ballo all'aperto al crepuscolo", tall: false },
+  { src: media("dsc01680.webp"), alt: "Sposi a tavola durante la cena di matrimonio", tall: false },
+  { src: media("dsc02198.webp"), alt: "Due invitati che corrono felici sul prato", tall: false },
+  { src: media("dsc02349.webp"), alt: "Lo sposo alzato dagli amici durante la festa", tall: false },
+  { src: media("dsc02552.webp"), alt: "Sposa e invitati a braccia alzate durante la festa", tall: false },
+  { src: media("dsc03221.webp"), alt: "Mani intrecciate in un campo, luce calda", tall: true },
+  { src: media("dsc04327.webp"), alt: "Sposa e bambina durante i preparativi", tall: true },
+  { src: media("dsc04983.webp"), alt: "Momento intimo tra due persone prima della cerimonia", tall: false },
+  { src: media("dsc05195.webp"), alt: "Uscita in una via, passo e sorriso", tall: false },
+  { src: media("dsc05439.webp"), alt: "Bambini che camminano in chiesa durante la cerimonia", tall: false },
+  { src: media("dsc05665.webp"), alt: "Sposa che ride mentre si prepara", tall: true },
+  { src: media("dsc06016.webp"), alt: "Sguardi all'altare, senza posa da set", tall: false },
+  { src: media("dsc06827.webp"), alt: "Corsa tra le bolle in giardino", tall: false },
+  { src: media("dsc07038.webp"), alt: "Uscita tra gli invitati in un bosco, riso in aria", tall: false },
+  { src: media("dsc07067.webp"), alt: "Sposi e invitati sotto una pioggia di riso", tall: false },
+  { src: media("dsc07570.webp"), alt: "Invitata che ride di gusto durante la festa", tall: false },
+  { src: media("dsc08452.webp"), alt: "Preparativi: un gesto di cura sul colletto", tall: false },
+  { src: media("dsc08601.webp"), alt: "Preparativi in cucina, vita vera prima del vestito", tall: false },
+  { src: media("dsc08634.webp"), alt: "Sposa che sorride mentre le sistemano il trucco", tall: true },
+  { src: media("dsc08840.webp"), alt: "Amiche che chiacchierano e ridono nei preparativi", tall: false },
+  { src: media("dsc09502.webp"), alt: "Gesto di festa: bouquet alzato in aria", tall: false },
+  { src: media("dsc09676.webp"), alt: "Sposa che scende da un mezzo di campagna", tall: true },
+  { src: media("dscf3577.webp"), alt: "Bambini che corrono in giardino durante il matrimonio", tall: false },
+  { src: media("dscf5547.webp"), alt: "Corsa in giardino, movimento e leggerezza", tall: false },
+  { src: media("141.webp"), alt: "Brindisi all'aperto tra gli invitati", tall: false },
+  { src: media("215.webp"), alt: "Ballo di sera all'aperto", tall: false }
 ];
 
 export const pricingNotes = {
@@ -105,124 +198,104 @@ export const stories = [
   {
     slug: "prewedding-nei-boschi-mattia-micaela",
     title: "Prewedding nei boschi con Mattia e Micaela",
-    eyebrow: "Prewedding / Lombardia",
     location: "Boschi in Lombardia",
-    image: "/photos/sposa-scala.webp",
-    alt: "Coppia fotografata da Lucea in un momento spontaneo prima del matrimonio",
+    image: media("dsc03221.webp"),
+    alt: "Mani intrecciate in un campo: atmosfera di un prewedding, senza attribuire lo scatto alla coppia",
     summary:
-      "Un prewedding semplice e leggero, pensato per chi vuole arrivare al matrimonio con meno imbarazzo davanti alla camera e piu confidenza con lo sguardo Lucea.",
+      "Mattia e Micaela, un prewedding nei boschi. Il racconto scritto di quella giornata ancora non c'è: restano il titolo e fotografie di atmosfera, non un album inventato.",
     status: "Prewedding"
   },
   {
     slug: "matrimonio-palazzo-reale-milano",
     title: "Matrimonio a Palazzo Reale di Milano",
-    eyebrow: "Milano / Storia reale",
     location: "Palazzo Reale, Milano",
-    image: "/photos/uscita-coriandoli.webp",
-    alt: "Sposi e invitati durante l'uscita dalla cerimonia fotografati da Lucea",
+    image: media("dsc05195.webp"),
+    alt: "Uscita in una via: atmosfera urbana, senza attribuire lo scatto a un matrimonio nominato",
     summary:
-      "Una storia urbana, milanese, costruita su gesti piccoli, uscita di cerimonia e immagini che tengono insieme eleganza e spontaneità.",
+      "Un matrimonio a Palazzo Reale di Milano. Sappiamo il luogo dal titolo; il racconto, i nomi e la sequenza vera arriveranno. Qui: immagini di atmosfera, non un reportage attribuito.",
     status: "Milano"
   },
   {
     slug: "250-invitati-anna-matte",
-    title: "250 invitati con semplicità: Anna e Matte",
-    eyebrow: "Festa vera / Reportage",
+    title: "250 invitati con semplicità: il matrimonio di Anna e Matte",
     location: "Festa con 250 invitati",
-    image: "/photos/festa-lancio-sposa.webp",
-    alt: "Sposa lanciata dagli amici durante una festa di matrimonio fotografata da Lucea",
+    image: media("dsc00200.webp"),
+    alt: "Sala piena durante una festa di matrimonio, energia da grande festa",
     summary:
-      "La prova che anche una festa grande può restare semplice: tante persone, molta energia, nessuna giornata trasformata in set.",
+      "Anna e Matte, una festa grande tenuta semplice. Manca ancora il racconto scritto: teniamo il titolo scelto da Andrea e fotografie di festa, senza fingere nomi sotto ogni volto.",
     status: "Festa vera"
   },
   {
     slug: "jinet-boris-oltrepo",
     title: "Il cuore di Jinet e Boris nelle colline dell'Oltrepò",
-    eyebrow: "Oltrepò / Trasferta",
     location: "Colline dell'Oltrepò",
-    image: "/photos/ballo-collina.webp",
-    alt: "Momento di festa all'aperto in collina durante un matrimonio Lucea",
+    image: media("127.webp"),
+    alt: "Brindisi in giardino, atmosfera di collina, senza attribuire lo scatto alla coppia",
     summary:
-      "Colline, abbracci e ritmo lento: una storia fuori Milano per raccontare trasferte e matrimoni vissuti con naturalezza.",
+      "Jinet e Boris nelle colline dell'Oltrepò. Il racconto arriverà; per ora il titolo e un'atmosfera di giardino, senza attribuire questi scatti a questa coppia.",
     status: "Oltrepò"
   }
 ];
 
-export const homeSlogans = [
-  "Storie vere. Zero pose.",
-  "Voi vi sposate. Noi raccontiamo.",
-  "Fotografia professionale per chi odia stare in posa.",
-  "Il primo obiettivo e farvi sentire a vostro agio."
-];
-
-export const andreaQualities = [
-  "disponibilità",
-  "gentilezza",
-  "amicizia",
-  "delicatezza",
-  "semplicità",
-  "professionalità",
+export const identityWords = [
   "discrezione",
-  "onestà"
-];
-
-export const reviewThemes = [
+  "leggerezza",
   "disponibilità",
-  "gentilezza",
-  "delicatezza",
+  "spontaneità",
   "semplicità",
-  "professionalità",
-  "presenza discreta"
+  "ironia",
+  "cura",
+  "racconto"
 ];
 
-/** Recensioni verificate su Matrimonio.com — foto placeholder fino ad approvazione coppie. */
+/** Recensioni verificate su Matrimonio.com — testi non modificati. Foto di supporto: persone/festa, non coppia=recensione. */
 export const matrimonioReviews = [
   {
     name: "Valentina",
     date: "31 luglio 2023",
     headline: "Consigliatissimi!",
     text: "Andrea si è dimostrato fin dal primo contatto una persona estremamente gentile e professionale, ha sempre risposto in tempi brevi alle nostre richieste e ci ha fornito informazioni esaustive e trasparenti. Il giorno del matrimonio lui e il suo collega non sono stati mai invadenti e ci hanno sempre messo a nostro agio.",
-    image: "/photos/festa-lancio-sposa.webp",
-    alt: "Sposa lanciata dagli amici durante una festa di matrimonio"
+    image: media("dsc00556.webp"),
+    alt: "Invitati che ballano e ridono durante una festa di matrimonio"
   },
   {
     name: "Laura",
     date: "27 maggio 2026",
     headline: "Fotografi professionali, super consigliati",
     text: "Durante il matrimonio non mi sono quasi accorta di loro, data la loro discrezione e professionalità. Qualità elevata e prezzi onesti: loro sono la miglior scelta!",
-    image: "/photos/uscita-coriandoli.webp",
-    alt: "Uscita degli sposi tra coriandoli a Milano"
+    image: media("dsc02198.webp"),
+    alt: "Invitati che corrono felici sul prato durante un matrimonio"
   },
   {
     name: "Maria G.",
     date: "21 aprile 2026",
     headline: "Feeling immediato",
     text: "Cercavamo un fotografo per il nostro matrimonio ma nessuno ci aveva mai messo a nostro agio. Con Lucea è stato subito feeling: professionalità, cortesia e simpatia. Il giorno del matrimonio non sono mai stati invadenti — e questo conta tantissimo.",
-    image: "/photos/bacio-cerimonia.webp",
-    alt: "Momento intimo durante la cerimonia"
+    image: media("dsc07570.webp"),
+    alt: "Invitata che ride durante la festa"
   },
   {
     name: "Annamaria",
     date: "14 aprile 2026",
     headline: "Sentirsi sé stessi",
     text: "Dal momento della preparazione fino ai saluti finali Andrea è stato spettacolare: empatia, disponibilità, spontaneità, professionalità, cura degli sposi e degli ospiti. Nessun obbligo di pose e niente di costruito, come sentirsi a casa.",
-    image: "/photos/aperitivo-sposi.webp",
-    alt: "Sposi durante l'aperitivo di matrimonio"
+    image: media("dsc08840.webp"),
+    alt: "Amiche che chiacchierano e ridono prima della cerimonia"
   },
   {
     name: "Stefano",
     date: "8 aprile 2026",
     headline: "La scelta giusta",
     text: "Siamo arrivati ad Andrea e Luciano grazie al consiglio di amici, e a nostra volta li consigliamo senza riserve. Due fratelli che lavorano in coppia con una sintonia che si vede: puntuali, presenti quando serviva, invisibili quando non serviva.",
-    image: "/photos/ballo-sala.webp",
-    alt: "Coppia che balla durante la festa di matrimonio"
+    image: media("dsc01055.webp"),
+    alt: "Invitati che ridono insieme durante l'aperitivo"
   },
   {
     name: "Paola e Antonio",
     date: "6 gennaio 2026",
     headline: "StraConsigliato",
     text: "Ci siamo trovati benissimo da subito con Andrea e il suo team. Hanno saputo cogliere al meglio l'atmosfera e tutti i momenti del matrimonio proprio con lo stile che avevamo richiesto: un racconto autentico di una bella ed emozionante festa.",
-    image: "/photos/uscita-chiesa-festa.webp",
-    alt: "Uscita di chiesa festosa"
+    image: media("dscf3577.webp"),
+    alt: "Bambini che corrono in giardino durante un matrimonio"
   }
 ];

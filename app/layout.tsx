@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { ScrollToTopOnNavigate } from "../components/ScrollToTopOnNavigate";
 import { Cabin, Lora } from "next/font/google";
 import "./globals.css";
@@ -17,6 +17,11 @@ const body = Lora({
   display: "swap"
 });
 
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1
+};
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://luceafotografie.it"),
   title: {
@@ -28,13 +33,17 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/"
   },
+  icons: {
+    icon: "/logo/logo-lucea-320.png",
+    apple: "/logo/logo-lucea-320.png"
+  },
   openGraph: {
     title: "Lucea | Fotografia matrimonio Milano",
     description:
       "Reportage di matrimonio a Milano, Lombardia, Italia ed estero. Momenti veri, niente posato.",
     type: "website",
     locale: "it_IT",
-    images: ["/photos/hero-graffiti.webp"]
+    images: ["/media/images/root/dsc02552.webp"]
   },
   robots: {
     index: true,

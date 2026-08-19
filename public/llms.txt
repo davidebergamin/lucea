@@ -1,6 +1,6 @@
 # Lucea Fotografie
 
-Lucea e un progetto di fotografia e video di matrimonio con base a Milano.
+Lucea è un progetto di fotografia e video di matrimonio ideato da Andrea Mauri, con base a Milano.
 
 ## Cosa fa
 
@@ -8,26 +8,31 @@ Lucea e un progetto di fotografia e video di matrimonio con base a Milano.
 - Video matrimonio.
 - Prematrimonio e postmatrimonio.
 - Album, mini album, album digitali e gallery privata online.
-- Servizi extra confermati dal profilo Matrimonio.com: drone, photocall/cabina fotografica, chiavetta USB, stampa foto durante l'evento.
+- Stampa foto durante la festa, drone e photocall quando concordati.
 
 ## Dove lavora
 
 - Base: Milano, Via Arzaga 11, 20146 Milano.
-- Area servita: Milano, Lombardia, Italia ed estero.
+- Area servita: Milano, Monza Brianza, Lombardia, Italia ed estero.
+- Pagina: https://luceafotografie.it/dove-lavoriamo
 
 ## Stile
 
-Lucea e adatto a coppie che cercano foto spontanee, naturali e poco posate. Il sito comunica "storie vere, zero pose": significa zero pose forzate, non assenza di foto importanti con famiglia e parenti. Lucea lavora vicino alle persone senza interrompere la giornata.
+Lucea è adatto a coppie che cercano foto spontanee, naturali e poco posate. Slogan: "Storie vere. Zero pose" — zero pose forzate, non assenza di foto importanti con famiglia e parenti. Presenza vicina, non ingombrante.
 
 ## Pagine utili
 
 - Home: https://luceafotografie.it/
-- Chi siamo: https://luceafotografie.it/chi-sono
+- Come funziona: https://luceafotografie.it/come-funziona
 - Storie: https://luceafotografie.it/storie
 - Portfolio: https://luceafotografie.it/portfolio
-- Prezzi: https://luceafotografie.it/prezzi
 - Recensioni: https://luceafotografie.it/recensioni
 - Contatti: https://luceafotografie.it/contatti
+- Chi è LUCEA: https://luceafotografie.it/chi-sono
+- Quanto può costare: https://luceafotografie.it/prezzi
+- Dove lavoriamo: https://luceafotografie.it/dove-lavoriamo
+- Privacy: https://luceafotografie.it/privacy
+- Cookie: https://luceafotografie.it/cookie
 
 ## Query a cui risponde
 
@@ -36,6 +41,7 @@ Lucea e adatto a coppie che cercano foto spontanee, naturali e poco posate. Il s
 - fotografo documentario matrimonio Milano
 - fotografo matrimonio spontaneo Milano
 - fotografo matrimonio non in posa Milano
+- fotografo matrimonio Monza Brianza
 - fotografo matrimonio con foto e video
 - fotografo matrimonio per coppie che odiano mettersi in posa
 

@@ -1,0 +1,2028 @@
+{
+  "generated_at": "2026-08-18T18:34:33.179052+00:00",
+  "source": "/Users/matrix/Downloads/wetransfer_17-jpg_2026-07-31_1432",
+  "output": "/Users/matrix/Documents/liquid-os/clients/lucea/site/public/media",
+  "settings": {
+    "images": {
+      "format": "webp",
+      "max_long_edge": 2000,
+      "quality": 80,
+      "thumbnail_long_edge": 600,
+      "thumbnail_quality": 80
+    },
+    "videos": {
+      "format": "mp4",
+      "codec": "h264",
+      "crf": 24,
+      "maxrate": "2600k",
+      "audio": "stripped"
+    }
+  },
+  "verification": {
+    "counts": {
+      "image": 166,
+      "video": 0,
+      "ok": 166,
+      "error": 0,
+      "missing-output": 0
+    },
+    "source_size_bytes": 1952442960,
+    "output_size_bytes": 28331678,
+    "missing_outputs": [],
+    "ok_to_delete_source": true
+  },
+  "items": [
+    {
+      "kind": "image",
+      "source": "127.jpg",
+      "project": "root",
+      "source_size": 12474326,
+      "outputs": {
+        "image": "images/root/127.webp",
+        "thumb": "thumbs/root/127.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "141.jpg",
+      "project": "root",
+      "source_size": 11954432,
+      "outputs": {
+        "image": "images/root/141.webp",
+        "thumb": "thumbs/root/141.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "17.jpg",
+      "project": "root",
+      "source_size": 18839085,
+      "outputs": {
+        "image": "images/root/17.webp",
+        "thumb": "thumbs/root/17.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "18.jpg",
+      "project": "root",
+      "source_size": 19521304,
+      "outputs": {
+        "image": "images/root/18.webp",
+        "thumb": "thumbs/root/18.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "21102023-DSC08899.JPG",
+      "project": "root",
+      "source_size": 9061146,
+      "outputs": {
+        "image": "images/root/21102023-dsc08899.webp",
+        "thumb": "thumbs/root/21102023-dsc08899.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "21102023-DSC09322.JPG",
+      "project": "root",
+      "source_size": 12542149,
+      "outputs": {
+        "image": "images/root/21102023-dsc09322.webp",
+        "thumb": "thumbs/root/21102023-dsc09322.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "215.jpg",
+      "project": "root",
+      "source_size": 17280885,
+      "outputs": {
+        "image": "images/root/215.webp",
+        "thumb": "thumbs/root/215.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "26.jpg",
+      "project": "root",
+      "source_size": 12119485,
+      "outputs": {
+        "image": "images/root/26.webp",
+        "thumb": "thumbs/root/26.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "56.jpg",
+      "project": "root",
+      "source_size": 4198482,
+      "outputs": {
+        "image": "images/root/56.webp",
+        "thumb": "thumbs/root/56.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "57.jpg",
+      "project": "root",
+      "source_size": 9949582,
+      "outputs": {
+        "image": "images/root/57.webp",
+        "thumb": "thumbs/root/57.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "59.jpg",
+      "project": "root",
+      "source_size": 10051919,
+      "outputs": {
+        "image": "images/root/59.webp",
+        "thumb": "thumbs/root/59.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DJI_20250904180819_0004_D.jpg",
+      "project": "root",
+      "source_size": 5065617,
+      "outputs": {
+        "image": "images/root/dji-20250904180819-0004-d.webp",
+        "thumb": "thumbs/root/dji-20250904180819-0004-d.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DJI_20250904181318_0014_D.jpg",
+      "project": "root",
+      "source_size": 4162451,
+      "outputs": {
+        "image": "images/root/dji-20250904181318-0014-d.webp",
+        "thumb": "thumbs/root/dji-20250904181318-0014-d.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC0000.jpg",
+      "project": "root",
+      "source_size": 10905753,
+      "outputs": {
+        "image": "images/root/dsc0000.webp",
+        "thumb": "thumbs/root/dsc0000.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC00032.jpg",
+      "project": "root",
+      "source_size": 10499404,
+      "outputs": {
+        "image": "images/root/dsc00032.webp",
+        "thumb": "thumbs/root/dsc00032.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC00095.jpg",
+      "project": "root",
+      "source_size": 10639175,
+      "outputs": {
+        "image": "images/root/dsc00095.webp",
+        "thumb": "thumbs/root/dsc00095.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC00200.jpg",
+      "project": "root",
+      "source_size": 16906727,
+      "outputs": {
+        "image": "images/root/dsc00200.webp",
+        "thumb": "thumbs/root/dsc00200.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC00317.jpg",
+      "project": "root",
+      "source_size": 10217459,
+      "outputs": {
+        "image": "images/root/dsc00317.webp",
+        "thumb": "thumbs/root/dsc00317.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC0049.jpg",
+      "project": "root",
+      "source_size": 12960430,
+      "outputs": {
+        "image": "images/root/dsc0049.webp",
+        "thumb": "thumbs/root/dsc0049.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC00556.jpg",
+      "project": "root",
+      "source_size": 7434148,
+      "outputs": {
+        "image": "images/root/dsc00556.webp",
+        "thumb": "thumbs/root/dsc00556.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC00629.jpg",
+      "project": "root",
+      "source_size": 9884160,
+      "outputs": {
+        "image": "images/root/dsc00629.webp",
+        "thumb": "thumbs/root/dsc00629.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC00646.jpg",
+      "project": "root",
+      "source_size": 7304887,
+      "outputs": {
+        "image": "images/root/dsc00646.webp",
+        "thumb": "thumbs/root/dsc00646.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC00706.jpg",
+      "project": "root",
+      "source_size": 6592318,
+      "outputs": {
+        "image": "images/root/dsc00706.webp",
+        "thumb": "thumbs/root/dsc00706.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC0077.jpg",
+      "project": "root",
+      "source_size": 11137498,
+      "outputs": {
+        "image": "images/root/dsc0077.webp",
+        "thumb": "thumbs/root/dsc0077.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC0080.jpg",
+      "project": "root",
+      "source_size": 11436459,
+      "outputs": {
+        "image": "images/root/dsc0080.webp",
+        "thumb": "thumbs/root/dsc0080.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC00833.jpg",
+      "project": "root",
+      "source_size": 7340812,
+      "outputs": {
+        "image": "images/root/dsc00833.webp",
+        "thumb": "thumbs/root/dsc00833.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC00856.jpg",
+      "project": "root",
+      "source_size": 15213645,
+      "outputs": {
+        "image": "images/root/dsc00856.webp",
+        "thumb": "thumbs/root/dsc00856.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC00928.jpg",
+      "project": "root",
+      "source_size": 15342686,
+      "outputs": {
+        "image": "images/root/dsc00928.webp",
+        "thumb": "thumbs/root/dsc00928.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC00930.jpg",
+      "project": "root",
+      "source_size": 11794450,
+      "outputs": {
+        "image": "images/root/dsc00930.webp",
+        "thumb": "thumbs/root/dsc00930.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC00991.jpg",
+      "project": "root",
+      "source_size": 12322663,
+      "outputs": {
+        "image": "images/root/dsc00991.webp",
+        "thumb": "thumbs/root/dsc00991.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC00994.jpg",
+      "project": "root",
+      "source_size": 17694545,
+      "outputs": {
+        "image": "images/root/dsc00994.webp",
+        "thumb": "thumbs/root/dsc00994.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC01055.jpg",
+      "project": "root",
+      "source_size": 10710357,
+      "outputs": {
+        "image": "images/root/dsc01055.webp",
+        "thumb": "thumbs/root/dsc01055.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC01091.jpg",
+      "project": "root",
+      "source_size": 6414528,
+      "outputs": {
+        "image": "images/root/dsc01091.webp",
+        "thumb": "thumbs/root/dsc01091.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC01159.jpg",
+      "project": "root",
+      "source_size": 18944323,
+      "outputs": {
+        "image": "images/root/dsc01159.webp",
+        "thumb": "thumbs/root/dsc01159.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC01238.jpg",
+      "project": "root",
+      "source_size": 15565596,
+      "outputs": {
+        "image": "images/root/dsc01238.webp",
+        "thumb": "thumbs/root/dsc01238.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC01312.jpg",
+      "project": "root",
+      "source_size": 15060358,
+      "outputs": {
+        "image": "images/root/dsc01312.webp",
+        "thumb": "thumbs/root/dsc01312.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC01339.jpg",
+      "project": "root",
+      "source_size": 10725645,
+      "outputs": {
+        "image": "images/root/dsc01339.webp",
+        "thumb": "thumbs/root/dsc01339.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC01374.jpg",
+      "project": "root",
+      "source_size": 15309559,
+      "outputs": {
+        "image": "images/root/dsc01374.webp",
+        "thumb": "thumbs/root/dsc01374.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC01397.jpg",
+      "project": "root",
+      "source_size": 18870623,
+      "outputs": {
+        "image": "images/root/dsc01397.webp",
+        "thumb": "thumbs/root/dsc01397.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC01680.jpg",
+      "project": "root",
+      "source_size": 12992019,
+      "outputs": {
+        "image": "images/root/dsc01680.webp",
+        "thumb": "thumbs/root/dsc01680.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC01682.jpg",
+      "project": "root",
+      "source_size": 17865882,
+      "outputs": {
+        "image": "images/root/dsc01682.webp",
+        "thumb": "thumbs/root/dsc01682.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC01905.jpg",
+      "project": "root",
+      "source_size": 21921342,
+      "outputs": {
+        "image": "images/root/dsc01905.webp",
+        "thumb": "thumbs/root/dsc01905.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC01918.jpg",
+      "project": "root",
+      "source_size": 12416640,
+      "outputs": {
+        "image": "images/root/dsc01918.webp",
+        "thumb": "thumbs/root/dsc01918.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC02198.jpg",
+      "project": "root",
+      "source_size": 10899360,
+      "outputs": {
+        "image": "images/root/dsc02198.webp",
+        "thumb": "thumbs/root/dsc02198.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC02220.jpg",
+      "project": "root",
+      "source_size": 10334095,
+      "outputs": {
+        "image": "images/root/dsc02220.webp",
+        "thumb": "thumbs/root/dsc02220.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC02349.jpg",
+      "project": "root",
+      "source_size": 12227449,
+      "outputs": {
+        "image": "images/root/dsc02349.webp",
+        "thumb": "thumbs/root/dsc02349.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC02361.jpg",
+      "project": "root",
+      "source_size": 10438362,
+      "outputs": {
+        "image": "images/root/dsc02361.webp",
+        "thumb": "thumbs/root/dsc02361.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC02425.jpg",
+      "project": "root",
+      "source_size": 14252526,
+      "outputs": {
+        "image": "images/root/dsc02425.webp",
+        "thumb": "thumbs/root/dsc02425.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC02552.jpg",
+      "project": "root",
+      "source_size": 14295836,
+      "outputs": {
+        "image": "images/root/dsc02552.webp",
+        "thumb": "thumbs/root/dsc02552.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC02702.jpg",
+      "project": "root",
+      "source_size": 14417273,
+      "outputs": {
+        "image": "images/root/dsc02702.webp",
+        "thumb": "thumbs/root/dsc02702.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC02938.jpg",
+      "project": "root",
+      "source_size": 11849710,
+      "outputs": {
+        "image": "images/root/dsc02938.webp",
+        "thumb": "thumbs/root/dsc02938.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC03072.jpg",
+      "project": "root",
+      "source_size": 16316977,
+      "outputs": {
+        "image": "images/root/dsc03072.webp",
+        "thumb": "thumbs/root/dsc03072.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC03205.jpg",
+      "project": "root",
+      "source_size": 10146204,
+      "outputs": {
+        "image": "images/root/dsc03205.webp",
+        "thumb": "thumbs/root/dsc03205.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC03221.jpg",
+      "project": "root",
+      "source_size": 11639398,
+      "outputs": {
+        "image": "images/root/dsc03221.webp",
+        "thumb": "thumbs/root/dsc03221.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC03491.jpg",
+      "project": "root",
+      "source_size": 14786438,
+      "outputs": {
+        "image": "images/root/dsc03491.webp",
+        "thumb": "thumbs/root/dsc03491.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC04317.jpg",
+      "project": "root",
+      "source_size": 9246734,
+      "outputs": {
+        "image": "images/root/dsc04317.webp",
+        "thumb": "thumbs/root/dsc04317.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC04327.jpg",
+      "project": "root",
+      "source_size": 9653845,
+      "outputs": {
+        "image": "images/root/dsc04327.webp",
+        "thumb": "thumbs/root/dsc04327.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC04372.jpg",
+      "project": "root",
+      "source_size": 10688854,
+      "outputs": {
+        "image": "images/root/dsc04372.webp",
+        "thumb": "thumbs/root/dsc04372.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC04465.jpg",
+      "project": "root",
+      "source_size": 10648577,
+      "outputs": {
+        "image": "images/root/dsc04465.webp",
+        "thumb": "thumbs/root/dsc04465.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC04471.jpg",
+      "project": "root",
+      "source_size": 7693675,
+      "outputs": {
+        "image": "images/root/dsc04471.webp",
+        "thumb": "thumbs/root/dsc04471.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC04600.jpg",
+      "project": "root",
+      "source_size": 5899287,
+      "outputs": {
+        "image": "images/root/dsc04600.webp",
+        "thumb": "thumbs/root/dsc04600.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC0485.jpg",
+      "project": "root",
+      "source_size": 14386870,
+      "outputs": {
+        "image": "images/root/dsc0485.webp",
+        "thumb": "thumbs/root/dsc0485.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC04916.jpg",
+      "project": "root",
+      "source_size": 11964837,
+      "outputs": {
+        "image": "images/root/dsc04916.webp",
+        "thumb": "thumbs/root/dsc04916.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC04918.jpg",
+      "project": "root",
+      "source_size": 9838260,
+      "outputs": {
+        "image": "images/root/dsc04918.webp",
+        "thumb": "thumbs/root/dsc04918.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC04983.jpg",
+      "project": "root",
+      "source_size": 6448827,
+      "outputs": {
+        "image": "images/root/dsc04983.webp",
+        "thumb": "thumbs/root/dsc04983.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC05037.jpg",
+      "project": "root",
+      "source_size": 17057005,
+      "outputs": {
+        "image": "images/root/dsc05037.webp",
+        "thumb": "thumbs/root/dsc05037.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC05046.jpg",
+      "project": "root",
+      "source_size": 8988457,
+      "outputs": {
+        "image": "images/root/dsc05046.webp",
+        "thumb": "thumbs/root/dsc05046.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC05054.jpg",
+      "project": "root",
+      "source_size": 10118527,
+      "outputs": {
+        "image": "images/root/dsc05054.webp",
+        "thumb": "thumbs/root/dsc05054.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC05097.jpg",
+      "project": "root",
+      "source_size": 15719861,
+      "outputs": {
+        "image": "images/root/dsc05097.webp",
+        "thumb": "thumbs/root/dsc05097.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC05107.jpg",
+      "project": "root",
+      "source_size": 14063845,
+      "outputs": {
+        "image": "images/root/dsc05107.webp",
+        "thumb": "thumbs/root/dsc05107.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC05131.jpg",
+      "project": "root",
+      "source_size": 11528557,
+      "outputs": {
+        "image": "images/root/dsc05131.webp",
+        "thumb": "thumbs/root/dsc05131.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC05155.jpg",
+      "project": "root",
+      "source_size": 11410047,
+      "outputs": {
+        "image": "images/root/dsc05155.webp",
+        "thumb": "thumbs/root/dsc05155.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC05195.jpg",
+      "project": "root",
+      "source_size": 9718868,
+      "outputs": {
+        "image": "images/root/dsc05195.webp",
+        "thumb": "thumbs/root/dsc05195.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC05206.jpg",
+      "project": "root",
+      "source_size": 12885159,
+      "outputs": {
+        "image": "images/root/dsc05206.webp",
+        "thumb": "thumbs/root/dsc05206.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC05254.jpg",
+      "project": "root",
+      "source_size": 15104503,
+      "outputs": {
+        "image": "images/root/dsc05254.webp",
+        "thumb": "thumbs/root/dsc05254.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC05363.jpg",
+      "project": "root",
+      "source_size": 11866591,
+      "outputs": {
+        "image": "images/root/dsc05363.webp",
+        "thumb": "thumbs/root/dsc05363.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC05400.jpg",
+      "project": "root",
+      "source_size": 13790677,
+      "outputs": {
+        "image": "images/root/dsc05400.webp",
+        "thumb": "thumbs/root/dsc05400.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC05439.jpg",
+      "project": "root",
+      "source_size": 14916147,
+      "outputs": {
+        "image": "images/root/dsc05439.webp",
+        "thumb": "thumbs/root/dsc05439.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC05478.jpg",
+      "project": "root",
+      "source_size": 14101400,
+      "outputs": {
+        "image": "images/root/dsc05478.webp",
+        "thumb": "thumbs/root/dsc05478.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC05665.jpg",
+      "project": "root",
+      "source_size": 11975722,
+      "outputs": {
+        "image": "images/root/dsc05665.webp",
+        "thumb": "thumbs/root/dsc05665.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC05670.jpg",
+      "project": "root",
+      "source_size": 12927381,
+      "outputs": {
+        "image": "images/root/dsc05670.webp",
+        "thumb": "thumbs/root/dsc05670.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC05683.jpg",
+      "project": "root",
+      "source_size": 7244104,
+      "outputs": {
+        "image": "images/root/dsc05683.webp",
+        "thumb": "thumbs/root/dsc05683.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC05880.jpg",
+      "project": "root",
+      "source_size": 14230329,
+      "outputs": {
+        "image": "images/root/dsc05880.webp",
+        "thumb": "thumbs/root/dsc05880.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC05960.jpg",
+      "project": "root",
+      "source_size": 8395324,
+      "outputs": {
+        "image": "images/root/dsc05960.webp",
+        "thumb": "thumbs/root/dsc05960.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC05963.jpg",
+      "project": "root",
+      "source_size": 8350588,
+      "outputs": {
+        "image": "images/root/dsc05963.webp",
+        "thumb": "thumbs/root/dsc05963.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC06016.jpg",
+      "project": "root",
+      "source_size": 14116644,
+      "outputs": {
+        "image": "images/root/dsc06016.webp",
+        "thumb": "thumbs/root/dsc06016.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC06206.jpg",
+      "project": "root",
+      "source_size": 5914845,
+      "outputs": {
+        "image": "images/root/dsc06206.webp",
+        "thumb": "thumbs/root/dsc06206.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC06212.jpg",
+      "project": "root",
+      "source_size": 5282981,
+      "outputs": {
+        "image": "images/root/dsc06212.webp",
+        "thumb": "thumbs/root/dsc06212.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC06229.jpg",
+      "project": "root",
+      "source_size": 6460015,
+      "outputs": {
+        "image": "images/root/dsc06229.webp",
+        "thumb": "thumbs/root/dsc06229.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC06235.jpg",
+      "project": "root",
+      "source_size": 18032347,
+      "outputs": {
+        "image": "images/root/dsc06235.webp",
+        "thumb": "thumbs/root/dsc06235.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC06570.jpg",
+      "project": "root",
+      "source_size": 8130649,
+      "outputs": {
+        "image": "images/root/dsc06570.webp",
+        "thumb": "thumbs/root/dsc06570.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC06596.jpg",
+      "project": "root",
+      "source_size": 20117591,
+      "outputs": {
+        "image": "images/root/dsc06596.webp",
+        "thumb": "thumbs/root/dsc06596.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC06603.jpg",
+      "project": "root",
+      "source_size": 15547684,
+      "outputs": {
+        "image": "images/root/dsc06603.webp",
+        "thumb": "thumbs/root/dsc06603.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC06702.jpg",
+      "project": "root",
+      "source_size": 5090567,
+      "outputs": {
+        "image": "images/root/dsc06702.webp",
+        "thumb": "thumbs/root/dsc06702.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC06753.jpg",
+      "project": "root",
+      "source_size": 9622884,
+      "outputs": {
+        "image": "images/root/dsc06753.webp",
+        "thumb": "thumbs/root/dsc06753.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC06827.jpg",
+      "project": "root",
+      "source_size": 8189110,
+      "outputs": {
+        "image": "images/root/dsc06827.webp",
+        "thumb": "thumbs/root/dsc06827.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC06834.jpg",
+      "project": "root",
+      "source_size": 6869512,
+      "outputs": {
+        "image": "images/root/dsc06834.webp",
+        "thumb": "thumbs/root/dsc06834.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC06878.jpg",
+      "project": "root",
+      "source_size": 11854847,
+      "outputs": {
+        "image": "images/root/dsc06878.webp",
+        "thumb": "thumbs/root/dsc06878.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC06887.jpg",
+      "project": "root",
+      "source_size": 15890389,
+      "outputs": {
+        "image": "images/root/dsc06887.webp",
+        "thumb": "thumbs/root/dsc06887.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC06913.jpg",
+      "project": "root",
+      "source_size": 12708104,
+      "outputs": {
+        "image": "images/root/dsc06913.webp",
+        "thumb": "thumbs/root/dsc06913.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC07038.jpg",
+      "project": "root",
+      "source_size": 14299341,
+      "outputs": {
+        "image": "images/root/dsc07038.webp",
+        "thumb": "thumbs/root/dsc07038.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC07067.jpg",
+      "project": "root",
+      "source_size": 12374891,
+      "outputs": {
+        "image": "images/root/dsc07067.webp",
+        "thumb": "thumbs/root/dsc07067.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC07069.jpg",
+      "project": "root",
+      "source_size": 14172225,
+      "outputs": {
+        "image": "images/root/dsc07069.webp",
+        "thumb": "thumbs/root/dsc07069.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC07072.jpg",
+      "project": "root",
+      "source_size": 19736411,
+      "outputs": {
+        "image": "images/root/dsc07072.webp",
+        "thumb": "thumbs/root/dsc07072.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC07114.jpg",
+      "project": "root",
+      "source_size": 13227581,
+      "outputs": {
+        "image": "images/root/dsc07114.webp",
+        "thumb": "thumbs/root/dsc07114.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC07130.jpg",
+      "project": "root",
+      "source_size": 14041175,
+      "outputs": {
+        "image": "images/root/dsc07130.webp",
+        "thumb": "thumbs/root/dsc07130.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC07229.jpg",
+      "project": "root",
+      "source_size": 11172195,
+      "outputs": {
+        "image": "images/root/dsc07229.webp",
+        "thumb": "thumbs/root/dsc07229.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC07264.jpg",
+      "project": "root",
+      "source_size": 11942045,
+      "outputs": {
+        "image": "images/root/dsc07264.webp",
+        "thumb": "thumbs/root/dsc07264.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC07272.jpg",
+      "project": "root",
+      "source_size": 18275064,
+      "outputs": {
+        "image": "images/root/dsc07272.webp",
+        "thumb": "thumbs/root/dsc07272.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC07526.jpg",
+      "project": "root",
+      "source_size": 12075320,
+      "outputs": {
+        "image": "images/root/dsc07526.webp",
+        "thumb": "thumbs/root/dsc07526.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC07539.jpg",
+      "project": "root",
+      "source_size": 11970146,
+      "outputs": {
+        "image": "images/root/dsc07539.webp",
+        "thumb": "thumbs/root/dsc07539.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC07570.jpg",
+      "project": "root",
+      "source_size": 9792730,
+      "outputs": {
+        "image": "images/root/dsc07570.webp",
+        "thumb": "thumbs/root/dsc07570.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC07690.jpg",
+      "project": "root",
+      "source_size": 9602160,
+      "outputs": {
+        "image": "images/root/dsc07690.webp",
+        "thumb": "thumbs/root/dsc07690.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC07698.jpg",
+      "project": "root",
+      "source_size": 9903026,
+      "outputs": {
+        "image": "images/root/dsc07698.webp",
+        "thumb": "thumbs/root/dsc07698.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC07712.jpg",
+      "project": "root",
+      "source_size": 8993121,
+      "outputs": {
+        "image": "images/root/dsc07712.webp",
+        "thumb": "thumbs/root/dsc07712.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC07779.jpg",
+      "project": "root",
+      "source_size": 8155210,
+      "outputs": {
+        "image": "images/root/dsc07779.webp",
+        "thumb": "thumbs/root/dsc07779.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC078.jpg",
+      "project": "root",
+      "source_size": 13737849,
+      "outputs": {
+        "image": "images/root/dsc078.webp",
+        "thumb": "thumbs/root/dsc078.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC07858.jpg",
+      "project": "root",
+      "source_size": 9845296,
+      "outputs": {
+        "image": "images/root/dsc07858.webp",
+        "thumb": "thumbs/root/dsc07858.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC079.jpg",
+      "project": "root",
+      "source_size": 13134787,
+      "outputs": {
+        "image": "images/root/dsc079.webp",
+        "thumb": "thumbs/root/dsc079.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC08343.jpg",
+      "project": "root",
+      "source_size": 11852592,
+      "outputs": {
+        "image": "images/root/dsc08343.webp",
+        "thumb": "thumbs/root/dsc08343.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC08398.jpg",
+      "project": "root",
+      "source_size": 10252784,
+      "outputs": {
+        "image": "images/root/dsc08398.webp",
+        "thumb": "thumbs/root/dsc08398.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC08400.jpg",
+      "project": "root",
+      "source_size": 10159122,
+      "outputs": {
+        "image": "images/root/dsc08400.webp",
+        "thumb": "thumbs/root/dsc08400.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC08413.jpg",
+      "project": "root",
+      "source_size": 8262972,
+      "outputs": {
+        "image": "images/root/dsc08413.webp",
+        "thumb": "thumbs/root/dsc08413.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC08417.jpg",
+      "project": "root",
+      "source_size": 8524811,
+      "outputs": {
+        "image": "images/root/dsc08417.webp",
+        "thumb": "thumbs/root/dsc08417.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC08430.jpg",
+      "project": "root",
+      "source_size": 11451313,
+      "outputs": {
+        "image": "images/root/dsc08430.webp",
+        "thumb": "thumbs/root/dsc08430.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC08452.jpg",
+      "project": "root",
+      "source_size": 10676413,
+      "outputs": {
+        "image": "images/root/dsc08452.webp",
+        "thumb": "thumbs/root/dsc08452.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC08455.jpg",
+      "project": "root",
+      "source_size": 9525198,
+      "outputs": {
+        "image": "images/root/dsc08455.webp",
+        "thumb": "thumbs/root/dsc08455.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC08467.jpg",
+      "project": "root",
+      "source_size": 9807296,
+      "outputs": {
+        "image": "images/root/dsc08467.webp",
+        "thumb": "thumbs/root/dsc08467.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC08479.jpg",
+      "project": "root",
+      "source_size": 10583824,
+      "outputs": {
+        "image": "images/root/dsc08479.webp",
+        "thumb": "thumbs/root/dsc08479.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC08492.jpg",
+      "project": "root",
+      "source_size": 9992907,
+      "outputs": {
+        "image": "images/root/dsc08492.webp",
+        "thumb": "thumbs/root/dsc08492.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC08529.jpg",
+      "project": "root",
+      "source_size": 9436776,
+      "outputs": {
+        "image": "images/root/dsc08529.webp",
+        "thumb": "thumbs/root/dsc08529.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC08601.jpg",
+      "project": "root",
+      "source_size": 9647134,
+      "outputs": {
+        "image": "images/root/dsc08601.webp",
+        "thumb": "thumbs/root/dsc08601.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC08603.jpg",
+      "project": "root",
+      "source_size": 16429243,
+      "outputs": {
+        "image": "images/root/dsc08603.webp",
+        "thumb": "thumbs/root/dsc08603.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC08604.jpg",
+      "project": "root",
+      "source_size": 10286812,
+      "outputs": {
+        "image": "images/root/dsc08604.webp",
+        "thumb": "thumbs/root/dsc08604.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC08628.jpg",
+      "project": "root",
+      "source_size": 10502168,
+      "outputs": {
+        "image": "images/root/dsc08628.webp",
+        "thumb": "thumbs/root/dsc08628.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC08634.jpg",
+      "project": "root",
+      "source_size": 8317765,
+      "outputs": {
+        "image": "images/root/dsc08634.webp",
+        "thumb": "thumbs/root/dsc08634.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC08641.jpg",
+      "project": "root",
+      "source_size": 12727355,
+      "outputs": {
+        "image": "images/root/dsc08641.webp",
+        "thumb": "thumbs/root/dsc08641.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC08647.jpg",
+      "project": "root",
+      "source_size": 9714217,
+      "outputs": {
+        "image": "images/root/dsc08647.webp",
+        "thumb": "thumbs/root/dsc08647.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC08649.jpg",
+      "project": "root",
+      "source_size": 11485855,
+      "outputs": {
+        "image": "images/root/dsc08649.webp",
+        "thumb": "thumbs/root/dsc08649.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC08672.jpg",
+      "project": "root",
+      "source_size": 12914327,
+      "outputs": {
+        "image": "images/root/dsc08672.webp",
+        "thumb": "thumbs/root/dsc08672.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC08688.jpg",
+      "project": "root",
+      "source_size": 12412808,
+      "outputs": {
+        "image": "images/root/dsc08688.webp",
+        "thumb": "thumbs/root/dsc08688.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC08689.jpg",
+      "project": "root",
+      "source_size": 16627548,
+      "outputs": {
+        "image": "images/root/dsc08689.webp",
+        "thumb": "thumbs/root/dsc08689.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC08696.jpg",
+      "project": "root",
+      "source_size": 12002929,
+      "outputs": {
+        "image": "images/root/dsc08696.webp",
+        "thumb": "thumbs/root/dsc08696.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC087.jpg",
+      "project": "root",
+      "source_size": 16397833,
+      "outputs": {
+        "image": "images/root/dsc087.webp",
+        "thumb": "thumbs/root/dsc087.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC08720.jpg",
+      "project": "root",
+      "source_size": 12385160,
+      "outputs": {
+        "image": "images/root/dsc08720.webp",
+        "thumb": "thumbs/root/dsc08720.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC08742.jpg",
+      "project": "root",
+      "source_size": 10780009,
+      "outputs": {
+        "image": "images/root/dsc08742.webp",
+        "thumb": "thumbs/root/dsc08742.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC08753.jpg",
+      "project": "root",
+      "source_size": 12331008,
+      "outputs": {
+        "image": "images/root/dsc08753.webp",
+        "thumb": "thumbs/root/dsc08753.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC08808.jpg",
+      "project": "root",
+      "source_size": 14829584,
+      "outputs": {
+        "image": "images/root/dsc08808.webp",
+        "thumb": "thumbs/root/dsc08808.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC08826.jpg",
+      "project": "root",
+      "source_size": 13055056,
+      "outputs": {
+        "image": "images/root/dsc08826.webp",
+        "thumb": "thumbs/root/dsc08826.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC0883.jpg",
+      "project": "root",
+      "source_size": 9585963,
+      "outputs": {
+        "image": "images/root/dsc0883.webp",
+        "thumb": "thumbs/root/dsc0883.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC08837.jpg",
+      "project": "root",
+      "source_size": 18775787,
+      "outputs": {
+        "image": "images/root/dsc08837.webp",
+        "thumb": "thumbs/root/dsc08837.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC08840.jpg",
+      "project": "root",
+      "source_size": 12817531,
+      "outputs": {
+        "image": "images/root/dsc08840.webp",
+        "thumb": "thumbs/root/dsc08840.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC08908.jpg",
+      "project": "root",
+      "source_size": 11299657,
+      "outputs": {
+        "image": "images/root/dsc08908.webp",
+        "thumb": "thumbs/root/dsc08908.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC09502.jpg",
+      "project": "root",
+      "source_size": 4802626,
+      "outputs": {
+        "image": "images/root/dsc09502.webp",
+        "thumb": "thumbs/root/dsc09502.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC09534.jpg",
+      "project": "root",
+      "source_size": 9278683,
+      "outputs": {
+        "image": "images/root/dsc09534.webp",
+        "thumb": "thumbs/root/dsc09534.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC09574.jpg",
+      "project": "root",
+      "source_size": 5687780,
+      "outputs": {
+        "image": "images/root/dsc09574.webp",
+        "thumb": "thumbs/root/dsc09574.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC09676.jpg",
+      "project": "root",
+      "source_size": 9938476,
+      "outputs": {
+        "image": "images/root/dsc09676.webp",
+        "thumb": "thumbs/root/dsc09676.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC09688.jpg",
+      "project": "root",
+      "source_size": 4554834,
+      "outputs": {
+        "image": "images/root/dsc09688.webp",
+        "thumb": "thumbs/root/dsc09688.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC09830.jpg",
+      "project": "root",
+      "source_size": 8339809,
+      "outputs": {
+        "image": "images/root/dsc09830.webp",
+        "thumb": "thumbs/root/dsc09830.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC09944.jpg",
+      "project": "root",
+      "source_size": 14109743,
+      "outputs": {
+        "image": "images/root/dsc09944.webp",
+        "thumb": "thumbs/root/dsc09944.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSC09945.jpg",
+      "project": "root",
+      "source_size": 14304135,
+      "outputs": {
+        "image": "images/root/dsc09945.webp",
+        "thumb": "thumbs/root/dsc09945.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSCF3577.jpg",
+      "project": "root",
+      "source_size": 16364825,
+      "outputs": {
+        "image": "images/root/dscf3577.webp",
+        "thumb": "thumbs/root/dscf3577.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSCF3596.jpg",
+      "project": "root",
+      "source_size": 17744316,
+      "outputs": {
+        "image": "images/root/dscf3596.webp",
+        "thumb": "thumbs/root/dscf3596.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "DSCF5547.jpg",
+      "project": "root",
+      "source_size": 9663293,
+      "outputs": {
+        "image": "images/root/dscf5547.webp",
+        "thumb": "thumbs/root/dscf5547.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "gs26.jpg",
+      "project": "root",
+      "source_size": 9537359,
+      "outputs": {
+        "image": "images/root/gs26.webp",
+        "thumb": "thumbs/root/gs26.webp"
+      },
+      "status": "ok",
+      "error": null
+    },
+    {
+      "kind": "image",
+      "source": "gs3.jpg",
+      "project": "root",
+      "source_size": 9875142,
+      "outputs": {
+        "image": "images/root/gs3.webp",
+        "thumb": "thumbs/root/gs3.webp"
+      },
+      "status": "ok",
+      "error": null
+    }
+  ]
+}

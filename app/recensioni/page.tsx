@@ -15,115 +15,67 @@ export default function RecensioniPage() {
   return (
     <>
       <SiteHeader />
-      <main>
-        <section className="page-hero split">
-          <div className="page-hero-inner">
-            <div className="page-hero-copy">
-              <p className="label">Recensioni</p>
-              <h1 className="page-title">
-                Le parole
-                <br />
-                delle coppie
-                <br />
-                contano.
-              </h1>
-              <p className="page-intro">
-                Recensioni verificate su Matrimonio.com: disponibilità, discrezione, gentilezza e
-                professionalità raccontate da chi ha vissuto il matrimonio con noi accanto.
-              </p>
+      <main className="page-offset">
+        <section className="page-block">
+          <div className="page-block-inner stack align-start">
+            <h1 className="page-title">
+              Le parole
+              <br />
+              delle coppie
+              <br />
+              <span className="accent">contano</span>
+            </h1>
+            <div className="stat-row" aria-label="Dati recensioni Lucea">
+              {trustStats.map((stat) => (
+                <div className="fact" key={stat.label}>
+                  <strong>{stat.value}</strong>
+                  <span className="label">{stat.label}</span>
+                </div>
+              ))}
             </div>
-            <div className="page-hero-photo contain">
-              <Image
-                src="/photos/bacio-cerimonia.webp"
-                alt="Coppia durante un momento intimo della cerimonia fotografato da Lucea"
-                width={1100}
-                height={760}
-                sizes="(max-width: 860px) 100vw, 50vw"
-                priority
-                unoptimized
-              />
-            </div>
-          </div>
-        </section>
-
-        <section className="content-section">
-          <div className="content-inner split-proof">
-            <div>
-              <p className="label">Matrimonio.com</p>
-              <h2 className="poster-title">
-                Fiducia
-                <br />
-                verificata.
-              </h2>
-            </div>
-            <div>
-              <div className="facts-grid" aria-label="Dati recensioni Lucea">
-                {trustStats.map((stat) => (
-                  <div className="fact" key={stat.label}>
-                    <strong>{stat.value}</strong>
-                    <span className="label">{stat.label}</span>
-                  </div>
-                ))}
-              </div>
-              <p className="body-copy stack-after-title">
-                171 recensioni, valutazione 5.0 su 5 e 100% consigliato: numeri forti, ma soprattutto
-                un modo di lavorare che rassicura coppie e famiglie.
-              </p>
-              <p className="stack-after-title">
-                <a className="btn-outline" href={matrimonioUrl} target="_blank" rel="noreferrer">
-                  Leggi tutte su Matrimonio.com
-                </a>
-              </p>
-            </div>
+            <p>
+              <a className="btn-outline" href={matrimonioUrl} target="_blank" rel="noreferrer">
+                Leggi tutte su Matrimonio.com
+              </a>
+            </p>
           </div>
         </section>
 
         <section className="reviews-list-section" aria-labelledby="reviews-list-title">
-          <div className="content-inner reviews-list-intro">
-            <h2 id="reviews-list-title" className="poster-title">
-              Cosa dicono di noi        
-            </h2>
-          </div>
-          <div className="review-story-list">
+          <h2 id="reviews-list-title" className="sr-only">
+            Recensioni verificate
+          </h2>
+          <div className="review-pair-list">
             {matrimonioReviews.map((review) => (
-              <article className="review-story-card" key={`${review.name}-${review.date}`}>
-                <figure className="review-story-photo">
+              <article className="review-pair" key={`${review.name}-${review.date}`}>
+                <figure className="review-pair-photo">
                   <Image
                     src={review.image}
                     alt={review.alt}
                     width={1600}
                     height={1066}
-                    sizes="100vw"
+                    sizes="(max-width: 860px) 100vw, 50vw"
                     unoptimized
                   />
                 </figure>
-                <div className="review-story-card-body">
+                <div className="review-pair-body">
                   <p className="label">
                     {review.name} · {review.date}
                   </p>
                   <h3>{review.headline}</h3>
-                  <p className="body-copy stack-after-title">{review.text}</p>
+                  <p className="body-copy">{review.text}</p>
                 </div>
               </article>
             ))}
           </div>
         </section>
 
-        <section className="content-section">
-          <div className="content-inner reviews-cta">
-            <p className="label">Vi riconoscete?</p>
-            <h2 className="poster-title poster-title--wide">
-              Raccontate
-              <br />
-              il vostro
-              <br />
-              <span className="accent">giorno.</span>
+        <section className="page-block">
+          <div className="page-block-inner stack align-start">
+            <h2 className="section-title">
+              Raccontate il vostro <span className="accent">giorno</span>
             </h2>
-            <p className="body-copy serif-lead reviews-cta-copy">
-              Se cercate fotografi di matrimonio a Milano o in Lombardia che lavorino con spontaneità,
-              discrezione e attenzione alle persone, scriveteci.
-            </p>
-            <p className="section-cta">
+            <p className="section-cta section-cta--start">
               <a className="btn-primary" href="/contatti">
                 Parliamo del vostro matrimonio
               </a>

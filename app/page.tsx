@@ -3,11 +3,11 @@ import { ContactForm } from "../components/ContactForm";
 import { SiteHeader } from "../components/SiteHeader";
 import { SiteFooter } from "../components/SiteFooter";
 import { contact, faqs, matrimonioUrl } from "../lib/site-content";
-import heroImage from "../public/photos/hero-graffiti.webp";
-import festaImage from "../public/photos/festa-lancio-sposa.webp";
-import famigliaImage from "../public/photos/ritratto-famiglia-bn.webp";
-import balloImage from "../public/photos/ballo-sala.webp";
-import contattoImage from "../public/photos/aperitivo-sposi.webp";
+import heroImage from "../public/media/images/root/dsc02552.webp";
+import proofImage from "../public/media/images/root/dsc00317.webp";
+import festaImage from "../public/media/images/root/dsc0080.webp";
+import peakImage from "../public/media/images/root/dsc07067.webp";
+import closeImage from "../public/media/images/root/dsc06827.webp";
 
 function JsonLd() {
   const organization = {
@@ -16,7 +16,7 @@ function JsonLd() {
     name: "Lucea Fotografie",
     alternateName: ["Lucea", "Lucea Fotografie"],
     url: "https://luceafotografie.it",
-    image: "https://luceafotografie.it/photos/hero-graffiti.webp",
+    image: "https://luceafotografie.it/media/images/root/dsc02552.webp",
     email: "eamauri@gmail.com",
     telephone: "+393495799243",
     address: {
@@ -26,7 +26,7 @@ function JsonLd() {
       postalCode: "20146",
       addressCountry: "IT"
     },
-    areaServed: ["Milano", "Lombardia", "Italia", "Estero"],
+    areaServed: ["Milano", "Monza Brianza", "Lombardia", "Italia", "Estero"],
     knowsAbout: [
       "fotografia di matrimonio",
       "wedding photojournalism",
@@ -36,6 +36,7 @@ function JsonLd() {
       "video matrimonio",
       "album matrimonio"
     ],
+    vatID: "IT09388090962",
     sameAs: [matrimonioUrl],
     aggregateRating: {
       "@type": "AggregateRating",
@@ -81,16 +82,6 @@ function FullPhoto({ src, alt, label }: { src: StaticImageData; alt: string; lab
   );
 }
 
-function HomeCta() {
-  return (
-    <p className="section-cta">
-      <a className="btn-primary" href="/contatti">
-        Parliamo del vostro giorno
-      </a>
-    </p>
-  );
-}
-
 export default function Home() {
   return (
     <>
@@ -106,12 +97,11 @@ export default function Home() {
           <div className="hero-image">
             <Image
               src={heroImage}
-              alt="Coppia Lucea in una scena urbana e spontanea"
-              width={1600}
-              height={1066}
+              alt="Sposa e invitati a braccia alzate durante una festa di matrimonio"
+              width={heroImage.width}
+              height={heroImage.height}
               priority
               sizes="100vw"
-              style={{ width: "100%", height: "auto", display: "block" }}
               unoptimized
             />
           </div>
@@ -119,10 +109,10 @@ export default function Home() {
           <div className="hero-copy">
             <h1 id="hero-title" className="display hero-headline">
               <span className="hero-headline-line">
-                <span className="accent">Storie</span> vere.
+                <span className="accent">Storie</span> vere
               </span>
               <span className="hero-headline-line">
-                Zero <span className="accent">pose.</span>
+                Zero <span className="accent">pose</span>
               </span>
             </h1>
           </div>
@@ -132,109 +122,108 @@ export default function Home() {
           className="poster-section warm poster-section--compact home-intro"
           aria-labelledby="home-intro-title"
           data-liquid-capture-section="section"
-          data-liquid-capture-name="Posizionamento"
+          data-liquid-capture-name="Lucea fotografia"
         >
           <div className="poster-inner">
-            <p className="label">Cosa</p>
-            <h2 id="home-intro-title" className="poster-title poster-title--wide">
-              Fotografie di <span className="accent">matrimonio</span>
-              <br />
-              senza <span className="accent">finzioni.</span>
-            </h2>
+            <div className="brand-lockup">
+              <p className="brand-lockup-name">Lucea</p>
+              <h2 id="home-intro-title" className="brand-lockup-role">
+                Fotografia di matrimonio
+              </h2>
+            </div>
             <p className="body-copy serif-lead stack-after-title">
-              A Milano, in Lombardia e ovunque.
+              Emozioni, sguardi e dettagli raccontati con discrezione e leggerezza.
             </p>
-            <HomeCta />
-          </div>
-        </section>
-
-        <FullPhoto
-          src={festaImage}
-          alt="Sposa lanciata dagli amici durante una festa di matrimonio fotografata da Lucea"
-          label="Festa vera, non recitata"
-        />
-
-        <section
-          id="chi-sono"
-          className="poster-section warm poster-section--compact"
-          aria-labelledby="chi-sono-title"
-          data-liquid-capture-section="section"
-          data-liquid-capture-name="Restiamo vicini"
-        >
-          <div className="poster-inner">
-            <p className="label">Chi siamo</p>
-            <h2 id="chi-sono-title" className="poster-title">
-              Restiamo <span className="accent">vicini.</span>
-              <br />
-              Non <span className="accent">interrompiamo.</span>
-              <br />
-              Non mettiamo in scena.
-            </h2>
-            <p className="body-copy serif-lead stack-after-title">
-              Raccontiamo gli sguardi, i sorrisi e la vita vera con semplicità e discrezione. E sì,
-              faremo anche le foto di rito, ma promesso: ci divertiremo.
+            <p className="body-copy muted-copy stack-after-title">
+              Con sede a Milano, vi raggiungiamo dove siete.
+            </p>
+            <p className="section-cta">
+              <a className="btn-primary" href="/contatti">
+                Parliamo del vostro giorno
+              </a>
             </p>
           </div>
         </section>
 
         <FullPhoto
-          src={famigliaImage}
-          alt="Ritratto di famiglia in bianco e nero durante un matrimonio fotografato da Lucea"
-          label="Famiglia e momenti di rito"
-        />
-
-        <section
-          id="come-avviene"
-          className="poster-section poster-section--compact"
-          aria-labelledby="come-avviene-title"
-          data-liquid-capture-section="section"
-          data-liquid-capture-name="Godetevi la festa"
-        >
-          <div className="poster-inner">
-            <p className="label">Come avviene</p>
-            <h2 id="come-avviene-title" className="poster-title">
-              Godetevi la <span className="accent">festa.</span>
-              <br />
-              Ai ricordi ci pensiamo noi.
-            </h2>
-            <p className="body-copy serif-lead stack-after-title">
-              Niente pose forzate, niente ore rubate agli invitati, nessuna recita. Un approccio
-              tranquillo e amichevole per raccontare la vostra giornata esattamente così come accade.
-            </p>
-          </div>
-        </section>
-
-        <FullPhoto
-          src={balloImage}
-          alt="Coppia che balla durante la festa di matrimonio fotografata da Lucea"
-          label="Festa e ballo"
+          src={proofImage}
+          alt="Sposi che escono tra invitati e bolle, sorrisi spontanei"
+          label="Uscita tra gli invitati"
         />
 
         <section
           className="poster-section warm poster-section--compact"
           aria-labelledby="voi-title"
           data-liquid-capture-section="section"
-          data-liquid-capture-name="Emozionatevi"
+          data-liquid-capture-name="Voi vi sposate"
         >
           <div className="poster-inner">
-            <p className="label">Voi</p>
             <h2 id="voi-title" className="poster-title poster-title--wide">
-              Emozionatevi, divertitevi, godetevi ogni momento:
+              Voi vi sposate
               <br />
-              è la vostra <span className="accent">festa.</span>
+              noi vi <span className="accent">fotografiamo</span>
             </h2>
             <p className="body-copy serif-lead stack-after-title">
-              Qui c&apos;è spazio solo per la vostra storia così com&apos;è. Lucea è uno spazio aperto a
-              ogni storia d&apos;amore, identità, cultura e credo. Senza distinzioni, sempre con cura e
-              rispetto. Se questo per voi conta, questo viaggio inizia insieme.
+              Vivete ogni istante della vostra giornata con spontaneità e noi vi aiuteremo a
+              ricordarla. E sì, faremo anche le foto di rito, ma promesso: saranno piacevoli,
+              curate, vostre.
             </p>
           </div>
         </section>
 
         <FullPhoto
-          src={contattoImage}
-          alt="Sposi durante l'aperitivo di matrimonio fotografati da Lucea"
-          label="Aperitivo e convivialità"
+          src={festaImage}
+          alt="Ingresso in sala: sposi di spalle e invitati che sventolano tovaglioli"
+          label="La festa in sala"
+        />
+
+        <section
+          className="poster-section poster-section--compact"
+          aria-labelledby="agio-title"
+          data-liquid-capture-section="section"
+          data-liquid-capture-name="A vostro agio"
+        >
+          <div className="poster-inner">
+            <h2 id="agio-title" className="poster-title poster-title--wide">
+              Il primo obiettivo è farvi sentire a <span className="accent">vostro agio</span>
+            </h2>
+            <p className="body-copy serif-lead stack-after-title">
+              Un approccio tranquillo e amichevole per accompagnarvi con leggerezza e raccontare
+              il vostro matrimonio così come accade.
+            </p>
+          </div>
+        </section>
+
+        <FullPhoto
+          src={peakImage}
+          alt="Sposi e invitati sotto una pioggia di riso"
+          label="Riso e invitati"
+        />
+
+        <section
+          className="poster-section warm poster-section--compact"
+          aria-labelledby="festa-title"
+          data-liquid-capture-section="section"
+          data-liquid-capture-name="La vostra festa"
+        >
+          <div className="poster-inner">
+            <h2 id="festa-title" className="poster-title poster-title--wide">
+              Emozionatevi, divertitevi:
+              <br />
+              è la vostra <span className="accent">festa</span>
+            </h2>
+            <p className="body-copy serif-lead stack-after-title">
+              Qui c&apos;è spazio solo per la vostra storia vera. LUCEA è uno spazio aperto a ogni
+              storia d&apos;amore, identità, cultura e credo. Senza distinzioni, sempre con cura e
+              rispetto. Se questo per voi conta, il nostro viaggio inizia insieme.
+            </p>
+          </div>
+        </section>
+
+        <FullPhoto
+          src={closeImage}
+          alt="Corsa tra le bolle in giardino durante un matrimonio"
+          label="Bolle e corsa"
         />
 
         <section
@@ -245,19 +234,21 @@ export default function Home() {
           data-liquid-capture-name="Parliamo di voi"
         >
           <div className="poster-inner home-contact-grid">
-            <p className="label">Contatto</p>
             <h2 id="contatti-title" className="poster-title poster-title--wide">
               Se siete arrivati fin qui,
               <br />
-              parliamo di <span className="accent">voi.</span>
+              ora parliamo di <span className="accent">voi</span>
             </h2>
+            <p className="body-copy serif-lead">
+              Due parole o una lunga chiacchierata: siamo sempre disponibili.
+            </p>
             <ContactForm compact />
             <p className="home-contact-links">
-              <a className="link-text" href={`mailto:${contact.email}`}>
-                {contact.email}
-              </a>
-              <a className="btn-outline" href={contact.whatsapp} target="_blank" rel="noreferrer">
+              <a className="btn-whatsapp" href={contact.whatsapp} target="_blank" rel="noreferrer">
                 WhatsApp
+              </a>
+              <a className="btn-outline" href={contact.phoneHref}>
+                {contact.phone}
               </a>
             </p>
           </div>
