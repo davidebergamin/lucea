@@ -27,7 +27,7 @@ export default function ChiSonoPage() {
 
         <figure className="media-full">
           <Image
-            src="/media/images/root/dsc04983.webp"
+            src="/media/images/root/lucea-matrimonio-home-018.webp"
             alt="Momento intimo durante i preparativi di un matrimonio"
             width={2000}
             height={1333}

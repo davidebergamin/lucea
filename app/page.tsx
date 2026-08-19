@@ -3,12 +3,12 @@ import { ContactForm } from "../components/ContactForm";
 import { SiteHeader } from "../components/SiteHeader";
 import { SiteFooter } from "../components/SiteFooter";
 import { contact, faqs, matrimonioUrl } from "../lib/site-content";
-import heroImage from "../public/media/images/root/dsc02552.webp";
-import heroMobileImage from "../public/media/images/root/dsc07272.webp";
-import proofImage from "../public/media/images/root/dsc00317.webp";
-import festaImage from "../public/media/images/root/dsc0080.webp";
-import peakImage from "../public/media/images/root/dsc07067.webp";
-import closeImage from "../public/media/images/root/dsc06827.webp";
+import heroImage from "../public/media/images/root/lucea-matrimonio-home-015.webp";
+import heroMobileImage from "../public/media/images/root/lucea-matrimonio-home-003.webp";
+import proofImage from "../public/media/images/root/lucea-matrimonio-home-014.webp";
+import festaImage from "../public/media/images/root/lucea-matrimonio-home-012.webp";
+import peakImage from "../public/media/images/root/lucea-matrimonio-home-022.webp";
+import closeImage from "../public/media/images/root/lucea-matrimonio-home-007.webp";
 
 function JsonLd() {
   const organization = {
@@ -17,7 +17,7 @@ function JsonLd() {
     name: "Lucea Fotografie",
     alternateName: ["Lucea", "Lucea Fotografie"],
     url: "https://luceafotografie.it",
-    image: "https://luceafotografie.it/media/images/root/dsc02552.webp",
+    image: "https://luceafotografie.it/media/images/root/lucea-matrimonio-home-015.webp",
     email: "eamauri@gmail.com",
     telephone: "+393495799243",
     address: {
@@ -98,7 +98,7 @@ export default function Home() {
           <div className="hero-image hero-image--desktop">
             <Image
               src={heroImage}
-              alt="Sposa e invitati a braccia alzate durante una festa di matrimonio"
+              alt="Sposi che escono dalla chiesa sotto una pioggia di coriandoli"
               width={heroImage.width}
               height={heroImage.height}
               priority
@@ -109,7 +109,7 @@ export default function Home() {
           <div className="hero-image hero-image--mobile">
             <Image
               src={heroMobileImage}
-              alt="Sposi che si guardano sorridendo, luce calda su un muro di pietra"
+              alt="Sposi sotto un arco di lightsaber formato dagli invitati"
               width={heroMobileImage.width}
               height={heroMobileImage.height}
               priority
@@ -159,7 +159,7 @@ export default function Home() {
 
         <FullPhoto
           src={proofImage}
-          alt="Sposi che escono tra invitati e bolle, sorrisi spontanei"
+          alt="Sposi di spalle che escono a braccia alzate tra gli invitati"
           label="Uscita tra gli invitati"
         />
 
@@ -185,8 +185,8 @@ export default function Home() {
 
         <FullPhoto
           src={festaImage}
-          alt="Ingresso in sala: sposi di spalle e invitati che sventolano tovaglioli"
-          label="La festa in sala"
+          alt="Sposi che ridono dentro un'auto d'epoca azzurra"
+          label="Auto d'epoca"
         />
 
         <section
@@ -208,8 +208,8 @@ export default function Home() {
 
         <FullPhoto
           src={peakImage}
-          alt="Sposi e invitati sotto una pioggia di riso"
-          label="Riso e invitati"
+          alt="Sposa e ospite che cantano al microfono durante la festa"
+          label="Festa"
         />
 
         <section
@@ -234,8 +234,8 @@ export default function Home() {
 
         <FullPhoto
           src={closeImage}
-          alt="Corsa tra le bolle in giardino durante un matrimonio"
-          label="Bolle e corsa"
+          alt="Abbraccio in un campo alto, colline sullo sfondo"
+          label="Campo"
         />
 
         <section

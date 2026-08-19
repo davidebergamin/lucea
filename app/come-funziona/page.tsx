@@ -32,7 +32,7 @@ export default function ComeFunzionaPage() {
 
         <figure className="media-full">
           <Image
-            src="/media/images/root/dsc08601.webp"
+            src="/media/images/root/lucea-matrimonio-home-005.webp"
             alt="Preparativi in una cucina, vita vera prima del matrimonio"
             width={2000}
             height={1333}
@@ -68,7 +68,7 @@ export default function ComeFunzionaPage() {
 
         <figure className="media-full">
           <Image
-            src="/media/images/root/dsc08452.webp"
+            src="/media/images/root/lucea-matrimonio-home-016.webp"
             alt="Un gesto di cura durante i preparativi"
             width={2000}
             height={1333}

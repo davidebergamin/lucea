@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: StoryPageProps): Promise<Meta
 
   return {
     title: story.title,
-    description: `${story.title}. Storia Lucea: titolo e atmosfera, in attesa del racconto scritto.`,
+    description: `${story.title} — ${story.location}. Fotografie Lucea.`,
     alternates: { canonical: `/storie/${story.slug}` },
     openGraph: {
       title: story.title,
@@ -40,6 +40,8 @@ export default async function StoryDetailPage({ params }: StoryPageProps) {
   if (!story) {
     notFound();
   }
+
+  const gallery = story.gallery?.length ? story.gallery : [{ src: story.image, alt: story.alt }];
 
   const breadcrumbJsonLd = {
     "@context": "https://schema.org",
@@ -79,20 +81,24 @@ export default async function StoryDetailPage({ params }: StoryPageProps) {
               <span>{story.title}</span>
             </nav>
             <h1 className="page-title">{story.title}</h1>
-            <p className="page-intro">{story.summary}</p>
+            <p className="page-intro">
+              {story.location}
+              {story.status ? ` · ${story.status}` : ""}
+            </p>
+            <p className="body-copy muted-copy">{story.summary}</p>
           </div>
         </section>
 
-        <figure className="media-full">
-          <Image src={story.image} alt={story.alt} width={1600} height={1066} sizes="100vw" unoptimized />
-        </figure>
+        <section className="portfolio-grid" aria-label={`Galleria ${story.title}`}>
+          {gallery.map((photo) => (
+            <figure className="portfolio-item" key={photo.src}>
+              <Image src={photo.src} alt={photo.alt} width={1200} height={900} sizes="50vw" unoptimized />
+            </figure>
+          ))}
+        </section>
 
         <section className="page-block">
           <div className="page-block-inner page-block-inner--narrow stack">
-            <p className="body-copy serif-lead">
-              Le fotografie in questa pagina sono atmosfera dal set di Andrea: non attribuiamo
-              questi scatti a questa coppia finché il racconto e l&apos;album non arrivano da lui.
-            </p>
             <p className="section-cta section-cta--start">
               <a className="btn-primary" href="/contatti">
                 Compila il form

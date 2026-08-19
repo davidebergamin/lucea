@@ -43,7 +43,7 @@ export const metadata: Metadata = {
       "Reportage di matrimonio a Milano, Lombardia, Italia ed estero. Momenti veri, niente posato.",
     type: "website",
     locale: "it_IT",
-    images: ["/media/images/root/dsc02552.webp"]
+    images: ["/media/images/root/lucea-matrimonio-home-015.webp"]
   },
   robots: {
     index: true,
