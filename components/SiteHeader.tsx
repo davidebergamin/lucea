@@ -126,6 +126,9 @@ export function SiteHeader() {
         <a className="mobile-menu-cta btn-whatsapp" href={contact.whatsapp} target="_blank" rel="noreferrer" onClick={closeMenu}>
           WhatsApp
         </a>
+        <button type="button" className="mobile-menu-close" onClick={closeMenu}>
+          Chiudi
+        </button>
       </div>
       {open ? <button type="button" className="mobile-menu-backdrop" aria-label="Chiudi menu" onClick={closeMenu} /> : null}
     </>

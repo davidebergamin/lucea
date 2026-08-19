@@ -4,6 +4,7 @@ import { SiteHeader } from "../components/SiteHeader";
 import { SiteFooter } from "../components/SiteFooter";
 import { contact, faqs, matrimonioUrl } from "../lib/site-content";
 import heroImage from "../public/media/images/root/dsc02552.webp";
+import heroMobileImage from "../public/media/images/root/dsc07526.webp";
 import proofImage from "../public/media/images/root/dsc00317.webp";
 import festaImage from "../public/media/images/root/dsc0080.webp";
 import peakImage from "../public/media/images/root/dsc07067.webp";
@@ -94,12 +95,23 @@ export default function Home() {
           data-liquid-capture-section="section"
           data-liquid-capture-name="Storie vere"
         >
-          <div className="hero-image">
+          <div className="hero-image hero-image--desktop">
             <Image
               src={heroImage}
               alt="Sposa e invitati a braccia alzate durante una festa di matrimonio"
               width={heroImage.width}
               height={heroImage.height}
+              priority
+              sizes="100vw"
+              unoptimized
+            />
+          </div>
+          <div className="hero-image hero-image--mobile">
+            <Image
+              src={heroMobileImage}
+              alt="Sposa che lancia il bouquet, invitati a braccia alzate"
+              width={heroMobileImage.width}
+              height={heroMobileImage.height}
               priority
               sizes="100vw"
               unoptimized
