@@ -31,19 +31,20 @@ export default function ContattiPage() {
                 WhatsApp
               </a>
               <a className="btn-outline" href={contact.phoneHref}>
-                {contact.phone}
+                Telefono
               </a>
             </p>
             <ContactForm compact />
           </div>
         </section>
 
-        <section className="page-block page-block--tight" aria-labelledby="fit-title">
+        <section className="page-block page-block--tight fit-block" aria-labelledby="fit-title">
           <div className="page-block-inner page-block-inner--narrow stack align-start">
-            <h2 id="fit-title" className="section-title">
-              Potremmo essere i fotografi giusti per voi se preferite{" "}
-              <span className="accent">ridere</span> che recitare
+            <p className="fit-kicker">Potremmo essere i fotografi giusti per voi se</p>
+            <h2 id="fit-title" className="fit-headline">
+              preferite <span className="accent">ridere</span> che recitare
             </h2>
+            <p className="fit-also">Ma anche se</p>
             <ul className="fit-list">
               {fitList.map((item) => (
                 <li key={item}>{item}</li>

@@ -47,10 +47,10 @@ export default function ComeFunzionaPage() {
             <div className="come-funziona-steps">
               {comeFunzionaSteps.map((step, index) => (
                 <article className="come-funziona-step" key={step.title}>
-                  <p className="come-funziona-step-index">{String(index + 1).padStart(2, "0")}</p>
+                  <p className="come-funziona-step-index">{index + 1}.</p>
                   <div className="stack">
-                    <p className="step-kicker">{step.kicker}</p>
-                    <h2>{step.title}</h2>
+                    <h2 className="come-funziona-step-concept">{step.title}</h2>
+                    <p className="come-funziona-step-slogan">{step.kicker}</p>
                     <p className="body-copy">{step.text}</p>
                     {step.cta ? (
                       <p>
@@ -79,29 +79,23 @@ export default function ComeFunzionaPage() {
 
         <section className="page-block">
           <div className="page-block-inner stack align-start">
-            <h2 className="section-title">
+            <h2 className="section-title section-title--services">
               Foto, video, album.
               <br />
-              Solo ciò che <span className="accent">desiderate</span>
+              Solo ciò che desiderate <span className="accent">voi</span>.
             </h2>
-            <p className="body-copy serif-lead">
-              Un solo fotografo per un matrimonio intimo, oppure uno staff con più operatori. La
-              stampa delle foto durante la festa, un quadro, un album, drone o photocall quando li
-              concordiamo. Scegliamo insieme.
-            </p>
             <ul className="plain-list">
               {services.map((service) => (
                 <li key={service}>{service}</li>
               ))}
             </ul>
+            <p className="services-price">
+              Pacchetti da 900 euro a 2500: oppure personalizziamo il tuo servizio su misura
+            </p>
             <p className="body-copy">
-              I servizi partono da 900 euro e arrivano fino a circa 2.300 euro. Il dettaglio è in{" "}
+              Da Milano a dove siete voi, senza confini. Il dettaglio è in{" "}
               <a className="link-text" href="/prezzi">
                 Quanto può costare
-              </a>
-              . Lavoriamo da Milano, in{" "}
-              <a className="link-text" href="/dove-lavoriamo">
-                Monza Brianza, Lombardia e in trasferta
               </a>
               .
             </p>
@@ -111,7 +105,7 @@ export default function ComeFunzionaPage() {
         <section className="page-block page-block--tight">
           <div className="page-block-inner stack align-start">
             <h2 className="section-title">
-              Domande prima di <span className="accent">scrivere</span>
+              Alcune domande che riceviamo <span className="accent">spesso</span>
             </h2>
             <div className="faq-list">
               {faqs.map((faq) => (

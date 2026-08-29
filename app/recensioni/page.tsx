@@ -2,7 +2,12 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { SiteFooter } from "../../components/SiteFooter";
 import { SiteHeader } from "../../components/SiteHeader";
-import { matrimonioReviews, matrimonioUrl, trustStats } from "../../lib/site-content";
+import {
+  matrimonioReviews,
+  matrimonioUrl,
+  matrimonioUrlSecondary,
+  trustStats
+} from "../../lib/site-content";
 
 export const metadata: Metadata = {
   title: "Recensioni",
@@ -33,11 +38,19 @@ export default function RecensioniPage() {
                 </div>
               ))}
             </div>
-            <p>
+            <div className="stack align-start matrimonio-links">
               <a className="btn-outline" href={matrimonioUrl} target="_blank" rel="noreferrer">
                 Leggi tutte su Matrimonio.com
               </a>
-            </p>
+              <a
+                className="btn-outline"
+                href={matrimonioUrlSecondary}
+                target="_blank"
+                rel="noreferrer"
+              >
+                Altra vetrina Lucea su Matrimonio.com
+              </a>
+            </div>
           </div>
         </section>
 

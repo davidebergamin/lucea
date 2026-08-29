@@ -1,6 +1,8 @@
 export const siteUrl = "https://luceafotografie.it";
 
 export const matrimonioUrl = "https://www.matrimonio.com/fotografo-matrimonio/lucea--e155161";
+export const matrimonioUrlSecondary =
+  "https://www.matrimonio.com/fotografo-matrimonio/lucea--e195078";
 
 /** Foto ufficiali Lucea — cartella «Foto possibili per home page» in root. */
 const home = (n: string) => `/media/images/root/lucea-matrimonio-home-${n}.webp`;
@@ -20,10 +22,10 @@ export const contact = {
 
 export const navLinks = [
   { href: "/come-funziona", label: "Come funziona" },
+  { href: "/chi-sono", label: "Chi è LUCEA" },
   { href: "/storie", label: "Storie" },
   { href: "/portfolio", label: "Portfolio" },
   { href: "/recensioni", label: "Recensioni" },
-  { href: "/chi-sono", label: "Chi è LUCEA" },
   { href: "/contatti", label: "Contatti" }
 ];
 
@@ -31,12 +33,17 @@ export const footerPlusItems = [
   {
     label: "Quanto può costare",
     href: "/prezzi",
-    body: "I servizi matrimonio partono da 900 euro e arrivano fino a circa 2.300 euro, in base a durata, foto, video, album e trasferta. Ogni preventivo nasce dal vostro giorno, non da un listino rigido."
+    body: "Pacchetti da 900 euro a 2.500 euro, oppure personalizziamo il servizio su misura. Il preventivo nasce dal vostro giorno, non da un listino rigido."
   },
   {
     label: "Dove lavoriamo",
     href: "/dove-lavoriamo",
-    body: "Con sede a Milano, vi raggiungiamo dove siete: Monza Brianza, Lombardia, Italia e all'estero quando il matrimonio lo richiede."
+    body: "Con sede a Milano, vi raggiungiamo dove siete voi: Monza Brianza, Como, Lombardia, Italia e all'estero quando il matrimonio lo richiede."
+  },
+  {
+    label: "Contatti",
+    href: "/contatti",
+    body: `${contact.address}. ${contact.phone} · ${contact.email}`
   }
 ];
 
@@ -47,13 +54,16 @@ export const trustStats = [
 ];
 
 export const services = [
-  "fotografia di matrimonio in stile reportage",
-  "video matrimonio",
-  "prematrimonio e postmatrimonio",
-  "album, mini album e album digitali",
-  "gallery privata online",
-  "stampa delle foto durante la festa, quando la volete",
-  "drone e photocall, solo se concordati insieme"
+  "fotografia di matrimonio spontanea e leggera",
+  "video, trailer, video integrali, video interviste",
+  "album di ogni tipo",
+  "stampa di cartoline durante la festa",
+  "photobooth",
+  "drone",
+  "prematrimonio",
+  "post matrimonio, famiglia",
+  "gallery online privata",
+  "incontri a domicilio gratuiti e senza impegno"
 ];
 
 export const foundViaOptions = [
@@ -69,11 +79,12 @@ export const foundViaOptions = [
 export const fitList = [
   "vi sentite in imbarazzo già adesso all'idea di essere fotografati",
   "volete una cosa semplice, spontanea, naturale",
-  "pensate che nelle foto venite sempre male",
+  "pensate che nelle foto venite sempre male…",
+  "…e il vostro partner odia farsi fotografare",
   "volete ricordarvi di quel giorno e di come vi siete emozionati, non solo di come eravate vestiti",
   "durante l'aperitivo volete prendervi una piccola pausa per le foto, non «andare a fare uno shooting»",
-  "volete anche le foto di rito, ma poche e divertenti senza «catena di montaggio»",
-  "vi chiedete anche voi il senso della foto con l'anello in equilibrio tra le scarpe della sposa",
+  "volete anche le foto di rito, ma poche, divertenti e veloci",
+  "vi siete chiesti anche voi il senso di quelle foto con l'anello in equilibrio tra le scarpe della sposa…",
   "preferite farvi una risata per tutta la durata della giornata piuttosto che mettervi in posa"
 ];
 
@@ -81,27 +92,37 @@ export const faqs = [
   {
     question: "Lucea lavora solo a Milano?",
     answer:
-      "No. Lucea ha base a Milano e lavora in Monza Brianza, in Lombardia, in Italia e anche all'estero quando il matrimonio lo richiede."
+      "No. Lucea ha base a Milano e lavora in città, in provincia, Monza Brianza, Como, Lombardia, in tutta Italia e anche all'estero quando il matrimonio lo richiede."
   },
   {
-    question: "Dobbiamo saper posare?",
+    question: "Davvero “zero pose”?",
     answer:
-      "No. Poche pose, tanta spontaneità. Le foto di rito ci sono se le volete, senza catena di montaggio e senza trasformare il matrimonio in un set."
+      "No, qualche foto a voi soli la faremo senz’altro: siete belli ed è il vostro giorno! Ma sarà un momento tranquillo: zero pose forzate e tanta spontaneità, senza trasformare il matrimonio in un set."
   },
   {
-    question: "Fate anche foto con famiglia e parenti?",
+    question: "Faremo anche le foto con famiglia e parenti?",
     answer:
-      "Sì. Famiglie, colleghi, amiche: si fanno, se volete, con i vostri tempi. Ci divertiamo, senza una catena di montaggio."
+      "Sì: gli invitati ve le chiederanno! Sarà un momento divertente, con i vostri tempi, senza fare una “catena di montaggio fotografica”."
   },
   {
-    question: "Offrite anche foto e video?",
+    question: "Proponete anche foto e video?",
     answer:
-      "Sì. Fotografia, video, album, stampa sul posto, drone o photocall quando li concordiamo insieme. Ogni servizio nasce dalle vostre esigenze."
+      "Sì. Fotografia, video, album, stampa sul posto, drone o photobooth quando li concordiamo insieme. Ogni servizio nasce dalle vostre esigenze."
   },
   {
-    question: "Quanto costa un servizio matrimonio?",
+    question: "Quanti fotografi verranno al matrimonio?",
     answer:
-      "I servizi matrimonio partono da 900 euro e arrivano fino a circa 2.300 euro, in base a durata, foto, video, album, trasferta e richieste."
+      "Due fotografi ci vorrebbero sempre, almeno durante i momenti più intensi della giornata. Ma i vostri desideri vengono prima di tutto, per cui decideremo insieme lo staff, da 1 fotografo per matrimoni intimi e semplici, fino a 4 operatori foto e video."
+  },
+  {
+    question: "Consegnate tutte le foto?",
+    answer:
+      "Se lo desiderate facciamo anche quello, ma la risposta giusta è no. Consegnarvi 3000 scatti vuol dire non aver fatto il nostro lavoro, che è quello di crearvi un ricordo di qualità, e costringervi a non guardarle più di una volta. Selezioniamo e sistemiamo con cura le vostre foto per lasciarvi un ricordo di qualità che vi meritate."
+  },
+  {
+    question: "A parte i matrimoni fate altre foto?",
+    answer:
+      "Sì, sempre alle persone e alle loro storie. Potete chiederci foto di fidanzamento, pre matrimonio, post, foto ambientate di coppia e di famiglia."
   }
 ];
 
@@ -707,9 +728,9 @@ export const portfolioImages = [
 ];
 
 export const pricingNotes = {
-  range: "Da 900 a 2.300 euro",
+  range: "Da 900 a 2.500 euro",
   lead:
-    "Ogni matrimonio ha ritmo, persone e richieste diverse. Il preventivo dipende da durata, video, album, trasferta e servizi extra.",
+    "Pacchetti da 900 euro a 2.500, oppure personalizziamo il tuo servizio su misura. Il preventivo dipende da durata, video, album, trasferta e servizi extra.",
   includes: [
     "fotografia di matrimonio in stile reportage",
     "presenza discreta e foto di rito senza catena di montaggio",
@@ -718,303 +739,8 @@ export const pricingNotes = {
   ]
 };
 
-export const stories = [
-  {
-    slug: "prewedding-michi-tia-boschi-cantu",
-    title: "Prematrimonio di Michi e Tia nei boschi di Cantù",
-    location: "Boschi Santa Naga, Cantù",
-    image: "/media/images/lucea-2025-michi-e-tia/lucea-2025-michi-e-tia-prewedding-lucea-prematrimonio-mt-cantu-boschi-santa-naga-010.webp",
-    alt: "Prematrimonio di Michi e Tia nei boschi di Cantù",
-    summary: "Selezione dalle fotografie del prematrimonio. Il racconto scritto completo arriverà da Andrea.",
-    status: "Prematrimonio",
-    gallery: [
-      { src: "/media/images/lucea-2025-michi-e-tia/lucea-2025-michi-e-tia-prewedding-lucea-prematrimonio-mt-cantu-boschi-santa-naga-010.webp", alt: "Prematrimonio di Michi e Tia nei boschi di Cantù" },
-      { src: "/media/images/lucea-2025-michi-e-tia/lucea-2025-michi-e-tia-prewedding-lucea-prematrimonio-mt-cantu-boschi-santa-naga-005.webp", alt: "Prematrimonio di Michi e Tia nei boschi di Cantù" },
-      { src: "/media/images/lucea-2025-michi-e-tia/lucea-2025-michi-e-tia-prewedding-lucea-prematrimonio-mt-cantu-boschi-santa-naga-001.webp", alt: "Prematrimonio di Michi e Tia nei boschi di Cantù" },
-      { src: "/media/images/lucea-2025-michi-e-tia/lucea-2025-michi-e-tia-prewedding-lucea-prematrimonio-mt-cantu-boschi-santa-naga-002.webp", alt: "Prematrimonio di Michi e Tia nei boschi di Cantù" },
-      { src: "/media/images/lucea-2025-michi-e-tia/lucea-2025-michi-e-tia-prewedding-lucea-prematrimonio-mt-cantu-boschi-santa-naga-003.webp", alt: "Prematrimonio di Michi e Tia nei boschi di Cantù" },
-      { src: "/media/images/lucea-2025-michi-e-tia/lucea-2025-michi-e-tia-prewedding-lucea-prematrimonio-mt-cantu-boschi-santa-naga-004.webp", alt: "Prematrimonio di Michi e Tia nei boschi di Cantù" },
-      { src: "/media/images/lucea-2025-michi-e-tia/lucea-2025-michi-e-tia-prewedding-lucea-prematrimonio-mt-cantu-boschi-santa-naga-006.webp", alt: "Prematrimonio di Michi e Tia nei boschi di Cantù" },
-      { src: "/media/images/lucea-2025-michi-e-tia/lucea-2025-michi-e-tia-prewedding-lucea-prematrimonio-mt-cantu-boschi-santa-naga-007.webp", alt: "Prematrimonio di Michi e Tia nei boschi di Cantù" },
-      { src: "/media/images/lucea-2025-michi-e-tia/lucea-2025-michi-e-tia-prewedding-lucea-prematrimonio-mt-cantu-boschi-santa-naga-008.webp", alt: "Prematrimonio di Michi e Tia nei boschi di Cantù" },
-      { src: "/media/images/lucea-2025-michi-e-tia/lucea-2025-michi-e-tia-prewedding-lucea-prematrimonio-mt-cantu-boschi-santa-naga-009.webp", alt: "Prematrimonio di Michi e Tia nei boschi di Cantù" },
-      { src: "/media/images/lucea-2025-michi-e-tia/lucea-2025-michi-e-tia-prewedding-lucea-prematrimonio-mt-cantu-boschi-santa-naga-011.webp", alt: "Prematrimonio di Michi e Tia nei boschi di Cantù" },
-      { src: "/media/images/lucea-2025-michi-e-tia/lucea-2025-michi-e-tia-prewedding-lucea-prematrimonio-mt-cantu-boschi-santa-naga-012.webp", alt: "Prematrimonio di Michi e Tia nei boschi di Cantù" },
-      { src: "/media/images/lucea-2025-michi-e-tia/lucea-2025-michi-e-tia-prewedding-lucea-prematrimonio-mt-cantu-boschi-santa-naga-013.webp", alt: "Prematrimonio di Michi e Tia nei boschi di Cantù" },
-      { src: "/media/images/lucea-2025-michi-e-tia/lucea-2025-michi-e-tia-prewedding-lucea-prematrimonio-mt-cantu-boschi-santa-naga-014.webp", alt: "Prematrimonio di Michi e Tia nei boschi di Cantù" },
-      { src: "/media/images/lucea-2025-michi-e-tia/lucea-2025-michi-e-tia-prewedding-lucea-prematrimonio-mt-cantu-boschi-santa-naga-015.webp", alt: "Prematrimonio di Michi e Tia nei boschi di Cantù" },
-    ]
-  },
-  {
-    slug: "matrimonio-michi-tia-villa-ghiringhelli",
-    title: "Il matrimonio di Michi e Tia a Villa Ghiringhelli",
-    location: "Villa Ghiringhelli, Azzate (Varese)",
-    image: "/media/images/lucea-2025-michi-e-tia/lucea-2025-michi-e-tia-wedding-lucea-matrimonio-mm-villa-ghiringhelli-varese-azzate-036.webp",
-    alt: "Matrimonio di Michi e Tia a Villa Ghiringhelli",
-    summary: "Selezione dalle fotografie del giorno. Il racconto scritto completo arriverà da Andrea.",
-    status: "Varese",
-    gallery: [
-      { src: "/media/images/lucea-2025-michi-e-tia/lucea-2025-michi-e-tia-wedding-lucea-matrimonio-mm-villa-ghiringhelli-varese-azzate-036.webp", alt: "Matrimonio di Michi e Tia a Villa Ghiringhelli" },
-      { src: "/media/images/lucea-2025-michi-e-tia/lucea-2025-michi-e-tia-wedding-lucea-matrimonio-mm-villa-ghiringhelli-varese-azzate-006.webp", alt: "Matrimonio di Michi e Tia a Villa Ghiringhelli" },
-      { src: "/media/images/lucea-2025-michi-e-tia/lucea-2025-michi-e-tia-prewedding-lucea-prematrimonio-mt-cantu-boschi-santa-naga-001.webp", alt: "Prematrimonio di Michi e Tia nei boschi di Cantù" },
-      { src: "/media/images/lucea-2025-michi-e-tia/lucea-2025-michi-e-tia-prewedding-lucea-prematrimonio-mt-cantu-boschi-santa-naga-004.webp", alt: "Prematrimonio di Michi e Tia nei boschi di Cantù" },
-      { src: "/media/images/lucea-2025-michi-e-tia/lucea-2025-michi-e-tia-prewedding-lucea-prematrimonio-mt-cantu-boschi-santa-naga-007.webp", alt: "Prematrimonio di Michi e Tia nei boschi di Cantù" },
-      { src: "/media/images/lucea-2025-michi-e-tia/lucea-2025-michi-e-tia-prewedding-lucea-prematrimonio-mt-cantu-boschi-santa-naga-010.webp", alt: "Prematrimonio di Michi e Tia nei boschi di Cantù" },
-      { src: "/media/images/lucea-2025-michi-e-tia/lucea-2025-michi-e-tia-prewedding-lucea-prematrimonio-mt-cantu-boschi-santa-naga-013.webp", alt: "Prematrimonio di Michi e Tia nei boschi di Cantù" },
-      { src: "/media/images/lucea-2025-michi-e-tia/lucea-2025-michi-e-tia-wedding-lucea-matrimonio-mm-villa-ghiringhelli-varese-azzate-001.webp", alt: "Matrimonio di Michi e Tia a Villa Ghiringhelli" },
-      { src: "/media/images/lucea-2025-michi-e-tia/lucea-2025-michi-e-tia-wedding-lucea-matrimonio-mm-villa-ghiringhelli-varese-azzate-005.webp", alt: "Matrimonio di Michi e Tia a Villa Ghiringhelli" },
-      { src: "/media/images/lucea-2025-michi-e-tia/lucea-2025-michi-e-tia-wedding-lucea-matrimonio-mm-villa-ghiringhelli-varese-azzate-008.webp", alt: "Matrimonio di Michi e Tia a Villa Ghiringhelli" },
-      { src: "/media/images/lucea-2025-michi-e-tia/lucea-2025-michi-e-tia-wedding-lucea-matrimonio-mm-villa-ghiringhelli-varese-azzate-011.webp", alt: "Matrimonio di Michi e Tia a Villa Ghiringhelli" },
-      { src: "/media/images/lucea-2025-michi-e-tia/lucea-2025-michi-e-tia-wedding-lucea-matrimonio-mm-villa-ghiringhelli-varese-azzate-014.webp", alt: "Matrimonio di Michi e Tia a Villa Ghiringhelli" },
-      { src: "/media/images/lucea-2025-michi-e-tia/lucea-2025-michi-e-tia-wedding-lucea-matrimonio-mm-villa-ghiringhelli-varese-azzate-017.webp", alt: "Matrimonio di Michi e Tia a Villa Ghiringhelli" },
-      { src: "/media/images/lucea-2025-michi-e-tia/lucea-2025-michi-e-tia-wedding-lucea-matrimonio-mm-villa-ghiringhelli-varese-azzate-020.webp", alt: "Matrimonio di Michi e Tia a Villa Ghiringhelli" },
-      { src: "/media/images/lucea-2025-michi-e-tia/lucea-2025-michi-e-tia-wedding-lucea-matrimonio-mm-villa-ghiringhelli-varese-azzate-024.webp", alt: "Matrimonio di Michi e Tia a Villa Ghiringhelli" },
-      { src: "/media/images/lucea-2025-michi-e-tia/lucea-2025-michi-e-tia-wedding-lucea-matrimonio-mm-villa-ghiringhelli-varese-azzate-027.webp", alt: "Matrimonio di Michi e Tia a Villa Ghiringhelli" },
-      { src: "/media/images/lucea-2025-michi-e-tia/lucea-2025-michi-e-tia-wedding-lucea-matrimonio-mm-villa-ghiringhelli-varese-azzate-030.webp", alt: "Matrimonio di Michi e Tia a Villa Ghiringhelli" },
-      { src: "/media/images/lucea-2025-michi-e-tia/lucea-2025-michi-e-tia-wedding-lucea-matrimonio-mm-villa-ghiringhelli-varese-azzate-033.webp", alt: "Matrimonio di Michi e Tia a Villa Ghiringhelli" },
-      { src: "/media/images/lucea-2025-michi-e-tia/lucea-2025-michi-e-tia-wedding-lucea-matrimonio-mm-villa-ghiringhelli-varese-azzate-039.webp", alt: "Matrimonio di Michi e Tia a Villa Ghiringhelli" },
-      { src: "/media/images/lucea-2025-michi-e-tia/lucea-2025-michi-e-tia-wedding-lucea-matrimonio-mm-villa-ghiringhelli-varese-azzate-043.webp", alt: "Matrimonio di Michi e Tia a Villa Ghiringhelli" },
-      { src: "/media/images/lucea-2025-michi-e-tia/lucea-2025-michi-e-tia-wedding-lucea-matrimonio-mm-villa-ghiringhelli-varese-azzate-046.webp", alt: "Matrimonio di Michi e Tia a Villa Ghiringhelli" },
-      { src: "/media/images/lucea-2025-michi-e-tia/lucea-2025-michi-e-tia-wedding-lucea-matrimonio-mm-villa-ghiringhelli-varese-azzate-049.webp", alt: "Matrimonio di Michi e Tia a Villa Ghiringhelli" },
-      { src: "/media/images/lucea-2025-michi-e-tia/lucea-2025-michi-e-tia-wedding-lucea-matrimonio-mm-villa-ghiringhelli-varese-azzate-052.webp", alt: "Matrimonio di Michi e Tia a Villa Ghiringhelli" },
-      { src: "/media/images/lucea-2025-michi-e-tia/lucea-2025-michi-e-tia-wedding-lucea-matrimonio-mm-villa-ghiringhelli-varese-azzate-055.webp", alt: "Matrimonio di Michi e Tia a Villa Ghiringhelli" },
-      { src: "/media/images/lucea-2025-michi-e-tia/lucea-2025-michi-e-tia-wedding-lucea-matrimonio-mm-villa-ghiringhelli-varese-azzate-058.webp", alt: "Matrimonio di Michi e Tia a Villa Ghiringhelli" },
-      { src: "/media/images/lucea-2025-michi-e-tia/lucea-2025-michi-e-tia-wedding-lucea-matrimonio-mm-villa-ghiringhelli-varese-azzate-062.webp", alt: "Matrimonio di Michi e Tia a Villa Ghiringhelli" },
-      { src: "/media/images/lucea-2025-michi-e-tia/lucea-2025-michi-e-tia-wedding-lucea-matrimonio-mm-villa-ghiringhelli-varese-azzate-065.webp", alt: "Matrimonio di Michi e Tia a Villa Ghiringhelli" },
-      { src: "/media/images/lucea-2025-michi-e-tia/lucea-2025-michi-e-tia-wedding-lucea-matrimonio-mm-villa-ghiringhelli-varese-azzate-068.webp", alt: "Matrimonio di Michi e Tia a Villa Ghiringhelli" },
-      { src: "/media/images/lucea-2025-michi-e-tia/lucea-2025-michi-e-tia-wedding-lucea-matrimonio-mm-villa-ghiringhelli-varese-azzate-071.webp", alt: "Matrimonio di Michi e Tia a Villa Ghiringhelli" },
-      { src: "/media/images/lucea-2025-michi-e-tia/lucea-2025-michi-e-tia-wedding-lucea-matrimonio-mm-villa-ghiringhelli-varese-azzate-074.webp", alt: "Matrimonio di Michi e Tia a Villa Ghiringhelli" },
-      { src: "/media/images/lucea-2025-michi-e-tia/lucea-2025-michi-e-tia-wedding-lucea-matrimonio-mm-villa-ghiringhelli-varese-azzate-077.webp", alt: "Matrimonio di Michi e Tia a Villa Ghiringhelli" },
-      { src: "/media/images/lucea-2025-michi-e-tia/lucea-2025-michi-e-tia-wedding-lucea-matrimonio-mm-villa-ghiringhelli-varese-azzate-081.webp", alt: "Matrimonio di Michi e Tia a Villa Ghiringhelli" },
-      { src: "/media/images/lucea-2025-michi-e-tia/lucea-2025-michi-e-tia-wedding-lucea-matrimonio-mm-villa-ghiringhelli-varese-azzate-084.webp", alt: "Matrimonio di Michi e Tia a Villa Ghiringhelli" },
-      { src: "/media/images/lucea-2025-michi-e-tia/lucea-2025-michi-e-tia-wedding-lucea-matrimonio-mm-villa-ghiringhelli-varese-azzate-087.webp", alt: "Matrimonio di Michi e Tia a Villa Ghiringhelli" },
-      { src: "/media/images/lucea-2025-michi-e-tia/lucea-2025-michi-e-tia-wedding-lucea-matrimonio-mm-villa-ghiringhelli-varese-azzate-090.webp", alt: "Matrimonio di Michi e Tia a Villa Ghiringhelli" },
-      { src: "/media/images/lucea-2025-michi-e-tia/lucea-2025-michi-e-tia-wedding-lucea-matrimonio-mm-villa-ghiringhelli-varese-azzate-093.webp", alt: "Matrimonio di Michi e Tia a Villa Ghiringhelli" },
-      { src: "/media/images/lucea-2025-michi-e-tia/lucea-2025-michi-e-tia-wedding-lucea-matrimonio-mm-villa-ghiringhelli-varese-azzate-097.webp", alt: "Matrimonio di Michi e Tia a Villa Ghiringhelli" },
-    ]
-  },
-  {
-    slug: "matrimonio-anna-matte-cantu-valmorea",
-    title: "250 invitati con semplicità: Anna e Matte",
-    location: "Cantù · Palazzo Sacchi, Valmorea (Como)",
-    image: "/media/images/lucea-2018-anna-matte/lucea-2018-anna-matte-lucea-matrimonio-am-cantu-san-teodoro-palazzo-sacchi-valmorea-como-050.webp",
-    alt: "Matrimonio di Anna e Matte, Cantù e Valmorea",
-    summary: "Selezione dalle fotografie del giorno. Il racconto scritto completo arriverà da Andrea.",
-    status: "Como",
-    gallery: [
-      { src: "/media/images/lucea-2018-anna-matte/lucea-2018-anna-matte-lucea-matrimonio-am-cantu-san-teodoro-palazzo-sacchi-valmorea-como-050.webp", alt: "Matrimonio di Anna e Matte, Cantù e Valmorea" },
-      { src: "/media/images/lucea-2018-anna-matte/lucea-2018-anna-matte-lucea-matrimonio-am-cantu-san-teodoro-palazzo-sacchi-valmorea-como-031.webp", alt: "Matrimonio di Anna e Matte, Cantù e Valmorea" },
-      { src: "/media/images/lucea-2018-anna-matte/lucea-2018-anna-matte-lucea-matrimonio-am-cantu-san-teodoro-palazzo-sacchi-valmorea-como-001.webp", alt: "Matrimonio di Anna e Matte, Cantù e Valmorea" },
-      { src: "/media/images/lucea-2018-anna-matte/lucea-2018-anna-matte-lucea-matrimonio-am-cantu-san-teodoro-palazzo-sacchi-valmorea-como-003.webp", alt: "Matrimonio di Anna e Matte, Cantù e Valmorea" },
-      { src: "/media/images/lucea-2018-anna-matte/lucea-2018-anna-matte-lucea-matrimonio-am-cantu-san-teodoro-palazzo-sacchi-valmorea-como-006.webp", alt: "Matrimonio di Anna e Matte, Cantù e Valmorea" },
-      { src: "/media/images/lucea-2018-anna-matte/lucea-2018-anna-matte-lucea-matrimonio-am-cantu-san-teodoro-palazzo-sacchi-valmorea-como-009.webp", alt: "Matrimonio di Anna e Matte, Cantù e Valmorea" },
-      { src: "/media/images/lucea-2018-anna-matte/lucea-2018-anna-matte-lucea-matrimonio-am-cantu-san-teodoro-palazzo-sacchi-valmorea-como-012.webp", alt: "Matrimonio di Anna e Matte, Cantù e Valmorea" },
-      { src: "/media/images/lucea-2018-anna-matte/lucea-2018-anna-matte-lucea-matrimonio-am-cantu-san-teodoro-palazzo-sacchi-valmorea-como-015.webp", alt: "Matrimonio di Anna e Matte, Cantù e Valmorea" },
-      { src: "/media/images/lucea-2018-anna-matte/lucea-2018-anna-matte-lucea-matrimonio-am-cantu-san-teodoro-palazzo-sacchi-valmorea-como-018.webp", alt: "Matrimonio di Anna e Matte, Cantù e Valmorea" },
-      { src: "/media/images/lucea-2018-anna-matte/lucea-2018-anna-matte-lucea-matrimonio-am-cantu-san-teodoro-palazzo-sacchi-valmorea-como-021.webp", alt: "Matrimonio di Anna e Matte, Cantù e Valmorea" },
-      { src: "/media/images/lucea-2018-anna-matte/lucea-2018-anna-matte-lucea-matrimonio-am-cantu-san-teodoro-palazzo-sacchi-valmorea-como-024.webp", alt: "Matrimonio di Anna e Matte, Cantù e Valmorea" },
-      { src: "/media/images/lucea-2018-anna-matte/lucea-2018-anna-matte-lucea-matrimonio-am-cantu-san-teodoro-palazzo-sacchi-valmorea-como-027.webp", alt: "Matrimonio di Anna e Matte, Cantù e Valmorea" },
-      { src: "/media/images/lucea-2018-anna-matte/lucea-2018-anna-matte-lucea-matrimonio-am-cantu-san-teodoro-palazzo-sacchi-valmorea-como-030.webp", alt: "Matrimonio di Anna e Matte, Cantù e Valmorea" },
-      { src: "/media/images/lucea-2018-anna-matte/lucea-2018-anna-matte-lucea-matrimonio-am-cantu-san-teodoro-palazzo-sacchi-valmorea-como-033.webp", alt: "Matrimonio di Anna e Matte, Cantù e Valmorea" },
-      { src: "/media/images/lucea-2018-anna-matte/lucea-2018-anna-matte-lucea-matrimonio-am-cantu-san-teodoro-palazzo-sacchi-valmorea-como-036.webp", alt: "Matrimonio di Anna e Matte, Cantù e Valmorea" },
-      { src: "/media/images/lucea-2018-anna-matte/lucea-2018-anna-matte-lucea-matrimonio-am-cantu-san-teodoro-palazzo-sacchi-valmorea-como-039.webp", alt: "Matrimonio di Anna e Matte, Cantù e Valmorea" },
-      { src: "/media/images/lucea-2018-anna-matte/lucea-2018-anna-matte-lucea-matrimonio-am-cantu-san-teodoro-palazzo-sacchi-valmorea-como-042.webp", alt: "Matrimonio di Anna e Matte, Cantù e Valmorea" },
-      { src: "/media/images/lucea-2018-anna-matte/lucea-2018-anna-matte-lucea-matrimonio-am-cantu-san-teodoro-palazzo-sacchi-valmorea-como-045.webp", alt: "Matrimonio di Anna e Matte, Cantù e Valmorea" },
-      { src: "/media/images/lucea-2018-anna-matte/lucea-2018-anna-matte-lucea-matrimonio-am-cantu-san-teodoro-palazzo-sacchi-valmorea-como-048.webp", alt: "Matrimonio di Anna e Matte, Cantù e Valmorea" },
-      { src: "/media/images/lucea-2018-anna-matte/lucea-2018-anna-matte-lucea-matrimonio-am-cantu-san-teodoro-palazzo-sacchi-valmorea-como-051.webp", alt: "Matrimonio di Anna e Matte, Cantù e Valmorea" },
-      { src: "/media/images/lucea-2018-anna-matte/lucea-2018-anna-matte-lucea-matrimonio-am-cantu-san-teodoro-palazzo-sacchi-valmorea-como-054.webp", alt: "Matrimonio di Anna e Matte, Cantù e Valmorea" },
-      { src: "/media/images/lucea-2018-anna-matte/lucea-2018-anna-matte-lucea-matrimonio-am-cantu-san-teodoro-palazzo-sacchi-valmorea-como-057.webp", alt: "Matrimonio di Anna e Matte, Cantù e Valmorea" },
-      { src: "/media/images/lucea-2018-anna-matte/lucea-2018-anna-matte-lucea-matrimonio-am-cantu-san-teodoro-palazzo-sacchi-valmorea-como-059.webp", alt: "Matrimonio di Anna e Matte, Cantù e Valmorea" },
-      { src: "/media/images/lucea-2018-anna-matte/lucea-2018-anna-matte-lucea-matrimonio-am-cantu-san-teodoro-palazzo-sacchi-valmorea-como-062.webp", alt: "Matrimonio di Anna e Matte, Cantù e Valmorea" },
-      { src: "/media/images/lucea-2018-anna-matte/lucea-2018-anna-matte-lucea-matrimonio-am-cantu-san-teodoro-palazzo-sacchi-valmorea-como-065.webp", alt: "Matrimonio di Anna e Matte, Cantù e Valmorea" },
-      { src: "/media/images/lucea-2018-anna-matte/lucea-2018-anna-matte-lucea-matrimonio-am-cantu-san-teodoro-palazzo-sacchi-valmorea-como-068.webp", alt: "Matrimonio di Anna e Matte, Cantù e Valmorea" },
-      { src: "/media/images/lucea-2018-anna-matte/lucea-2018-anna-matte-lucea-matrimonio-am-cantu-san-teodoro-palazzo-sacchi-valmorea-como-071.webp", alt: "Matrimonio di Anna e Matte, Cantù e Valmorea" },
-      { src: "/media/images/lucea-2018-anna-matte/lucea-2018-anna-matte-lucea-matrimonio-am-cantu-san-teodoro-palazzo-sacchi-valmorea-como-074.webp", alt: "Matrimonio di Anna e Matte, Cantù e Valmorea" },
-      { src: "/media/images/lucea-2018-anna-matte/lucea-2018-anna-matte-lucea-matrimonio-am-cantu-san-teodoro-palazzo-sacchi-valmorea-como-077.webp", alt: "Matrimonio di Anna e Matte, Cantù e Valmorea" },
-      { src: "/media/images/lucea-2018-anna-matte/lucea-2018-anna-matte-lucea-matrimonio-am-cantu-san-teodoro-palazzo-sacchi-valmorea-como-080.webp", alt: "Matrimonio di Anna e Matte, Cantù e Valmorea" },
-      { src: "/media/images/lucea-2018-anna-matte/lucea-2018-anna-matte-lucea-matrimonio-am-cantu-san-teodoro-palazzo-sacchi-valmorea-como-083.webp", alt: "Matrimonio di Anna e Matte, Cantù e Valmorea" },
-      { src: "/media/images/lucea-2018-anna-matte/lucea-2018-anna-matte-lucea-matrimonio-am-cantu-san-teodoro-palazzo-sacchi-valmorea-como-086.webp", alt: "Matrimonio di Anna e Matte, Cantù e Valmorea" },
-      { src: "/media/images/lucea-2018-anna-matte/lucea-2018-anna-matte-lucea-matrimonio-am-cantu-san-teodoro-palazzo-sacchi-valmorea-como-089.webp", alt: "Matrimonio di Anna e Matte, Cantù e Valmorea" },
-      { src: "/media/images/lucea-2018-anna-matte/lucea-2018-anna-matte-lucea-matrimonio-am-cantu-san-teodoro-palazzo-sacchi-valmorea-como-092.webp", alt: "Matrimonio di Anna e Matte, Cantù e Valmorea" },
-      { src: "/media/images/lucea-2018-anna-matte/lucea-2018-anna-matte-lucea-matrimonio-am-cantu-san-teodoro-palazzo-sacchi-valmorea-como-095.webp", alt: "Matrimonio di Anna e Matte, Cantù e Valmorea" },
-      { src: "/media/images/lucea-2018-anna-matte/lucea-2018-anna-matte-lucea-matrimonio-am-cantu-san-teodoro-palazzo-sacchi-valmorea-como-098.webp", alt: "Matrimonio di Anna e Matte, Cantù e Valmorea" },
-      { src: "/media/images/lucea-2018-anna-matte/lucea-2018-anna-matte-lucea-matrimonio-am-cantu-san-teodoro-palazzo-sacchi-valmorea-como-101.webp", alt: "Matrimonio di Anna e Matte, Cantù e Valmorea" },
-      { src: "/media/images/lucea-2018-anna-matte/lucea-2018-anna-matte-lucea-matrimonio-am-cantu-san-teodoro-palazzo-sacchi-valmorea-como-104.webp", alt: "Matrimonio di Anna e Matte, Cantù e Valmorea" },
-      { src: "/media/images/lucea-2018-anna-matte/lucea-2018-anna-matte-lucea-matrimonio-am-cantu-san-teodoro-palazzo-sacchi-valmorea-como-107.webp", alt: "Matrimonio di Anna e Matte, Cantù e Valmorea" },
-      { src: "/media/images/lucea-2018-anna-matte/lucea-2018-anna-matte-lucea-matrimonio-am-cantu-san-teodoro-palazzo-sacchi-valmorea-como-110.webp", alt: "Matrimonio di Anna e Matte, Cantù e Valmorea" },
-      { src: "/media/images/lucea-2018-anna-matte/lucea-2018-anna-matte-lucea-matrimonio-am-cantu-san-teodoro-palazzo-sacchi-valmorea-como-113.webp", alt: "Matrimonio di Anna e Matte, Cantù e Valmorea" },
-      { src: "/media/images/lucea-2018-anna-matte/lucea-2018-anna-matte-lucea-matrimonio-am-cantu-san-teodoro-palazzo-sacchi-valmorea-como-116.webp", alt: "Matrimonio di Anna e Matte, Cantù e Valmorea" },
-    ]
-  },
-  {
-    slug: "matrimonio-jinet-boris-oltrepo",
-    title: "Il cuore di Jinet e Boris in Oltrepò",
-    location: "Agriturismo Melo Rosso, Fortunago (Oltrepò)",
-    image: "/media/images/lucea-2025-jinet-boris/lucea-2025-jinet-boris-lucea-matrimonio-jb-milano-agriturismo-melo-rosso-fortunago-oltrepo-023.webp",
-    alt: "Matrimonio di Jinet e Boris in Oltrepò",
-    summary: "Selezione dalle fotografie del giorno. Il racconto scritto completo arriverà da Andrea.",
-    status: "Oltrepò",
-    gallery: [
-      { src: "/media/images/lucea-2025-jinet-boris/lucea-2025-jinet-boris-lucea-matrimonio-jb-milano-agriturismo-melo-rosso-fortunago-oltrepo-023.webp", alt: "Matrimonio di Jinet e Boris in Oltrepò" },
-      { src: "/media/images/lucea-2025-jinet-boris/lucea-2025-jinet-boris-lucea-matrimonio-jb-milano-agriturismo-melo-rosso-fortunago-oltrepo-001.webp", alt: "Matrimonio di Jinet e Boris in Oltrepò" },
-      { src: "/media/images/lucea-2025-jinet-boris/lucea-2025-jinet-boris-lucea-matrimonio-jb-milano-agriturismo-melo-rosso-fortunago-oltrepo-003.webp", alt: "Matrimonio di Jinet e Boris in Oltrepò" },
-      { src: "/media/images/lucea-2025-jinet-boris/lucea-2025-jinet-boris-lucea-matrimonio-jb-milano-agriturismo-melo-rosso-fortunago-oltrepo-005.webp", alt: "Matrimonio di Jinet e Boris in Oltrepò" },
-      { src: "/media/images/lucea-2025-jinet-boris/lucea-2025-jinet-boris-lucea-matrimonio-jb-milano-agriturismo-melo-rosso-fortunago-oltrepo-007.webp", alt: "Matrimonio di Jinet e Boris in Oltrepò" },
-      { src: "/media/images/lucea-2025-jinet-boris/lucea-2025-jinet-boris-lucea-matrimonio-jb-milano-agriturismo-melo-rosso-fortunago-oltrepo-009.webp", alt: "Matrimonio di Jinet e Boris in Oltrepò" },
-      { src: "/media/images/lucea-2025-jinet-boris/lucea-2025-jinet-boris-lucea-matrimonio-jb-milano-agriturismo-melo-rosso-fortunago-oltrepo-011.webp", alt: "Matrimonio di Jinet e Boris in Oltrepò" },
-      { src: "/media/images/lucea-2025-jinet-boris/lucea-2025-jinet-boris-lucea-matrimonio-jb-milano-agriturismo-melo-rosso-fortunago-oltrepo-014.webp", alt: "Matrimonio di Jinet e Boris in Oltrepò" },
-      { src: "/media/images/lucea-2025-jinet-boris/lucea-2025-jinet-boris-lucea-matrimonio-jb-milano-agriturismo-melo-rosso-fortunago-oltrepo-016.webp", alt: "Matrimonio di Jinet e Boris in Oltrepò" },
-      { src: "/media/images/lucea-2025-jinet-boris/lucea-2025-jinet-boris-lucea-matrimonio-jb-milano-agriturismo-melo-rosso-fortunago-oltrepo-018.webp", alt: "Matrimonio di Jinet e Boris in Oltrepò" },
-      { src: "/media/images/lucea-2025-jinet-boris/lucea-2025-jinet-boris-lucea-matrimonio-jb-milano-agriturismo-melo-rosso-fortunago-oltrepo-020.webp", alt: "Matrimonio di Jinet e Boris in Oltrepò" },
-      { src: "/media/images/lucea-2025-jinet-boris/lucea-2025-jinet-boris-lucea-matrimonio-jb-milano-agriturismo-melo-rosso-fortunago-oltrepo-022.webp", alt: "Matrimonio di Jinet e Boris in Oltrepò" },
-      { src: "/media/images/lucea-2025-jinet-boris/lucea-2025-jinet-boris-lucea-matrimonio-jb-milano-agriturismo-melo-rosso-fortunago-oltrepo-025.webp", alt: "Matrimonio di Jinet e Boris in Oltrepò" },
-      { src: "/media/images/lucea-2025-jinet-boris/lucea-2025-jinet-boris-lucea-matrimonio-jb-milano-agriturismo-melo-rosso-fortunago-oltrepo-027.webp", alt: "Matrimonio di Jinet e Boris in Oltrepò" },
-      { src: "/media/images/lucea-2025-jinet-boris/lucea-2025-jinet-boris-lucea-matrimonio-jb-milano-agriturismo-melo-rosso-fortunago-oltrepo-029.webp", alt: "Matrimonio di Jinet e Boris in Oltrepò" },
-      { src: "/media/images/lucea-2025-jinet-boris/lucea-2025-jinet-boris-lucea-matrimonio-jb-milano-agriturismo-melo-rosso-fortunago-oltrepo-031.webp", alt: "Matrimonio di Jinet e Boris in Oltrepò" },
-      { src: "/media/images/lucea-2025-jinet-boris/lucea-2025-jinet-boris-lucea-matrimonio-jb-milano-agriturismo-melo-rosso-fortunago-oltrepo-033.webp", alt: "Matrimonio di Jinet e Boris in Oltrepò" },
-      { src: "/media/images/lucea-2025-jinet-boris/lucea-2025-jinet-boris-lucea-matrimonio-jb-milano-agriturismo-melo-rosso-fortunago-oltrepo-035.webp", alt: "Matrimonio di Jinet e Boris in Oltrepò" },
-      { src: "/media/images/lucea-2025-jinet-boris/lucea-2025-jinet-boris-lucea-matrimonio-jb-milano-agriturismo-melo-rosso-fortunago-oltrepo-038.webp", alt: "Matrimonio di Jinet e Boris in Oltrepò" },
-      { src: "/media/images/lucea-2025-jinet-boris/lucea-2025-jinet-boris-lucea-matrimonio-jb-milano-agriturismo-melo-rosso-fortunago-oltrepo-040.webp", alt: "Matrimonio di Jinet e Boris in Oltrepò" },
-      { src: "/media/images/lucea-2025-jinet-boris/lucea-2025-jinet-boris-lucea-matrimonio-jb-milano-agriturismo-melo-rosso-fortunago-oltrepo-042.webp", alt: "Matrimonio di Jinet e Boris in Oltrepò" },
-      { src: "/media/images/lucea-2025-jinet-boris/lucea-2025-jinet-boris-lucea-matrimonio-jb-milano-agriturismo-melo-rosso-fortunago-oltrepo-044.webp", alt: "Matrimonio di Jinet e Boris in Oltrepò" },
-      { src: "/media/images/lucea-2025-jinet-boris/lucea-2025-jinet-boris-lucea-matrimonio-jb-milano-agriturismo-melo-rosso-fortunago-oltrepo-046.webp", alt: "Matrimonio di Jinet e Boris in Oltrepò" },
-      { src: "/media/images/lucea-2025-jinet-boris/lucea-2025-jinet-boris-lucea-matrimonio-jb-milano-agriturismo-melo-rosso-fortunago-oltrepo-049.webp", alt: "Matrimonio di Jinet e Boris in Oltrepò" },
-      { src: "/media/images/lucea-2025-jinet-boris/lucea-2025-jinet-boris-lucea-matrimonio-jb-milano-agriturismo-melo-rosso-fortunago-oltrepo-051.webp", alt: "Matrimonio di Jinet e Boris in Oltrepò" },
-      { src: "/media/images/lucea-2025-jinet-boris/lucea-2025-jinet-boris-lucea-matrimonio-jb-milano-agriturismo-melo-rosso-fortunago-oltrepo-053.webp", alt: "Matrimonio di Jinet e Boris in Oltrepò" },
-      { src: "/media/images/lucea-2025-jinet-boris/lucea-2025-jinet-boris-lucea-matrimonio-jb-milano-agriturismo-melo-rosso-fortunago-oltrepo-055.webp", alt: "Matrimonio di Jinet e Boris in Oltrepò" },
-      { src: "/media/images/lucea-2025-jinet-boris/lucea-2025-jinet-boris-lucea-matrimonio-jb-milano-agriturismo-melo-rosso-fortunago-oltrepo-057.webp", alt: "Matrimonio di Jinet e Boris in Oltrepò" },
-      { src: "/media/images/lucea-2025-jinet-boris/lucea-2025-jinet-boris-lucea-matrimonio-jb-milano-agriturismo-melo-rosso-fortunago-oltrepo-060.webp", alt: "Matrimonio di Jinet e Boris in Oltrepò" },
-    ]
-  },
-  {
-    slug: "matrimonio-laura-roberto-magenta",
-    title: "Laura e Roberto a Cascina Pietrasanta",
-    location: "Sala Specchi · Cascina Pietrasanta, Magenta",
-    image: "/media/images/lucea-2025-laura-roberto/lucea-2025-laura-roberto-lucea-matrimonio-lr-milano-sala-specchi-cascina-pietrasanta-magenta-050.webp",
-    alt: "Matrimonio di Laura e Roberto a Magenta",
-    summary: "Selezione dalle fotografie del giorno. Il racconto scritto completo arriverà da Andrea.",
-    status: "Magenta",
-    gallery: [
-      { src: "/media/images/lucea-2025-laura-roberto/lucea-2025-laura-roberto-lucea-matrimonio-lr-milano-sala-specchi-cascina-pietrasanta-magenta-050.webp", alt: "Matrimonio di Laura e Roberto a Magenta" },
-      { src: "/media/images/lucea-2025-laura-roberto/lucea-2025-laura-roberto-lucea-matrimonio-lr-milano-sala-specchi-cascina-pietrasanta-magenta-026.webp", alt: "Matrimonio di Laura e Roberto a Magenta" },
-      { src: "/media/images/lucea-2025-laura-roberto/lucea-2025-laura-roberto-lucea-matrimonio-lr-milano-sala-specchi-cascina-pietrasanta-magenta-001.webp", alt: "Matrimonio di Laura e Roberto a Magenta" },
-      { src: "/media/images/lucea-2025-laura-roberto/lucea-2025-laura-roberto-lucea-matrimonio-lr-milano-sala-specchi-cascina-pietrasanta-magenta-003.webp", alt: "Matrimonio di Laura e Roberto a Magenta" },
-      { src: "/media/images/lucea-2025-laura-roberto/lucea-2025-laura-roberto-lucea-matrimonio-lr-milano-sala-specchi-cascina-pietrasanta-magenta-006.webp", alt: "Matrimonio di Laura e Roberto a Magenta" },
-      { src: "/media/images/lucea-2025-laura-roberto/lucea-2025-laura-roberto-lucea-matrimonio-lr-milano-sala-specchi-cascina-pietrasanta-magenta-009.webp", alt: "Matrimonio di Laura e Roberto a Magenta" },
-      { src: "/media/images/lucea-2025-laura-roberto/lucea-2025-laura-roberto-lucea-matrimonio-lr-milano-sala-specchi-cascina-pietrasanta-magenta-012.webp", alt: "Matrimonio di Laura e Roberto a Magenta" },
-      { src: "/media/images/lucea-2025-laura-roberto/lucea-2025-laura-roberto-lucea-matrimonio-lr-milano-sala-specchi-cascina-pietrasanta-magenta-015.webp", alt: "Matrimonio di Laura e Roberto a Magenta" },
-      { src: "/media/images/lucea-2025-laura-roberto/lucea-2025-laura-roberto-lucea-matrimonio-lr-milano-sala-specchi-cascina-pietrasanta-magenta-018.webp", alt: "Matrimonio di Laura e Roberto a Magenta" },
-      { src: "/media/images/lucea-2025-laura-roberto/lucea-2025-laura-roberto-lucea-matrimonio-lr-milano-sala-specchi-cascina-pietrasanta-magenta-021.webp", alt: "Matrimonio di Laura e Roberto a Magenta" },
-      { src: "/media/images/lucea-2025-laura-roberto/lucea-2025-laura-roberto-lucea-matrimonio-lr-milano-sala-specchi-cascina-pietrasanta-magenta-023.webp", alt: "Matrimonio di Laura e Roberto a Magenta" },
-      { src: "/media/images/lucea-2025-laura-roberto/lucea-2025-laura-roberto-lucea-matrimonio-lr-milano-sala-specchi-cascina-pietrasanta-magenta-029.webp", alt: "Matrimonio di Laura e Roberto a Magenta" },
-      { src: "/media/images/lucea-2025-laura-roberto/lucea-2025-laura-roberto-lucea-matrimonio-lr-milano-sala-specchi-cascina-pietrasanta-magenta-032.webp", alt: "Matrimonio di Laura e Roberto a Magenta" },
-      { src: "/media/images/lucea-2025-laura-roberto/lucea-2025-laura-roberto-lucea-matrimonio-lr-milano-sala-specchi-cascina-pietrasanta-magenta-035.webp", alt: "Matrimonio di Laura e Roberto a Magenta" },
-      { src: "/media/images/lucea-2025-laura-roberto/lucea-2025-laura-roberto-lucea-matrimonio-lr-milano-sala-specchi-cascina-pietrasanta-magenta-038.webp", alt: "Matrimonio di Laura e Roberto a Magenta" },
-      { src: "/media/images/lucea-2025-laura-roberto/lucea-2025-laura-roberto-lucea-matrimonio-lr-milano-sala-specchi-cascina-pietrasanta-magenta-041.webp", alt: "Matrimonio di Laura e Roberto a Magenta" },
-      { src: "/media/images/lucea-2025-laura-roberto/lucea-2025-laura-roberto-lucea-matrimonio-lr-milano-sala-specchi-cascina-pietrasanta-magenta-043.webp", alt: "Matrimonio di Laura e Roberto a Magenta" },
-      { src: "/media/images/lucea-2025-laura-roberto/lucea-2025-laura-roberto-lucea-matrimonio-lr-milano-sala-specchi-cascina-pietrasanta-magenta-046.webp", alt: "Matrimonio di Laura e Roberto a Magenta" },
-      { src: "/media/images/lucea-2025-laura-roberto/lucea-2025-laura-roberto-lucea-matrimonio-lr-milano-sala-specchi-cascina-pietrasanta-magenta-049.webp", alt: "Matrimonio di Laura e Roberto a Magenta" },
-      { src: "/media/images/lucea-2025-laura-roberto/lucea-2025-laura-roberto-lucea-matrimonio-lr-milano-sala-specchi-cascina-pietrasanta-magenta-052.webp", alt: "Matrimonio di Laura e Roberto a Magenta" },
-      { src: "/media/images/lucea-2025-laura-roberto/lucea-2025-laura-roberto-lucea-matrimonio-lr-milano-sala-specchi-cascina-pietrasanta-magenta-055.webp", alt: "Matrimonio di Laura e Roberto a Magenta" },
-      { src: "/media/images/lucea-2025-laura-roberto/lucea-2025-laura-roberto-lucea-matrimonio-lr-milano-sala-specchi-cascina-pietrasanta-magenta-058.webp", alt: "Matrimonio di Laura e Roberto a Magenta" },
-      { src: "/media/images/lucea-2025-laura-roberto/lucea-2025-laura-roberto-lucea-matrimonio-lr-milano-sala-specchi-cascina-pietrasanta-magenta-061.webp", alt: "Matrimonio di Laura e Roberto a Magenta" },
-      { src: "/media/images/lucea-2025-laura-roberto/lucea-2025-laura-roberto-lucea-matrimonio-lr-milano-sala-specchi-cascina-pietrasanta-magenta-063.webp", alt: "Matrimonio di Laura e Roberto a Magenta" },
-      { src: "/media/images/lucea-2025-laura-roberto/lucea-2025-laura-roberto-lucea-matrimonio-lr-milano-sala-specchi-cascina-pietrasanta-magenta-066.webp", alt: "Matrimonio di Laura e Roberto a Magenta" },
-      { src: "/media/images/lucea-2025-laura-roberto/lucea-2025-laura-roberto-lucea-matrimonio-lr-milano-sala-specchi-cascina-pietrasanta-magenta-069.webp", alt: "Matrimonio di Laura e Roberto a Magenta" },
-      { src: "/media/images/lucea-2025-laura-roberto/lucea-2025-laura-roberto-lucea-matrimonio-lr-milano-sala-specchi-cascina-pietrasanta-magenta-072.webp", alt: "Matrimonio di Laura e Roberto a Magenta" },
-      { src: "/media/images/lucea-2025-laura-roberto/lucea-2025-laura-roberto-lucea-matrimonio-lr-milano-sala-specchi-cascina-pietrasanta-magenta-bn-001.webp", alt: "Matrimonio di Laura e Roberto a Magenta" },
-      { src: "/media/images/lucea-2025-laura-roberto/lucea-2025-laura-roberto-lucea-matrimonio-lr-milano-sala-specchi-cascina-pietrasanta-magenta-bn-004.webp", alt: "Matrimonio di Laura e Roberto a Magenta" },
-      { src: "/media/images/lucea-2025-laura-roberto/lucea-2025-laura-roberto-lucea-matrimonio-lr-milano-sala-specchi-cascina-pietrasanta-magenta-bn-007.webp", alt: "Matrimonio di Laura e Roberto a Magenta" },
-      { src: "/media/images/lucea-2025-laura-roberto/lucea-2025-laura-roberto-lucea-matrimonio-lr-milano-sala-specchi-cascina-pietrasanta-magenta-bn-009.webp", alt: "Matrimonio di Laura e Roberto a Magenta" },
-      { src: "/media/images/lucea-2025-laura-roberto/lucea-2025-laura-roberto-lucea-matrimonio-lr-milano-sala-specchi-cascina-pietrasanta-magenta-bn-012.webp", alt: "Matrimonio di Laura e Roberto a Magenta" },
-      { src: "/media/images/lucea-2025-laura-roberto/lucea-2025-laura-roberto-lucea-matrimonio-lr-milano-sala-specchi-cascina-pietrasanta-magenta-bn-015.webp", alt: "Matrimonio di Laura e Roberto a Magenta" },
-      { src: "/media/images/lucea-2025-laura-roberto/lucea-2025-laura-roberto-lucea-matrimonio-lr-milano-sala-specchi-cascina-pietrasanta-magenta-bn-018.webp", alt: "Matrimonio di Laura e Roberto a Magenta" },
-      { src: "/media/images/lucea-2025-laura-roberto/lucea-2025-laura-roberto-lucea-matrimonio-lr-milano-sala-specchi-cascina-pietrasanta-magenta-bn-021.webp", alt: "Matrimonio di Laura e Roberto a Magenta" },
-      { src: "/media/images/lucea-2025-laura-roberto/lucea-2025-laura-roberto-lucea-matrimonio-lr-milano-sala-specchi-cascina-pietrasanta-magenta-bn-024.webp", alt: "Matrimonio di Laura e Roberto a Magenta" },
-      { src: "/media/images/lucea-2025-laura-roberto/lucea-2025-laura-roberto-lucea-matrimonio-lr-milano-sala-specchi-cascina-pietrasanta-magenta-bn-027.webp", alt: "Matrimonio di Laura e Roberto a Magenta" },
-    ]
-  },
-  {
-    slug: "matrimonio-yuri-marco-abbiategrasso",
-    title: "Yuri e Marco a Cascina Palazzo",
-    location: "Cascina Palazzo, Abbiategrasso (Milano)",
-    image: "/media/images/lucea-2025-yuri-marco/lucea-2025-yuri-marco-lucea-matrimonio-ym-milano-sala-specchi-cascina-palazzo-abbiategrasso-025.webp",
-    alt: "Matrimonio di Yuri e Marco ad Abbiategrasso",
-    summary: "Selezione dalle fotografie del giorno. Il racconto scritto completo arriverà da Andrea.",
-    status: "Milano",
-    gallery: [
-      { src: "/media/images/lucea-2025-yuri-marco/lucea-2025-yuri-marco-lucea-matrimonio-ym-milano-sala-specchi-cascina-palazzo-abbiategrasso-025.webp", alt: "Matrimonio di Yuri e Marco ad Abbiategrasso" },
-      { src: "/media/images/lucea-2025-yuri-marco/lucea-2025-yuri-marco-lucea-matrimonio-ym-milano-sala-specchi-cascina-palazzo-abbiategrasso-016.webp", alt: "Matrimonio di Yuri e Marco ad Abbiategrasso" },
-      { src: "/media/images/lucea-2025-yuri-marco/lucea-2025-yuri-marco-lucea-matrimonio-ym-milano-sala-specchi-cascina-palazzo-abbiategrasso-001.webp", alt: "Matrimonio di Yuri e Marco ad Abbiategrasso" },
-      { src: "/media/images/lucea-2025-yuri-marco/lucea-2025-yuri-marco-lucea-matrimonio-ym-milano-sala-specchi-cascina-palazzo-abbiategrasso-003.webp", alt: "Matrimonio di Yuri e Marco ad Abbiategrasso" },
-      { src: "/media/images/lucea-2025-yuri-marco/lucea-2025-yuri-marco-lucea-matrimonio-ym-milano-sala-specchi-cascina-palazzo-abbiategrasso-005.webp", alt: "Matrimonio di Yuri e Marco ad Abbiategrasso" },
-      { src: "/media/images/lucea-2025-yuri-marco/lucea-2025-yuri-marco-lucea-matrimonio-ym-milano-sala-specchi-cascina-palazzo-abbiategrasso-007.webp", alt: "Matrimonio di Yuri e Marco ad Abbiategrasso" },
-      { src: "/media/images/lucea-2025-yuri-marco/lucea-2025-yuri-marco-lucea-matrimonio-ym-milano-sala-specchi-cascina-palazzo-abbiategrasso-009.webp", alt: "Matrimonio di Yuri e Marco ad Abbiategrasso" },
-      { src: "/media/images/lucea-2025-yuri-marco/lucea-2025-yuri-marco-lucea-matrimonio-ym-milano-sala-specchi-cascina-palazzo-abbiategrasso-011.webp", alt: "Matrimonio di Yuri e Marco ad Abbiategrasso" },
-      { src: "/media/images/lucea-2025-yuri-marco/lucea-2025-yuri-marco-lucea-matrimonio-ym-milano-sala-specchi-cascina-palazzo-abbiategrasso-014.webp", alt: "Matrimonio di Yuri e Marco ad Abbiategrasso" },
-      { src: "/media/images/lucea-2025-yuri-marco/lucea-2025-yuri-marco-lucea-matrimonio-ym-milano-sala-specchi-cascina-palazzo-abbiategrasso-018.webp", alt: "Matrimonio di Yuri e Marco ad Abbiategrasso" },
-      { src: "/media/images/lucea-2025-yuri-marco/lucea-2025-yuri-marco-lucea-matrimonio-ym-milano-sala-specchi-cascina-palazzo-abbiategrasso-020.webp", alt: "Matrimonio di Yuri e Marco ad Abbiategrasso" },
-      { src: "/media/images/lucea-2025-yuri-marco/lucea-2025-yuri-marco-lucea-matrimonio-ym-milano-sala-specchi-cascina-palazzo-abbiategrasso-022.webp", alt: "Matrimonio di Yuri e Marco ad Abbiategrasso" },
-      { src: "/media/images/lucea-2025-yuri-marco/lucea-2025-yuri-marco-lucea-matrimonio-ym-milano-sala-specchi-cascina-palazzo-abbiategrasso-024.webp", alt: "Matrimonio di Yuri e Marco ad Abbiategrasso" },
-      { src: "/media/images/lucea-2025-yuri-marco/lucea-2025-yuri-marco-lucea-matrimonio-ym-milano-sala-specchi-cascina-palazzo-abbiategrasso-027.webp", alt: "Matrimonio di Yuri e Marco ad Abbiategrasso" },
-      { src: "/media/images/lucea-2025-yuri-marco/lucea-2025-yuri-marco-lucea-matrimonio-ym-milano-sala-specchi-cascina-palazzo-abbiategrasso-029.webp", alt: "Matrimonio di Yuri e Marco ad Abbiategrasso" },
-      { src: "/media/images/lucea-2025-yuri-marco/lucea-2025-yuri-marco-lucea-matrimonio-ym-milano-sala-specchi-cascina-palazzo-abbiategrasso-031.webp", alt: "Matrimonio di Yuri e Marco ad Abbiategrasso" },
-      { src: "/media/images/lucea-2025-yuri-marco/lucea-2025-yuri-marco-lucea-matrimonio-ym-milano-sala-specchi-cascina-palazzo-abbiategrasso-033.webp", alt: "Matrimonio di Yuri e Marco ad Abbiategrasso" },
-      { src: "/media/images/lucea-2025-yuri-marco/lucea-2025-yuri-marco-lucea-matrimonio-ym-milano-sala-specchi-cascina-palazzo-abbiategrasso-035.webp", alt: "Matrimonio di Yuri e Marco ad Abbiategrasso" },
-      { src: "/media/images/lucea-2025-yuri-marco/lucea-2025-yuri-marco-lucea-matrimonio-ym-milano-sala-specchi-cascina-palazzo-abbiategrasso-037.webp", alt: "Matrimonio di Yuri e Marco ad Abbiategrasso" },
-      { src: "/media/images/lucea-2025-yuri-marco/lucea-2025-yuri-marco-lucea-matrimonio-ym-milano-sala-specchi-cascina-palazzo-abbiategrasso-040.webp", alt: "Matrimonio di Yuri e Marco ad Abbiategrasso" },
-      { src: "/media/images/lucea-2025-yuri-marco/lucea-2025-yuri-marco-lucea-matrimonio-ym-milano-sala-specchi-cascina-palazzo-abbiategrasso-042.webp", alt: "Matrimonio di Yuri e Marco ad Abbiategrasso" },
-      { src: "/media/images/lucea-2025-yuri-marco/lucea-2025-yuri-marco-lucea-matrimonio-ym-milano-sala-specchi-cascina-palazzo-abbiategrasso-bn-002.webp", alt: "Matrimonio di Yuri e Marco ad Abbiategrasso" },
-      { src: "/media/images/lucea-2025-yuri-marco/lucea-2025-yuri-marco-lucea-matrimonio-ym-milano-sala-specchi-cascina-palazzo-abbiategrasso-bn-004.webp", alt: "Matrimonio di Yuri e Marco ad Abbiategrasso" },
-      { src: "/media/images/lucea-2025-yuri-marco/lucea-2025-yuri-marco-lucea-matrimonio-ym-milano-sala-specchi-cascina-palazzo-abbiategrasso-bn-006.webp", alt: "Matrimonio di Yuri e Marco ad Abbiategrasso" },
-      { src: "/media/images/lucea-2025-yuri-marco/lucea-2025-yuri-marco-lucea-matrimonio-ym-milano-sala-specchi-cascina-palazzo-abbiategrasso-bn-009.webp", alt: "Matrimonio di Yuri e Marco ad Abbiategrasso" },
-    ]
-  },
-  {
-    slug: "matrimonio-liz-luca-mapello",
-    title: "Liz e Luca a Villa Martinelli",
-    location: "Villa Martinelli, Mapello (Bergamo)",
-    image: "/media/images/lucea-2026-liz-luca/lucea-2026-liz-luca-lucea-matrimonio-ll-bergamo-mapello-villa-martinelli-029.webp",
-    alt: "Matrimonio di Liz e Luca a Mapello",
-    summary: "Selezione dalle fotografie del giorno. Il racconto scritto completo arriverà da Andrea.",
-    status: "Bergamo",
-    gallery: [
-      { src: "/media/images/lucea-2026-liz-luca/lucea-2026-liz-luca-lucea-matrimonio-ll-bergamo-mapello-villa-martinelli-029.webp", alt: "Matrimonio di Liz e Luca a Mapello" },
-      { src: "/media/images/lucea-2026-liz-luca/lucea-2026-liz-luca-lucea-matrimonio-ll-bergamo-mapello-villa-martinelli-001.webp", alt: "Matrimonio di Liz e Luca a Mapello" },
-      { src: "/media/images/lucea-2026-liz-luca/lucea-2026-liz-luca-lucea-matrimonio-ll-bergamo-mapello-villa-martinelli-003.webp", alt: "Matrimonio di Liz e Luca a Mapello" },
-      { src: "/media/images/lucea-2026-liz-luca/lucea-2026-liz-luca-lucea-matrimonio-ll-bergamo-mapello-villa-martinelli-005.webp", alt: "Matrimonio di Liz e Luca a Mapello" },
-      { src: "/media/images/lucea-2026-liz-luca/lucea-2026-liz-luca-lucea-matrimonio-ll-bergamo-mapello-villa-martinelli-008.webp", alt: "Matrimonio di Liz e Luca a Mapello" },
-      { src: "/media/images/lucea-2026-liz-luca/lucea-2026-liz-luca-lucea-matrimonio-ll-bergamo-mapello-villa-martinelli-010.webp", alt: "Matrimonio di Liz e Luca a Mapello" },
-      { src: "/media/images/lucea-2026-liz-luca/lucea-2026-liz-luca-lucea-matrimonio-ll-bergamo-mapello-villa-martinelli-013.webp", alt: "Matrimonio di Liz e Luca a Mapello" },
-      { src: "/media/images/lucea-2026-liz-luca/lucea-2026-liz-luca-lucea-matrimonio-ll-bergamo-mapello-villa-martinelli-015.webp", alt: "Matrimonio di Liz e Luca a Mapello" },
-      { src: "/media/images/lucea-2026-liz-luca/lucea-2026-liz-luca-lucea-matrimonio-ll-bergamo-mapello-villa-martinelli-017.webp", alt: "Matrimonio di Liz e Luca a Mapello" },
-      { src: "/media/images/lucea-2026-liz-luca/lucea-2026-liz-luca-lucea-matrimonio-ll-bergamo-mapello-villa-martinelli-020.webp", alt: "Matrimonio di Liz e Luca a Mapello" },
-      { src: "/media/images/lucea-2026-liz-luca/lucea-2026-liz-luca-lucea-matrimonio-ll-bergamo-mapello-villa-martinelli-022.webp", alt: "Matrimonio di Liz e Luca a Mapello" },
-      { src: "/media/images/lucea-2026-liz-luca/lucea-2026-liz-luca-lucea-matrimonio-ll-bergamo-mapello-villa-martinelli-025.webp", alt: "Matrimonio di Liz e Luca a Mapello" },
-      { src: "/media/images/lucea-2026-liz-luca/lucea-2026-liz-luca-lucea-matrimonio-ll-bergamo-mapello-villa-martinelli-027.webp", alt: "Matrimonio di Liz e Luca a Mapello" },
-      { src: "/media/images/lucea-2026-liz-luca/lucea-2026-liz-luca-lucea-matrimonio-ll-bergamo-mapello-villa-martinelli-030.webp", alt: "Matrimonio di Liz e Luca a Mapello" },
-      { src: "/media/images/lucea-2026-liz-luca/lucea-2026-liz-luca-lucea-matrimonio-ll-bergamo-mapello-villa-martinelli-032.webp", alt: "Matrimonio di Liz e Luca a Mapello" },
-      { src: "/media/images/lucea-2026-liz-luca/lucea-2026-liz-luca-lucea-matrimonio-ll-bergamo-mapello-villa-martinelli-034.webp", alt: "Matrimonio di Liz e Luca a Mapello" },
-      { src: "/media/images/lucea-2026-liz-luca/lucea-2026-liz-luca-lucea-matrimonio-ll-bergamo-mapello-villa-martinelli-037.webp", alt: "Matrimonio di Liz e Luca a Mapello" },
-      { src: "/media/images/lucea-2026-liz-luca/lucea-2026-liz-luca-lucea-matrimonio-ll-bergamo-mapello-villa-martinelli-039.webp", alt: "Matrimonio di Liz e Luca a Mapello" },
-      { src: "/media/images/lucea-2026-liz-luca/lucea-2026-liz-luca-lucea-matrimonio-ll-bergamo-mapello-villa-martinelli-042.webp", alt: "Matrimonio di Liz e Luca a Mapello" },
-      { src: "/media/images/lucea-2026-liz-luca/lucea-2026-liz-luca-lucea-matrimonio-ll-bergamo-mapello-villa-martinelli-044.webp", alt: "Matrimonio di Liz e Luca a Mapello" },
-      { src: "/media/images/lucea-2026-liz-luca/lucea-2026-liz-luca-lucea-matrimonio-ll-bergamo-mapello-villa-martinelli-046.webp", alt: "Matrimonio di Liz e Luca a Mapello" },
-      { src: "/media/images/lucea-2026-liz-luca/lucea-2026-liz-luca-lucea-matrimonio-ll-bergamo-mapello-villa-martinelli-049.webp", alt: "Matrimonio di Liz e Luca a Mapello" },
-      { src: "/media/images/lucea-2026-liz-luca/lucea-2026-liz-luca-lucea-matrimonio-ll-bergamo-mapello-villa-martinelli-051.webp", alt: "Matrimonio di Liz e Luca a Mapello" },
-      { src: "/media/images/lucea-2026-liz-luca/lucea-2026-liz-luca-lucea-matrimonio-ll-bergamo-mapello-villa-martinelli-054.webp", alt: "Matrimonio di Liz e Luca a Mapello" },
-      { src: "/media/images/lucea-2026-liz-luca/lucea-2026-liz-luca-lucea-matrimonio-ll-bergamo-mapello-villa-martinelli-056.webp", alt: "Matrimonio di Liz e Luca a Mapello" },
-      { src: "/media/images/lucea-2026-liz-luca/lucea-2026-liz-luca-lucea-matrimonio-ll-bergamo-mapello-villa-martinelli-059.webp", alt: "Matrimonio di Liz e Luca a Mapello" },
-      { src: "/media/images/lucea-2026-liz-luca/lucea-2026-liz-luca-lucea-matrimonio-ll-bergamo-mapello-villa-martinelli-061.webp", alt: "Matrimonio di Liz e Luca a Mapello" },
-      { src: "/media/images/lucea-2026-liz-luca/lucea-2026-liz-luca-lucea-matrimonio-ll-bergamo-mapello-villa-martinelli-063.webp", alt: "Matrimonio di Liz e Luca a Mapello" },
-      { src: "/media/images/lucea-2026-liz-luca/lucea-2026-liz-luca-lucea-matrimonio-ll-bergamo-mapello-villa-martinelli-066.webp", alt: "Matrimonio di Liz e Luca a Mapello" },
-      { src: "/media/images/lucea-2026-liz-luca/lucea-2026-liz-luca-lucea-matrimonio-ll-bergamo-mapello-villa-martinelli-068.webp", alt: "Matrimonio di Liz e Luca a Mapello" },
-      { src: "/media/images/lucea-2026-liz-luca/lucea-2026-liz-luca-lucea-matrimonio-ll-bergamo-mapello-villa-martinelli-071.webp", alt: "Matrimonio di Liz e Luca a Mapello" },
-      { src: "/media/images/lucea-2026-liz-luca/lucea-2026-liz-luca-lucea-matrimonio-ll-bergamo-mapello-villa-martinelli-073.webp", alt: "Matrimonio di Liz e Luca a Mapello" },
-      { src: "/media/images/lucea-2026-liz-luca/lucea-2026-liz-luca-lucea-matrimonio-ll-bergamo-mapello-villa-martinelli-076.webp", alt: "Matrimonio di Liz e Luca a Mapello" },
-    ]
-  },
-];
+export type { Story, StoryPhoto } from "./stories";
+export { stories, storiesNewestFirst } from "./stories";
 
 /** Recensioni verificate su Matrimonio.com — testi non modificati. Foto di supporto dal set home ufficiale. */
 export const matrimonioReviews = [

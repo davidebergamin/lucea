@@ -89,8 +89,8 @@ export function ContactForm({ compact = false }: { compact?: boolean }) {
           Ho letto l&apos;
           <a className="link-text" href="/privacy">
             informativa privacy
-          </a>{" "}
-          e acconsento al trattamento dei dati per ricevere risposta.
+          </a>
+          .
         </span>
       </label>
       <button className="btn-primary field-wide" type="submit" disabled={state === "sending"}>

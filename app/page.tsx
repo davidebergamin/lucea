@@ -2,11 +2,10 @@ import Image, { type StaticImageData } from "next/image";
 import { ContactForm } from "../components/ContactForm";
 import { SiteHeader } from "../components/SiteHeader";
 import { SiteFooter } from "../components/SiteFooter";
-import { contact, faqs, matrimonioUrl } from "../lib/site-content";
-import heroImage from "../public/media/images/root/lucea-matrimonio-home-015.webp";
-import heroMobileImage from "../public/media/images/root/lucea-matrimonio-home-003.webp";
-import proofImage from "../public/media/images/root/lucea-matrimonio-home-014.webp";
-import festaImage from "../public/media/images/root/lucea-matrimonio-home-012.webp";
+import { contact, faqs, matrimonioUrl, matrimonioUrlSecondary } from "../lib/site-content";
+import heroImage from "../public/media/images/root/lucea-matrimonio-home-003.webp";
+import proofImage from "../public/media/images/root/lucea-matrimonio-home-012.webp";
+import festaImage from "../public/media/images/root/lucea-matrimonio-home-025b.webp";
 import peakImage from "../public/media/images/root/lucea-matrimonio-home-022.webp";
 import closeImage from "../public/media/images/root/lucea-matrimonio-home-007.webp";
 
@@ -17,7 +16,7 @@ function JsonLd() {
     name: "Lucea Fotografie",
     alternateName: ["Lucea", "Lucea Fotografie"],
     url: "https://luceafotografie.it",
-    image: "https://luceafotografie.it/media/images/root/lucea-matrimonio-home-015.webp",
+    image: "https://luceafotografie.it/media/images/root/lucea-matrimonio-home-003.webp",
     email: "eamauri@gmail.com",
     telephone: "+393495799243",
     address: {
@@ -38,7 +37,7 @@ function JsonLd() {
       "album matrimonio"
     ],
     vatID: "IT09388090962",
-    sameAs: [matrimonioUrl],
+    sameAs: [matrimonioUrl, matrimonioUrlSecondary],
     aggregateRating: {
       "@type": "AggregateRating",
       ratingValue: "5.0",
@@ -46,7 +45,7 @@ function JsonLd() {
       bestRating: "5",
       worstRating: "1"
     },
-    priceRange: "900-2300 EUR"
+    priceRange: "900-2500 EUR"
   };
 
   const faqSchema = {
@@ -95,23 +94,12 @@ export default function Home() {
           data-liquid-capture-section="section"
           data-liquid-capture-name="Storie vere"
         >
-          <div className="hero-image hero-image--desktop">
+          <div className="hero-image">
             <Image
               src={heroImage}
-              alt="Sposi che escono dalla chiesa sotto una pioggia di coriandoli"
+              alt="Sposi sotto un arco di lightsaber formato dagli invitati"
               width={heroImage.width}
               height={heroImage.height}
-              priority
-              sizes="100vw"
-              unoptimized
-            />
-          </div>
-          <div className="hero-image hero-image--mobile">
-            <Image
-              src={heroMobileImage}
-              alt="Sposi sotto un arco di lightsaber formato dagli invitati"
-              width={heroMobileImage.width}
-              height={heroMobileImage.height}
               priority
               sizes="100vw"
               unoptimized
@@ -134,23 +122,24 @@ export default function Home() {
           className="poster-section warm poster-section--compact home-intro"
           aria-labelledby="home-intro-title"
           data-liquid-capture-section="section"
-          data-liquid-capture-name="Lucea fotografia"
+          data-liquid-capture-name="Lucea fotografie"
         >
           <div className="poster-inner">
             <div className="brand-lockup">
               <p className="brand-lockup-name">Lucea</p>
               <h2 id="home-intro-title" className="brand-lockup-role">
-                Fotografia di matrimonio
+                Fotografie di matrimonio
               </h2>
             </div>
             <p className="body-copy serif-lead stack-after-title">
               Emozioni, sguardi e dettagli raccontati con discrezione e leggerezza.
             </p>
-            <p className="body-copy muted-copy stack-after-title">
-              Con sede a Milano, vi raggiungiamo dove siete.
+            <span className="brand-lockup-rule" aria-hidden="true" />
+            <p className="brand-lockup-place">
+              Con sede a Milano, vi raggiungiamo dove siete voi
             </p>
             <p className="section-cta">
-              <a className="btn-primary" href="/contatti">
+              <a className="btn-outline" href="/contatti">
                 Parliamo del vostro giorno
               </a>
             </p>
@@ -159,8 +148,8 @@ export default function Home() {
 
         <FullPhoto
           src={proofImage}
-          alt="Sposi di spalle che escono a braccia alzate tra gli invitati"
-          label="Uscita tra gli invitati"
+          alt="Sposi che ridono dentro un'auto d'epoca azzurra"
+          label="Auto d'epoca"
         />
 
         <section
@@ -175,7 +164,7 @@ export default function Home() {
               <br />
               noi vi <span className="accent">fotografiamo</span>
             </h2>
-            <p className="body-copy serif-lead stack-after-title">
+            <p className="body-copy serif-lead stack-after-title stack-after-title--roomy">
               Vivete ogni istante della vostra giornata con spontaneità e noi vi aiuteremo a
               ricordarla. E sì, faremo anche le foto di rito, ma promesso: saranno piacevoli,
               curate, vostre.
@@ -185,8 +174,8 @@ export default function Home() {
 
         <FullPhoto
           src={festaImage}
-          alt="Sposi che ridono dentro un'auto d'epoca azzurra"
-          label="Auto d'epoca"
+          alt="Momento di festa durante un matrimonio"
+          label="Festa"
         />
 
         <section
@@ -199,7 +188,7 @@ export default function Home() {
             <h2 id="agio-title" className="poster-title poster-title--wide">
               Il primo obiettivo è farvi sentire a <span className="accent">vostro agio</span>
             </h2>
-            <p className="body-copy serif-lead stack-after-title">
+            <p className="body-copy serif-lead stack-after-title stack-after-title--roomy">
               Un approccio tranquillo e amichevole per accompagnarvi con leggerezza e raccontare
               il vostro matrimonio così come accade.
             </p>
@@ -209,7 +198,7 @@ export default function Home() {
         <FullPhoto
           src={peakImage}
           alt="Sposa e ospite che cantano al microfono durante la festa"
-          label="Festa"
+          label="Canto"
         />
 
         <section
@@ -224,7 +213,7 @@ export default function Home() {
               <br />
               è la vostra <span className="accent">festa</span>
             </h2>
-            <p className="body-copy serif-lead stack-after-title">
+            <p className="body-copy serif-lead stack-after-title stack-after-title--roomy">
               Qui c&apos;è spazio solo per la vostra storia vera. LUCEA è uno spazio aperto a ogni
               storia d&apos;amore, identità, cultura e credo. Senza distinzioni, sempre con cura e
               rispetto. Se questo per voi conta, il nostro viaggio inizia insieme.
@@ -260,7 +249,7 @@ export default function Home() {
                 WhatsApp
               </a>
               <a className="btn-outline" href={contact.phoneHref}>
-                {contact.phone}
+                Telefono
               </a>
             </p>
           </div>

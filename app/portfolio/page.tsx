@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Image from "next/image";
+import { PhotoLightbox } from "../../components/PhotoLightbox";
 import { SiteFooter } from "../../components/SiteFooter";
 import { SiteHeader } from "../../components/SiteHeader";
 import { portfolioImages } from "../../lib/site-content";
@@ -37,13 +37,7 @@ export default function PortfolioPage() {
           </div>
         </section>
 
-        <section className="portfolio-grid" aria-label="Galleria portfolio Lucea">
-          {portfolioImages.map((photo) => (
-            <figure className={`portfolio-item${photo.tall ? " portfolio-item--tall" : ""}`} key={photo.src}>
-              <Image src={photo.src} alt={photo.alt} width={1200} height={photo.tall ? 1600 : 900} sizes="50vw" unoptimized />
-            </figure>
-          ))}
-        </section>
+        <PhotoLightbox photos={portfolioImages} />
 
         <section className="page-block page-block--tight">
           <div className="page-block-inner stack align-start">

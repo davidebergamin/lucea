@@ -6,7 +6,7 @@ import { contact, faqs, pricingNotes } from "../../lib/site-content";
 export const metadata: Metadata = {
   title: "Quanto può costare",
   description:
-    "Prezzi fotografia matrimonio Lucea a Milano: servizi da 900 a 2.300 euro, preventivo su misura per foto, video e album.",
+    "Prezzi fotografia matrimonio Lucea a Milano: servizi da 900 a 2.500 euro, preventivo su misura per foto, video e album.",
   alternates: { canonical: "/prezzi" }
 };
 

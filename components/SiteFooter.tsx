@@ -1,4 +1,4 @@
-import { contact, footerPlusItems, matrimonioUrl } from "../lib/site-content";
+import { footerPlusItems } from "../lib/site-content";
 
 export function SiteFooter() {
   return (
@@ -23,27 +23,7 @@ export function SiteFooter() {
       </section>
 
       <footer className="site-footer" data-liquid-capture-section="footer" data-liquid-capture-name="footer">
-        <div className="footer-top">
-          <div className="footer-brand">
-            <strong>Lucea</strong>
-            <p className="muted-copy">Fotografia di matrimonio · Milano</p>
-          </div>
-          <div className="footer-contact">
-            <a href={contact.phoneHref}>{contact.phone}</a>
-            <a href={`mailto:${contact.email}`}>{contact.email}</a>
-            <a href={contact.whatsapp} target="_blank" rel="noreferrer">
-              WhatsApp
-            </a>
-            <a href={matrimonioUrl} target="_blank" rel="noreferrer">
-              Matrimonio.com
-            </a>
-          </div>
-        </div>
-
-        <div className="footer-legal">
-          <p className="muted-copy">
-            {contact.address} · P.IVA {contact.vat}
-          </p>
+        <div className="footer-legal footer-legal--only">
           <p className="footer-links">
             <a className="footer-link" href="/privacy">
               Privacy

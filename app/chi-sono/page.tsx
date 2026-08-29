@@ -6,7 +6,7 @@ import { SiteHeader } from "../../components/SiteHeader";
 export const metadata: Metadata = {
   title: "Chi è LUCEA",
   description:
-    "Qui c'è posto per ogni storia. LUCEA è uno spazio aperto a ogni storia d'amore, identità, cultura e credo.",
+    "Dietro LUCEA c'è Andrea: fotografia di matrimonio leggera, gentile, reale. Qui c'è posto per ogni storia.",
   alternates: { canonical: "/chi-sono" }
 };
 
@@ -16,20 +16,46 @@ export default function ChiSonoPage() {
       <SiteHeader />
       <main className="page-offset">
         <section className="page-block">
+          <div className="page-block-inner page-block-inner--narrow stack align-start">
+            <h1 className="page-title chi-sono-lead-title">
+              Fotografiamo matrimoni
+              <br />
+              Raccontiamo <span className="accent">persone</span>
+            </h1>
+            <div className="chi-sono-intro">
+              <p>LUCEA è fotografia di matrimonio.</p>
+              <p>Leggera, gentile, reale.</p>
+              <p>
+                Dietro LUCEA ci sono io, Andrea: quello che risponde ai vostri messaggi, che vi
+                incontra, che viene al matrimonio e che crea con cura il vostro ricordo.
+              </p>
+              <p>
+                Lavoro da solo, se volete vivere quel giorno con semplicità, ma più spesso
+                lavoriamo in staff con colleghi fotografi e operatori video: Luciano, Yuki, Luca,
+                Lorenzo, che condividono lo spirito di LUCEA. Discrezione, leggerezza, disponibilità
+                e spontaneità.
+              </p>
+              <p>
+                Non vogliamo soltanto la bella immagine: cerchiamo quell&apos;emozione che avete
+                vissuto e che potrete rivivere in futuro.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section className="page-block page-block--tight">
           <div className="page-block-inner page-block-inner--narrow stack align-start manifesto">
             <p className="label">Il nostro impegno per l&apos;uguaglianza nella diversità</p>
-            <h1 className="page-title">
+            <h2 className="page-title">
               Qui c&apos;è posto per ogni <span className="accent">storia</span>
-            </h1>
+            </h2>
 
             <p className="body-copy serif-lead manifesto-lead">
               LUCEA è uno spazio aperto a ogni storia d&apos;amore, identità, cultura e credo.
             </p>
 
             <div className="manifesto-lines" role="presentation">
-              <p>Chiunque voi siate.</p>
-              <p>Chiunque voi amiate.</p>
-              <p>Qui troverete accoglienza.</p>
+              <p>Chiunque voi siate, chiunque voi amiate, qui troverete accoglienza.</p>
             </div>
 
             <p className="body-copy">

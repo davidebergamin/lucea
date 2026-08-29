@@ -70,18 +70,15 @@ export function SiteHeader() {
         data-liquid-capture-section="header"
         data-liquid-capture-name="header"
       >
-        <a className="logo-mark" href="/" aria-label="Lucea fotografia, homepage" onClick={closeMenu}>
+        <a className="logo-mark" href="/" aria-label="Lucea fotografie, homepage" onClick={closeMenu}>
           <Image
-            src="/logo/logo-lucea-320.png"
-            alt=""
-            width={108}
-            height={108}
+            src="/logo/logo-lucea-mono-640.png"
+            alt="Lucea fotografie"
+            width={640}
+            height={476}
             priority
             unoptimized
           />
-          <span className="logo-word">
-            <span className="logo-sub">fotografia</span>
-          </span>
         </a>
         <nav className="nav-links" aria-label="Navigazione principale">
           {navLinks.map((link) => (
@@ -117,12 +114,15 @@ export function SiteHeader() {
             </a>
           ))}
         </nav>
-        <a className="mobile-menu-cta btn-whatsapp" href={contact.whatsapp} target="_blank" rel="noreferrer" onClick={closeMenu}>
+        <a
+          className="mobile-menu-cta btn-whatsapp"
+          href={contact.whatsapp}
+          target="_blank"
+          rel="noreferrer"
+          onClick={closeMenu}
+        >
           WhatsApp
         </a>
-        <button type="button" className="mobile-menu-close" onClick={closeMenu}>
-          Chiudi
-        </button>
       </div>
       {open ? <button type="button" className="mobile-menu-backdrop" aria-label="Chiudi menu" onClick={closeMenu} /> : null}
     </>

@@ -13,6 +13,7 @@ const display = Cabin({
 const body = Lora({
   subsets: ["latin"],
   weight: ["400", "600"],
+  style: ["normal", "italic"],
   variable: "--font-body",
   display: "swap"
 });
@@ -34,8 +35,8 @@ export const metadata: Metadata = {
     canonical: "/"
   },
   icons: {
-    icon: "/logo/logo-lucea-320.png",
-    apple: "/logo/logo-lucea-320.png"
+    icon: "/logo/logo-lucea-mono-320.png",
+    apple: "/logo/logo-lucea-mono-320.png"
   },
   openGraph: {
     title: "Lucea | Fotografia matrimonio Milano",
@@ -43,7 +44,7 @@ export const metadata: Metadata = {
       "Reportage di matrimonio a Milano, Lombardia, Italia ed estero. Momenti veri, niente posato.",
     type: "website",
     locale: "it_IT",
-    images: ["/media/images/root/lucea-matrimonio-home-015.webp"]
+    images: ["/media/images/root/lucea-matrimonio-home-003.webp"]
   },
   robots: {
     index: true,
