@@ -2110,14 +2110,14 @@ textarea {
   }
 
   .hero-image--mobile img {
-    object-position: center 40%;
+    object-position: center 42%;
   }
 
   .hero-copy {
-    align-items: start;
+    align-items: end;
     width: 100%;
-    /* Sit under the raised hands, still in the upper third of the photo. */
-    padding: calc(var(--header-height) + 18svh) 20px 28vh;
+    /* Under the couple's joined hands (thighs), not over faces or saber hilts. */
+    padding: calc(var(--header-height) + 24px) 20px 27svh;
     text-align: center;
   }
 
