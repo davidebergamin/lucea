@@ -436,23 +436,23 @@ body.mobile-menu-open {
   line-height: 1.58;
 }
 
-.stack-after-title {
-  margin-top: clamp(22px, 3.2vw, 34px);
-}
-
-.stack-after-title--roomy {
-  margin-top: clamp(32px, 4.6vw, 52px);
-}
-
-.home-intro .stack-after-title {
-  margin-top: 1.15em;
-}
-
 .body-copy {
   margin: 0;
   font-size: var(--type-body);
   line-height: 1.55;
   color: var(--foreground);
+}
+
+.stack-after-title {
+  margin-top: clamp(22px, 3.2vw, 34px);
+}
+
+.stack-after-title--roomy {
+  margin-top: clamp(40px, 5.2vw, 58px);
+}
+
+.home-intro .stack-after-title {
+  margin-top: 1.15em;
 }
 
 .body-copy a {
@@ -624,10 +624,13 @@ select:focus-visible {
   display: grid;
   gap: clamp(8px, 1.4vw, 16px);
   text-transform: uppercase;
+  /* Soft dark halo around the letters — not a directional drop shadow. */
   text-shadow:
-    2px 3px 0 rgb(0 0 0 / 0.28),
-    0 6px 18px rgb(0 0 0 / 0.45),
-    0 0 28px rgb(0 0 0 / 0.35);
+    -1px 0 3px rgb(0 0 0 / 0.38),
+    1px 0 3px rgb(0 0 0 / 0.38),
+    0 -1px 3px rgb(0 0 0 / 0.38),
+    0 1px 3px rgb(0 0 0 / 0.38),
+    0 0 10px rgb(0 0 0 / 0.28);
 }
 
 .hero-headline-line {
