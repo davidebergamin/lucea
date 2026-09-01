@@ -8,6 +8,20 @@ type Photo = {
   alt: string;
 };
 
+function useDesktopLightbox() {
+  const [enabled, setEnabled] = useState(false);
+
+  useEffect(() => {
+    const query = window.matchMedia("(min-width: 861px) and (hover: hover)");
+    const update = () => setEnabled(query.matches);
+    update();
+    query.addEventListener("change", update);
+    return () => query.removeEventListener("change", update);
+  }, []);
+
+  return enabled;
+}
+
 export function PhotoLightbox({
   photos,
   className = "portfolio-grid"
@@ -17,7 +31,12 @@ export function PhotoLightbox({
 }) {
   const [open, setOpen] = useState<number | null>(null);
   const titleId = useId();
+  const lightboxEnabled = useDesktopLightbox();
   const active = open !== null ? photos[open] : null;
+
+  useEffect(() => {
+    if (!lightboxEnabled && open !== null) setOpen(null);
+  }, [lightboxEnabled, open]);
 
   useEffect(() => {
     if (open === null) return;
@@ -41,17 +60,23 @@ export function PhotoLightbox({
   return (
     <>
       <section className={className} aria-label="Galleria">
-        {photos.map((photo, index) => (
-          <button
-            type="button"
-            className="portfolio-item lightbox-trigger"
-            key={photo.src}
-            onClick={() => setOpen(index)}
-          >
-            <Image src={photo.src} alt={photo.alt} width={1200} height={900} sizes="50vw" unoptimized />
-            <span className="sr-only">Ingrandisci foto</span>
-          </button>
-        ))}
+        {photos.map((photo, index) =>
+          lightboxEnabled ? (
+            <button
+              type="button"
+              className="portfolio-item lightbox-trigger"
+              key={photo.src}
+              onClick={() => setOpen(index)}
+            >
+              <Image src={photo.src} alt={photo.alt} width={1200} height={900} sizes="50vw" unoptimized />
+              <span className="sr-only">Ingrandisci foto</span>
+            </button>
+          ) : (
+            <figure className="portfolio-item" key={photo.src}>
+              <Image src={photo.src} alt={photo.alt} width={1200} height={900} sizes="50vw" unoptimized />
+            </figure>
+          )
+        )}
       </section>
 
       {active ? (

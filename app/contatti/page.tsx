@@ -27,11 +27,8 @@ export default function ContattiPage() {
             <p className="body-copy">Niente di impegnativo, giusto uno scambio con me.</p>
             <p className="andrea-sign">Andrea</p>
             <p className="section-cta section-cta--start">
-              <a className="btn-whatsapp" href={contact.whatsapp} target="_blank" rel="noreferrer">
+              <a className="btn-whatsapp btn-compact" href={contact.whatsapp} target="_blank" rel="noreferrer">
                 WhatsApp
-              </a>
-              <a className="btn-outline" href={contact.phoneHref}>
-                Telefono
               </a>
             </p>
             <ContactForm compact />

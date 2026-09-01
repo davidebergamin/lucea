@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { SiteFooter } from "../../components/SiteFooter";
 import { SiteHeader } from "../../components/SiteHeader";
-import { comeFunzionaSteps, contact, faqs, services } from "../../lib/site-content";
+import { comeFunzionaClose, comeFunzionaSteps, contact, faqs, services } from "../../lib/site-content";
 
 export const metadata: Metadata = {
   title: "Come funziona",
@@ -63,6 +63,41 @@ export default function ComeFunzionaPage() {
                 </article>
               ))}
             </div>
+
+            <div className="come-funziona-close stack">
+              <p className="come-funziona-close-slogan">{comeFunzionaClose.kicker}</p>
+              <p className="body-copy">{comeFunzionaClose.text}</p>
+              <p>
+                <a className="btn-primary" href={comeFunzionaClose.cta.href}>
+                  {comeFunzionaClose.cta.label}
+                </a>
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <figure className="media-full">
+          <Image
+            src="/media/images/root/lucea-matrimonio-home-012.webp"
+            alt="Sposi che ridono dentro un'auto d'epoca azzurra"
+            width={2000}
+            height={1333}
+            sizes="100vw"
+            unoptimized
+          />
+        </figure>
+
+        <section className="page-block page-block--tight">
+          <div className="page-block-inner stack align-start">
+            <h2 className="section-title">FAQ</h2>
+            <div className="faq-list">
+              {faqs.map((faq) => (
+                <article className="faq-item" key={faq.question}>
+                  <h3>{faq.question}</h3>
+                  <p className="body-copy">{faq.answer}</p>
+                </article>
+              ))}
+            </div>
           </div>
         </section>
 
@@ -90,7 +125,7 @@ export default function ComeFunzionaPage() {
               ))}
             </ul>
             <p className="services-price">
-              Pacchetti da 900 euro a 2500: oppure personalizziamo il tuo servizio su misura
+              Pacchetti da 950 euro a 2400: oppure personalizziamo il tuo servizio su misura
             </p>
             <p className="body-copy">
               Da Milano a dove siete voi, senza confini. Il dettaglio è in{" "}
@@ -99,22 +134,6 @@ export default function ComeFunzionaPage() {
               </a>
               .
             </p>
-          </div>
-        </section>
-
-        <section className="page-block page-block--tight">
-          <div className="page-block-inner stack align-start">
-            <h2 className="section-title">
-              Alcune domande che riceviamo <span className="accent">spesso</span>
-            </h2>
-            <div className="faq-list">
-              {faqs.map((faq) => (
-                <article className="faq-item" key={faq.question}>
-                  <h3>{faq.question}</h3>
-                  <p className="body-copy">{faq.answer}</p>
-                </article>
-              ))}
-            </div>
             <p className="section-cta section-cta--start">
               <a className="btn-primary" href="/contatti">
                 Parliamo del vostro giorno

@@ -6,7 +6,7 @@ import { contact } from "../../lib/site-content";
 export const metadata: Metadata = {
   title: "Dove lavoriamo",
   description:
-    "Lucea ha base a Milano e fotografa matrimoni in Monza Brianza, Lombardia, Italia e all'estero.",
+    "Lucea ha base a Milano e fotografa matrimoni in Lombardia, Italia e all'estero.",
   alternates: { canonical: "/dove-lavoriamo" }
 };
 
@@ -16,16 +16,12 @@ const places = [
     text: "Qui abbiamo sede. Via Arzaga 11, 20146 Milano. Il punto di partenza, non un recinto."
   },
   {
-    title: "Monza Brianza",
-    text: "La stessa area in cui ci trovate su Matrimonio.com. Matrimoni vicini, stesso modo di esserci."
-  },
-  {
     title: "Lombardia",
-    text: "Ville, colline, laghi, città: vi raggiungiamo dove festeggiate."
+    text: "Ville, colline, laghi, città, cascine, prati, spiagge, cime: ogni luogo è una magia per il vostro matrimonio e per le nostre foto."
   },
   {
     title: "Italia e estero",
-    text: "Se il matrimonio è lontano, ne parliamo. Trasferte in Italia e all'estero quando ha senso per voi."
+    text: "Se il matrimonio è lontano, vi seguiamo anche in viaggio."
   }
 ];
 
@@ -39,10 +35,7 @@ export default function DoveLavoriamoPage() {
             <h1 className="page-title">
               Dove <span className="accent">lavoriamo</span>
             </h1>
-            <p className="body-copy serif-lead">
-              Con sede a Milano, vi raggiungiamo dove siete. Niente pagine città inventate: questi
-              sono i luoghi veri.
-            </p>
+            <p className="body-copy serif-lead">Con sede a Milano, vi raggiungiamo dove siete.</p>
             <ul className="plain-list">
               {places.map((place) => (
                 <li key={place.title}>
@@ -52,7 +45,7 @@ export default function DoveLavoriamoPage() {
             </ul>
             <p className="section-cta section-cta--start">
               <a className="btn-primary" href="/contatti">
-                Parliamo del vostro giorno
+                Diteci dove vi sposate
               </a>
               <a className="btn-whatsapp" href={contact.whatsapp} target="_blank" rel="noreferrer">
                 WhatsApp

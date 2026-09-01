@@ -7,6 +7,8 @@ export const matrimonioUrlSecondary =
 /** Foto ufficiali Lucea — cartella «Foto possibili per home page» in root. */
 const home = (n: string) => `/media/images/root/lucea-matrimonio-home-${n}.webp`;
 
+const recensione = (slug: string) => `/media/images/root/lucea-recensione-${slug}.webp`;
+
 /** Album matrimonio (path dopo liquid_optimize_media). */
 const album = (folder: string, file: string) => `/media/images/${folder}/${file}`;
 
@@ -33,16 +35,19 @@ export const footerPlusItems = [
   {
     label: "Quanto può costare",
     href: "/prezzi",
-    body: "Pacchetti da 900 euro a 2.500 euro, oppure personalizziamo il servizio su misura. Il preventivo nasce dal vostro giorno, non da un listino rigido."
+    linkLabel: "Maggiori dettagli",
+    body: "Pacchetti da 950 euro a 2.400 euro, oppure personalizziamo il servizio su misura. Il preventivo nasce dal vostro giorno, non da un listino rigido."
   },
   {
     label: "Dove lavoriamo",
     href: "/dove-lavoriamo",
-    body: "Con sede a Milano, vi raggiungiamo dove siete voi: Monza Brianza, Como, Lombardia, Italia e all'estero quando il matrimonio lo richiede."
+    linkLabel: "Scopri di più",
+    body: "Con sede a Milano, vi raggiungiamo dove siete voi: Como, Lombardia, Italia e all'estero quando il matrimonio lo richiede."
   },
   {
     label: "Contatti",
     href: "/contatti",
+    linkLabel: "Altro",
     body: `${contact.address}. ${contact.phone} · ${contact.email}`
   }
 ];
@@ -92,7 +97,7 @@ export const faqs = [
   {
     question: "Lucea lavora solo a Milano?",
     answer:
-      "No. Lucea ha base a Milano e lavora in città, in provincia, Monza Brianza, Como, Lombardia, in tutta Italia e anche all'estero quando il matrimonio lo richiede."
+      "No. Lucea ha base a Milano e lavora in città, in provincia, Como, Lombardia, in tutta Italia e anche all'estero quando il matrimonio lo richiede."
   },
   {
     question: "Davvero “zero pose”?",
@@ -163,14 +168,14 @@ export const comeFunzionaSteps = [
     title: "Dopo il matrimonio",
     kicker: "E poi arrivano i ricordi",
     text: "Non vi daremo 5.000 scatti senza averli guardati: noi selezioniamo e lavoriamo le immagini con cura. Vi consegneremo un racconto completo della giornata, fatto di momenti importanti, dettagli, persone, abbracci, festa, e di tutto ciò che, in una giornata così traboccante di ogni cosa, potrebbe esservi sfuggito."
-  },
-  {
-    title: "Chiusura",
-    kicker: "Se avete domande, è il momento giusto",
-    text: "Non dovete arrivare con le idee perfette. Basta iniziare a raccontarci qualcosa del vostro matrimonio.",
-    cta: { href: "/contatti", label: "Parliamo del vostro giorno" }
   }
 ];
+
+export const comeFunzionaClose = {
+  kicker: "Se avete domande, è il momento giusto",
+  text: "Non dovete arrivare con le idee perfette. Basta iniziare a raccontarci qualcosa del vostro matrimonio.",
+  cta: { href: "/contatti", label: "Parliamo del vostro giorno" }
+};
 
 /** Tutte le foto degli album eventi, sparse (non solo cartella home). */
 export const portfolioImages = [
@@ -728,9 +733,9 @@ export const portfolioImages = [
 ];
 
 export const pricingNotes = {
-  range: "Da 900 a 2.500 euro",
+  range: "Da 950 a 2.400 euro",
   lead:
-    "Pacchetti da 900 euro a 2.500, oppure personalizziamo il tuo servizio su misura. Il preventivo dipende da durata, video, album, trasferta e servizi extra.",
+    "Pacchetti da 950 euro a 2.400, oppure personalizziamo il tuo servizio su misura. Il preventivo dipende da durata, video, album, trasferta e servizi extra.",
   includes: [
     "fotografia di matrimonio in stile reportage",
     "presenza discreta e foto di rito senza catena di montaggio",
@@ -742,55 +747,63 @@ export const pricingNotes = {
 export type { Story, StoryPhoto } from "./stories";
 export { stories, storiesNewestFirst } from "./stories";
 
-/** Recensioni verificate su Matrimonio.com — testi non modificati. Foto di supporto dal set home ufficiale. */
+/** Recensioni verificate su Matrimonio.com — testi Andrea 1 set 2026. Foto coppie da SwissTransfer 01a05c67. */
 export const matrimonioReviews = [
   {
-    name: "Valentina",
+    name: "Valentina e Andrea",
     date: "31 luglio 2023",
     headline: "Consigliatissimi!",
     text: "Andrea si è dimostrato fin dal primo contatto una persona estremamente gentile e professionale, ha sempre risposto in tempi brevi alle nostre richieste e ci ha fornito informazioni esaustive e trasparenti. Il giorno del matrimonio lui e il suo collega non sono stati mai invadenti e ci hanno sempre messo a nostro agio.",
-    image: home("002"),
-    alt: "Invitati che ridono a tavola durante una festa di matrimonio"
+    image: recensione("valentina-andrea"),
+    alt: "Cerimonia all'aperto di Valentina e Andrea, Dimora Fiamberta, Certosa di Pavia"
   },
   {
-    name: "Laura",
+    name: "Roberta e Denis",
+    date: "4 luglio 2026",
+    headline: "Semplicemente superlativi",
+    text: "Dalla prima chiacchierata avevo capito che ci saremmo trovati benissimo. Parola chiave: spontaneità! Ti seguono in ogni momento della giornata, in maniera delicata e per niente invadente. Attenti ad ogni esigenza degli sposi. Li consiglio vivamente! Ottima l'idea delle stampe in loco per gli invitati!",
+    image: recensione("roberta-denis"),
+    alt: "Roberta e Denis si baciano davanti alla torta, fumo colorato, Ristorante Al Piave"
+  },
+  {
+    name: "Laura e Roberto",
     date: "27 maggio 2026",
     headline: "Fotografi professionali, super consigliati",
     text: "Durante il matrimonio non mi sono quasi accorta di loro, data la loro discrezione e professionalità. Qualità elevata e prezzi onesti: loro sono la miglior scelta!",
     image: home("004"),
-    alt: "Momento di festa all'aperto durante un matrimonio"
-  },
-  {
-    name: "Maria G.",
-    date: "21 aprile 2026",
-    headline: "Feeling immediato",
-    text: "Cercavamo un fotografo per il nostro matrimonio ma nessuno ci aveva mai messo a nostro agio. Con Lucea è stato subito feeling: professionalità, cortesia e simpatia. Il giorno del matrimonio non sono mai stati invadenti — e questo conta tantissimo.",
-    image: home("022"),
-    alt: "Festa e canto durante il ricevimento"
+    alt: "Momento di festa all'aperto durante il matrimonio di Laura e Roberto"
   },
   {
     name: "Annamaria",
     date: "14 aprile 2026",
     headline: "Sentirsi sé stessi",
     text: "Dal momento della preparazione fino ai saluti finali Andrea è stato spettacolare: empatia, disponibilità, spontaneità, professionalità, cura degli sposi e degli ospiti. Nessun obbligo di pose e niente di costruito, come sentirsi a casa.",
-    image: home("011"),
-    alt: "Conversazione tra invitati fuori dalla cerimonia"
+    image: recensione("annamaria-gabriele"),
+    alt: "Annamaria e Gabriele all'altare, La Lodovica Vimercate"
   },
   {
-    name: "Stefano",
-    date: "8 aprile 2026",
+    name: "Maria Grazia e Flavio",
+    date: "12 luglio 2025",
+    headline: "Lucea fotografo",
+    text: "Cercavamo un fotografo per il nostro matrimonio ma nessuno ci ha mai messo a nostro agio e ne abbiamo sentiti parecchi, poi abbiamo chiamato Lucea e appena ci siamo incontrati è stato subito feeling. Il giorno del matrimonio non sono mai stati invadenti, e questo conta tantissimo.",
+    image: recensione("mariagrazia-flavio"),
+    alt: "Maria Grazia e Flavio in controluce, Ristorante Green Park Borgarello"
+  },
+  {
+    name: "Stefano e Alberto",
+    date: "5 dicembre 2026",
     headline: "La scelta giusta",
     text: "Siamo arrivati ad Andrea e Luciano grazie al consiglio di amici, e a nostra volta li consigliamo senza riserve. Due fratelli che lavorano in coppia con una sintonia che si vede: puntuali, presenti quando serviva, invisibili quando non serviva.",
-    image: home("024"),
-    alt: "Coppia a tavola che ride insieme"
+    image: recensione("stefano-alberto"),
+    alt: "Stefano e Alberto si abbracciano, Villa Scheibler Rho"
   },
   {
-    name: "Paola e Antonio",
-    date: "6 gennaio 2026",
-    headline: "StraConsigliato",
-    text: "Ci siamo trovati benissimo da subito con Andrea e il suo team. Hanno saputo cogliere al meglio l'atmosfera e tutti i momenti del matrimonio proprio con lo stile che avevamo richiesto: un racconto autentico di una bella ed emozionante festa.",
-    image: home("010"),
-    alt: "Sposi sorridenti tra le foglie"
+    name: "Ila e Nic",
+    date: "7 settembre 2024",
+    headline: "Consigliatissimo 10!!!!",
+    text: "Andrea ci ha messo a nostro agio sin dalla chiamata iniziale. Sia lui che il suo collega sono stati super professionali, alla mano e per niente invadenti: la loro simpatia ha messo a proprio agio tutti quanti. Se cercate foto naturali che colgano l'essenza vostra e della giornata, Lucea è la scelta migliore. Grazie ancora di tutto.",
+    image: recensione("ilaria-niccolo"),
+    alt: "Ila e Nic nel pulmino Volkswagen appena sposati, Cascina Caremma"
   }
 ];
 

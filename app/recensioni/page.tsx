@@ -5,7 +5,6 @@ import { SiteHeader } from "../../components/SiteHeader";
 import {
   matrimonioReviews,
   matrimonioUrl,
-  matrimonioUrlSecondary,
   trustStats
 } from "../../lib/site-content";
 
@@ -40,15 +39,7 @@ export default function RecensioniPage() {
             </div>
             <div className="stack align-start matrimonio-links">
               <a className="btn-outline" href={matrimonioUrl} target="_blank" rel="noreferrer">
-                Leggi tutte su Matrimonio.com
-              </a>
-              <a
-                className="btn-outline"
-                href={matrimonioUrlSecondary}
-                target="_blank"
-                rel="noreferrer"
-              >
-                Altra vetrina Lucea su Matrimonio.com
+                Leggi tutte le recensioni su Matrimonio.com
               </a>
             </div>
           </div>

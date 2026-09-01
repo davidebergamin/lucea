@@ -4,7 +4,6 @@ import { notFound } from "next/navigation";
 import { SiteFooter } from "../../../components/SiteFooter";
 import { SiteHeader } from "../../../components/SiteHeader";
 import { contact, siteUrl, stories } from "../../../lib/site-content";
-import type { StoryPhoto } from "../../../lib/stories";
 
 type StoryPageProps = {
   params: Promise<{ slug: string }>;
@@ -54,16 +53,6 @@ function StoryParagraph({ text }: { text: string }) {
   );
 }
 
-function interleaveStory(paragraphs: string[], gallery: StoryPhoto[]) {
-  const rest = gallery.slice(1);
-  const size = Math.max(1, Math.ceil(rest.length / Math.max(paragraphs.length, 1)));
-
-  return paragraphs.map((text, index) => ({
-    text,
-    photos: rest.slice(index * size, index === paragraphs.length - 1 ? rest.length : (index + 1) * size)
-  }));
-}
-
 export default async function StoryDetailPage({ params }: StoryPageProps) {
   const { slug } = await params;
   const story = stories.find((item) => item.slug === slug);
@@ -74,7 +63,7 @@ export default async function StoryDetailPage({ params }: StoryPageProps) {
 
   const gallery = story.gallery?.length ? story.gallery : [{ src: story.image, alt: story.alt }];
   const cover = gallery[0];
-  const blocks = interleaveStory(story.paragraphs, gallery);
+  const restPhotos = gallery.slice(1);
 
   const breadcrumbJsonLd = {
     "@context": "https://schema.org",
@@ -118,25 +107,25 @@ export default async function StoryDetailPage({ params }: StoryPageProps) {
               <span>{story.title}</span>
             </nav>
             <h1 className="page-title">{story.title}</h1>
+            <div className="stack story-copy-stack stack-after-title">
+              {story.paragraphs.map((text) => (
+                <StoryParagraph key={text.slice(0, 48)} text={text} />
+              ))}
+            </div>
           </div>
         </section>
 
-        {blocks.map((block) => (
-          <section className="story-block" key={block.text.slice(0, 48)}>
-            <div className="page-block-inner page-block-inner--narrow stack">
-              <StoryParagraph text={block.text} />
+        {restPhotos.length ? (
+          <section className="story-block" aria-label="Fotografie">
+            <div className="portfolio-grid story-photos">
+              {restPhotos.map((photo) => (
+                <figure className="portfolio-item" key={photo.src}>
+                  <Image src={photo.src} alt={photo.alt} width={1200} height={900} sizes="50vw" unoptimized />
+                </figure>
+              ))}
             </div>
-            {block.photos.length ? (
-              <div className="portfolio-grid story-photos">
-                {block.photos.map((photo) => (
-                  <figure className="portfolio-item" key={photo.src}>
-                    <Image src={photo.src} alt={photo.alt} width={1200} height={900} sizes="50vw" unoptimized />
-                  </figure>
-                ))}
-              </div>
-            ) : null}
           </section>
-        ))}
+        ) : null}
 
         <section className="page-block">
           <div className="page-block-inner page-block-inner--narrow stack">

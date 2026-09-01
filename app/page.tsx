@@ -45,7 +45,7 @@ function JsonLd() {
       bestRating: "5",
       worstRating: "1"
     },
-    priceRange: "900-2500 EUR"
+    priceRange: "950-2400 EUR"
   };
 
   const faqSchema = {

@@ -14,7 +14,7 @@ export function SiteFooter() {
               <div className="footer-plus-panel">
                 <p>{item.body}</p>
                 <a className="link-text" href={item.href}>
-                  {item.label}
+                  {item.linkLabel}
                 </a>
               </div>
             </details>
