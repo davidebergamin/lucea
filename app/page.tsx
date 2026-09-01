@@ -26,7 +26,7 @@ function JsonLd() {
       postalCode: "20146",
       addressCountry: "IT"
     },
-    areaServed: ["Milano", "Monza Brianza", "Lombardia", "Italia", "Estero"],
+    areaServed: ["Milano", "Lombardia", "Italia", "Estero"],
     knowsAbout: [
       "fotografia di matrimonio",
       "wedding photojournalism",

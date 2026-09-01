@@ -2116,7 +2116,8 @@ textarea {
   .hero-copy {
     align-items: start;
     width: 100%;
-    padding: calc(var(--header-height) + 18px) 20px 38vh;
+    /* Sit under the raised hands, still in the upper third of the photo. */
+    padding: calc(var(--header-height) + 18svh) 20px 28vh;
     text-align: center;
   }
 
