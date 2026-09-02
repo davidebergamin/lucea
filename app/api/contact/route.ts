@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { contact } from "../../../lib/site-content";
 
 type ContactPayload = {
   nome?: string;
@@ -30,8 +31,11 @@ export async function POST(request: Request) {
   }
 
   const apiKey = process.env.RESEND_API_KEY;
-  const to = process.env.CONTACT_TO_EMAIL;
-  const from = process.env.RESEND_FROM_EMAIL || process.env.CONTACT_FROM_EMAIL;
+  const to = contact.email;
+  const from =
+    process.env.RESEND_FROM_EMAIL ||
+    process.env.CONTACT_FROM_EMAIL ||
+    "Lucea <noreply@liquidagency.eu>";
 
   if (!apiKey || !to || !from) {
     return NextResponse.json({ error: "Servizio email non configurato" }, { status: 503 });
