@@ -624,7 +624,7 @@ select:focus-visible {
   display: grid;
   gap: clamp(8px, 1.4vw, 16px);
   text-transform: uppercase;
-  text-shadow: 2px 3px 10px rgb(0 0 0 / 0.55);
+  text-shadow: 2px 3px 10px rgb(0 0 0 / 0.38);
 }
 
 .hero-headline-line {
