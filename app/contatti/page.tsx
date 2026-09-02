@@ -1,21 +1,29 @@
 import type { Metadata } from "next";
 import { ContactForm } from "../../components/ContactForm";
+import { JsonLd } from "../../components/JsonLd";
 import { SiteFooter } from "../../components/SiteFooter";
 import { SiteHeader } from "../../components/SiteHeader";
+import { breadcrumbJsonLd, pageMetadata } from "../../lib/seo";
 import { contact, fitList } from "../../lib/site-content";
 
-export const metadata: Metadata = {
-  title: "Contatti",
+export const metadata: Metadata = pageMetadata({
+  title: "Contatti fotografo matrimonio Milano",
   description:
-    "Parlatemi di voi. Contatta Lucea per fotografia e video di matrimonio a Milano, Lombardia, Italia ed estero.",
-  alternates: { canonical: "/contatti" }
-};
+    "Scrivi a Lucea: Andrea Mauri, fotografo matrimonio a Milano. WhatsApp, email, form. Niente di impegnativo, uno scambio vero.",
+  path: "/contatti"
+});
 
 export default function ContattiPage() {
   return (
     <>
       <SiteHeader />
       <main className="page-offset">
+        <JsonLd
+          data={breadcrumbJsonLd([
+            { name: "Home", path: "/" },
+            { name: "Contatti", path: "/contatti" }
+          ])}
+        />
         <section className="page-block">
           <div className="page-block-inner page-block-inner--narrow stack align-start">
             <h1 className="page-title">

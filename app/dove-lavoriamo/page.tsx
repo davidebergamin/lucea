@@ -1,14 +1,16 @@
 import type { Metadata } from "next";
+import { JsonLd } from "../../components/JsonLd";
 import { SiteFooter } from "../../components/SiteFooter";
 import { SiteHeader } from "../../components/SiteHeader";
+import { breadcrumbJsonLd, pageMetadata } from "../../lib/seo";
 import { contact } from "../../lib/site-content";
 
-export const metadata: Metadata = {
-  title: "Dove lavoriamo",
+export const metadata: Metadata = pageMetadata({
+  title: "Fotografo matrimonio Milano, Lombardia e trasferte",
   description:
-    "Lucea ha base a Milano e fotografa matrimoni in Lombardia, Italia e all'estero.",
-  alternates: { canonical: "/dove-lavoriamo" }
-};
+    "Lucea ha sede a Milano, Via Arzaga 11. Fotografiamo matrimoni in Lombardia, in Italia e all'estero.",
+  path: "/dove-lavoriamo"
+});
 
 const places = [
   {
@@ -30,6 +32,12 @@ export default function DoveLavoriamoPage() {
     <>
       <SiteHeader />
       <main className="page-offset">
+        <JsonLd
+          data={breadcrumbJsonLd([
+            { name: "Home", path: "/" },
+            { name: "Dove lavoriamo", path: "/dove-lavoriamo" }
+          ])}
+        />
         <section className="page-block">
           <div className="page-block-inner stack align-start">
             <h1 className="page-title">

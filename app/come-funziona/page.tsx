@@ -1,21 +1,32 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import { JsonLd } from "../../components/JsonLd";
 import { SiteFooter } from "../../components/SiteFooter";
 import { SiteHeader } from "../../components/SiteHeader";
+import { breadcrumbJsonLd, faqPageJsonLd, pageMetadata } from "../../lib/seo";
 import { comeFunzionaClose, comeFunzionaSteps, contact, faqs, services } from "../../lib/site-content";
 
-export const metadata: Metadata = {
-  title: "Come funziona",
+export const metadata: Metadata = pageMetadata({
+  title: "Come funziona un fotografo matrimonio a Milano",
   description:
-    "Dal primo pensiero al giorno del matrimonio: come lavora Lucea a Milano. Foto, video, album, stampa sul posto. Niente set.",
-  alternates: { canonical: "/come-funziona" }
-};
+    "Dal primo contatto al giorno del matrimonio: come lavora Lucea a Milano. Reportage, video, album, stampa sul posto. Niente set, FAQ e prezzi.",
+  path: "/come-funziona"
+});
 
 export default function ComeFunzionaPage() {
   return (
     <>
       <SiteHeader />
       <main className="page-offset">
+        <JsonLd
+          data={[
+            faqPageJsonLd,
+            breadcrumbJsonLd([
+              { name: "Home", path: "/" },
+              { name: "Come funziona", path: "/come-funziona" }
+            ])
+          ]}
+        />
         <section className="page-block">
           <div className="page-block-inner stack align-start">
             <h1 className="page-title">

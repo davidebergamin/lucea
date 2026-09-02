@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { notFound } from "next/navigation";
+import { JsonLd } from "../../../components/JsonLd";
 import { SiteFooter } from "../../../components/SiteFooter";
 import { SiteHeader } from "../../../components/SiteHeader";
+import { breadcrumbJsonLd, pageMetadata } from "../../../lib/seo";
 import { contact, siteUrl, stories } from "../../../lib/site-content";
 
 type StoryPageProps = {
@@ -21,16 +23,12 @@ export async function generateMetadata({ params }: StoryPageProps): Promise<Meta
     return {};
   }
 
-  return {
-    title: story.title,
-    description: `${story.title} — ${story.location}. Fotografie Lucea.`,
-    alternates: { canonical: `/storie/${story.slug}` },
-    openGraph: {
-      title: story.title,
-      description: story.summary,
-      images: [story.image]
-    }
-  };
+  return pageMetadata({
+    title: `${story.title} | fotografie Lucea`,
+    description: `${story.summary} ${story.location}. Reportage Lucea, fotografo matrimonio Milano.`,
+    path: `/storie/${story.slug}`,
+    image: story.image
+  });
 }
 
 function StoryParagraph({ text }: { text: string }) {
@@ -65,36 +63,31 @@ export default async function StoryDetailPage({ params }: StoryPageProps) {
   const cover = gallery[0];
   const restPhotos = gallery.slice(1);
 
-  const breadcrumbJsonLd = {
+  const crumbs = breadcrumbJsonLd([
+    { name: "Home", path: "/" },
+    { name: "Storie", path: "/storie" },
+    { name: story.title, path: `/storie/${story.slug}` }
+  ]);
+
+  const storyJsonLd = {
     "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    itemListElement: [
-      {
-        "@type": "ListItem",
-        position: 1,
-        name: "Home",
-        item: siteUrl
-      },
-      {
-        "@type": "ListItem",
-        position: 2,
-        name: "Storie",
-        item: `${siteUrl}/storie`
-      },
-      {
-        "@type": "ListItem",
-        position: 3,
-        name: story.title,
-        item: `${siteUrl}/storie/${story.slug}`
-      }
-    ]
+    "@type": "Photograph",
+    name: story.title,
+    description: story.summary,
+    image: `${siteUrl}${story.image}`,
+    contentLocation: story.location,
+    creator: {
+      "@type": "Person",
+      name: "Andrea Mauri"
+    },
+    url: `${siteUrl}/storie/${story.slug}`
   };
 
   return (
     <>
       <SiteHeader />
       <main className="page-offset">
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
+        <JsonLd data={[crumbs, storyJsonLd]} />
         <figure className="story-cover">
           <Image src={cover.src} alt={cover.alt} width={2000} height={1333} sizes="100vw" priority unoptimized />
         </figure>

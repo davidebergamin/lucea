@@ -1,25 +1,36 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import { JsonLd } from "../../components/JsonLd";
 import { SiteFooter } from "../../components/SiteFooter";
 import { SiteHeader } from "../../components/SiteHeader";
+import { breadcrumbJsonLd, pageMetadata, reviewsJsonLd } from "../../lib/seo";
 import {
   matrimonioReviews,
   matrimonioUrl,
   trustStats
 } from "../../lib/site-content";
 
-export const metadata: Metadata = {
-  title: "Recensioni",
+export const metadata: Metadata = pageMetadata({
+  title: "Recensioni fotografo matrimonio Milano",
   description:
-    "Recensioni Lucea su Matrimonio.com: 171 recensioni, 5.0 su 5 e 100% consigliato per fotografia di matrimonio spontanea a Milano.",
-  alternates: { canonical: "/recensioni" }
-};
+    "171 recensioni Lucea su Matrimonio.com, 5.0 su 5 e 100% consigliato. Parole reali delle coppie su fotografia di matrimonio a Milano.",
+  path: "/recensioni"
+});
 
 export default function RecensioniPage() {
   return (
     <>
       <SiteHeader />
       <main className="page-offset">
+        <JsonLd
+          data={[
+            reviewsJsonLd,
+            breadcrumbJsonLd([
+              { name: "Home", path: "/" },
+              { name: "Recensioni", path: "/recensioni" }
+            ])
+          ]}
+        />
         <section className="page-block">
           <div className="page-block-inner stack align-start">
             <h1 className="page-title">

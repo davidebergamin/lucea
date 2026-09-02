@@ -1,20 +1,28 @@
 import type { Metadata } from "next";
+import { JsonLd } from "../../components/JsonLd";
 import { SiteFooter } from "../../components/SiteFooter";
 import { SiteHeader } from "../../components/SiteHeader";
+import { breadcrumbJsonLd, pageMetadata } from "../../lib/seo";
 import { contact, pricingNotes } from "../../lib/site-content";
 
-export const metadata: Metadata = {
-  title: "Quanto può costare",
+export const metadata: Metadata = pageMetadata({
+  title: "Prezzi fotografo matrimonio Milano",
   description:
-    "Prezzi fotografia matrimonio Lucea a Milano: servizi da 950 a 2.400 euro, preventivo su misura per foto, video e album.",
-  alternates: { canonical: "/prezzi" }
-};
+    "Quanto costa un fotografo matrimonio a Milano con Lucea: da 950 a 2.400 euro, preventivo su misura per foto, video e album.",
+  path: "/prezzi"
+});
 
 export default function PrezziPage() {
   return (
     <>
       <SiteHeader />
       <main className="page-offset">
+        <JsonLd
+          data={breadcrumbJsonLd([
+            { name: "Home", path: "/" },
+            { name: "Quanto può costare", path: "/prezzi" }
+          ])}
+        />
         <section className="page-block">
           <div className="page-block-inner stack align-start">
             <h1 className="page-title">

@@ -1,22 +1,30 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { JsonLd } from "../../components/JsonLd";
 import { SiteFooter } from "../../components/SiteFooter";
 import { SiteHeader } from "../../components/SiteHeader";
+import { breadcrumbJsonLd, pageMetadata } from "../../lib/seo";
 import { storiesNewestFirst } from "../../lib/site-content";
 
-export const metadata: Metadata = {
-  title: "Storie",
+export const metadata: Metadata = pageMetadata({
+  title: "Storie di matrimonio a Milano e in Lombardia",
   description:
-    "È successo davvero: matrimoni, risate e lacrime raccontati da Lucea. Milano, Lombardia e trasferte.",
-  alternates: { canonical: "/storie" }
-};
+    "Matrimoni raccontati da Lucea: Cantù, Abbiategrasso, Varese, Bergamo. Reportage vero, foto spontanee, zero pose forzate.",
+  path: "/storie"
+});
 
 export default function StoriePage() {
   return (
     <>
       <SiteHeader />
       <main className="page-offset">
+        <JsonLd
+          data={breadcrumbJsonLd([
+            { name: "Home", path: "/" },
+            { name: "Storie", path: "/storie" }
+          ])}
+        />
         <section className="page-block page-block--tight" aria-labelledby="storie-title">
           <div className="page-block-inner stack align-start">
             <h1 id="storie-title" className="page-title">

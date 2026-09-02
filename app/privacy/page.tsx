@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
 import { SiteFooter } from "../../components/SiteFooter";
 import { SiteHeader } from "../../components/SiteHeader";
+import { pageMetadata } from "../../lib/seo";
 import { contact } from "../../lib/site-content";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Privacy",
   description: "Informativa privacy del sito Lucea Fotografie, fotografia di matrimonio a Milano.",
-  alternates: { canonical: "/privacy" }
-};
+  path: "/privacy"
+});
 
 export default function PrivacyPage() {
   return (

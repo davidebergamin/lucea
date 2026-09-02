@@ -1,21 +1,29 @@
 import type { Metadata } from "next";
+import { JsonLd } from "../../components/JsonLd";
 import { PhotoLightbox } from "../../components/PhotoLightbox";
 import { SiteFooter } from "../../components/SiteFooter";
 import { SiteHeader } from "../../components/SiteHeader";
+import { breadcrumbJsonLd, pageMetadata } from "../../lib/seo";
 import { portfolioImages } from "../../lib/site-content";
 
-export const metadata: Metadata = {
-  title: "Portfolio",
+export const metadata: Metadata = pageMetadata({
+  title: "Portfolio fotografia matrimonio Milano",
   description:
-    "Portfolio matrimoni Lucea: discrezione, leggerezza, spontaneità. Fotografie reportage a Milano, senza set.",
-  alternates: { canonical: "/portfolio" }
-};
+    "Portfolio Lucea: reportage di matrimonio a Milano, discrezione e spontaneità. Fotografie intere, niente set.",
+  path: "/portfolio"
+});
 
 export default function PortfolioPage() {
   return (
     <>
       <SiteHeader />
       <main className="page-offset">
+        <JsonLd
+          data={breadcrumbJsonLd([
+            { name: "Home", path: "/" },
+            { name: "Portfolio", path: "/portfolio" }
+          ])}
+        />
         <section className="page-block page-block--intro portfolio-intro" aria-labelledby="portfolio-title">
           <div className="portfolio-intro-inner">
             <h1 id="portfolio-title" className="sr-only">

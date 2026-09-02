@@ -1,14 +1,15 @@
 import type { MetadataRoute } from "next";
-import { stories } from "../lib/site-content";
+import { siteUrl, stories } from "../lib/site-content";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base = "https://luceafoto.com";
+  const base = siteUrl;
   const staticRoutes: MetadataRoute.Sitemap = [
     {
       url: base,
       lastModified: new Date(),
       changeFrequency: "weekly",
-      priority: 1
+      priority: 1,
+      images: [`${base}/media/images/root/lucea-matrimonio-home-003.webp`]
     },
     {
       url: `${base}/come-funziona`,
@@ -76,7 +77,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${base}/storie/${story.slug}`,
     lastModified: new Date(),
     changeFrequency: "monthly" as const,
-    priority: 0.7
+    priority: 0.7,
+    images: [story.image.startsWith("http") ? story.image : `${base}${story.image}`]
   }));
 
   return [...staticRoutes, ...storyRoutes];

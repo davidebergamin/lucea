@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
 import { SiteFooter } from "../../components/SiteFooter";
 import { SiteHeader } from "../../components/SiteHeader";
+import { pageMetadata } from "../../lib/seo";
 import { contact } from "../../lib/site-content";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Cookie",
-  description: "Informativa sui cookie del sito Lucea Fotografie.",
-  alternates: { canonical: "/cookie" }
-};
+  description: "Informativa sui cookie del sito Lucea Fotografie, fotografo matrimonio a Milano.",
+  path: "/cookie"
+});
 
 export default function CookiePage() {
   return (

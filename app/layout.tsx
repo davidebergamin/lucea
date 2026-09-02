@@ -1,6 +1,8 @@
 import type { Metadata, Viewport } from "next";
 import { ScrollToTopOnNavigate } from "../components/ScrollToTopOnNavigate";
 import { Cabin, Lora } from "next/font/google";
+import { siteUrl } from "../lib/site-content";
+import { seoOgImage } from "../lib/seo";
 import "./globals.css";
 
 const display = Cabin({
@@ -23,28 +25,60 @@ export const viewport: Viewport = {
   initialScale: 1
 };
 
+const defaultTitle = "Fotografo matrimonio Milano | Lucea — storie vere, zero pose";
+const defaultDescription =
+  "Lucea è fotografia e video di matrimonio a Milano: reportage spontaneo, niente pose forzate. Andrea Mauri, base a Milano, trasferte in Italia e all'estero.";
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://luceafoto.com"),
+  metadataBase: new URL(siteUrl),
   title: {
-    default: "Lucea | Fotografia matrimonio Milano senza pose forzate",
+    default: defaultTitle,
     template: "%s | Lucea Fotografie"
   },
-  description:
-    "Lucea: fotografia di matrimonio a Milano per coppie che vogliono reportage spontaneo, niente pose forzate, foto e video veri.",
+  description: defaultDescription,
+  applicationName: "Lucea Fotografie",
+  authors: [{ name: "Andrea Mauri", url: `${siteUrl}/chi-sono` }],
+  creator: "Andrea Mauri",
+  publisher: "Lucea Fotografie",
+  category: "Fotografia di matrimonio",
+  keywords: [
+    "fotografo matrimonio Milano",
+    "fotografo reportage matrimonio Milano",
+    "fotografo documentario matrimonio Milano",
+    "fotografo matrimonio spontaneo Milano",
+    "fotografo matrimonio non in posa Milano",
+    "Lucea fotografie matrimonio",
+    "Andrea Mauri fotografo"
+  ],
   alternates: {
-    canonical: "/"
+    canonical: "/",
+    languages: { "it-IT": "/" }
   },
   icons: {
     icon: "/logo/logo-lucea-mono-320.png",
     apple: "/logo/logo-lucea-mono-320.png"
   },
   openGraph: {
-    title: "Lucea | Fotografia matrimonio Milano",
-    description:
-      "Reportage di matrimonio a Milano, Lombardia, Italia ed estero. Momenti veri, niente posato.",
-    type: "website",
+    title: defaultTitle,
+    description: defaultDescription,
+    url: siteUrl,
+    siteName: "Lucea Fotografie",
     locale: "it_IT",
-    images: ["/media/images/root/lucea-matrimonio-home-003.webp"]
+    type: "website",
+    images: [
+      {
+        url: seoOgImage,
+        width: 2000,
+        height: 1334,
+        alt: "Sposi sotto un arco di lightsaber, fotografia di matrimonio Lucea a Milano"
+      }
+    ]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: defaultTitle,
+    description: defaultDescription,
+    images: [seoOgImage]
   },
   robots: {
     index: true,
@@ -53,8 +87,13 @@ export const metadata: Metadata = {
       index: true,
       follow: true,
       "max-image-preview": "large",
-      "max-snippet": -1
+      "max-snippet": -1,
+      "max-video-preview": -1
     }
+  },
+  other: {
+    "geo.region": "IT-MI",
+    "geo.placename": "Milano"
   }
 };
 

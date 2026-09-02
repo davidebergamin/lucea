@@ -1,72 +1,18 @@
 import Image, { type StaticImageData } from "next/image";
 import { ContactForm } from "../components/ContactForm";
+import { JsonLd } from "../components/JsonLd";
 import { SiteHeader } from "../components/SiteHeader";
 import { SiteFooter } from "../components/SiteFooter";
-import { contact, faqs, matrimonioUrl, matrimonioUrlSecondary } from "../lib/site-content";
+import { contact } from "../lib/site-content";
+import { localBusinessJsonLd, personJsonLd, websiteJsonLd } from "../lib/seo";
 import heroImage from "../public/media/images/root/lucea-matrimonio-home-003.webp";
 import proofImage from "../public/media/images/root/lucea-matrimonio-home-012.webp";
 import festaImage from "../public/media/images/root/lucea-matrimonio-home-025b.webp";
 import peakImage from "../public/media/images/root/lucea-matrimonio-home-022.webp";
 import closeImage from "../public/media/images/root/lucea-matrimonio-home-007.webp";
 
-function JsonLd() {
-  const organization = {
-    "@context": "https://schema.org",
-    "@type": ["LocalBusiness", "ProfessionalService"],
-    name: "Lucea Fotografie",
-    alternateName: ["Lucea", "Lucea Fotografie"],
-    url: "https://luceafoto.com",
-    image: "https://luceafoto.com/media/images/root/lucea-matrimonio-home-003.webp",
-    email: "eamauri@gmail.com",
-    telephone: "+393495799243",
-    address: {
-      "@type": "PostalAddress",
-      streetAddress: "Via Arzaga, 11",
-      addressLocality: "Milano",
-      postalCode: "20146",
-      addressCountry: "IT"
-    },
-    areaServed: ["Milano", "Lombardia", "Italia", "Estero"],
-    knowsAbout: [
-      "fotografia di matrimonio",
-      "wedding photojournalism",
-      "reportage di matrimonio",
-      "fotografo matrimonio Milano",
-      "foto spontanee di matrimonio",
-      "video matrimonio",
-      "album matrimonio"
-    ],
-    vatID: "IT09388090962",
-    sameAs: [matrimonioUrl, matrimonioUrlSecondary],
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: "5.0",
-      reviewCount: "171",
-      bestRating: "5",
-      worstRating: "1"
-    },
-    priceRange: "950-2400 EUR"
-  };
-
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: faqs.map((item) => ({
-      "@type": "Question",
-      name: item.question,
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: item.answer
-      }
-    }))
-  };
-
-  return (
-    <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organization) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-    </>
-  );
+function JsonLdHome() {
+  return <JsonLd data={[localBusinessJsonLd, websiteJsonLd, personJsonLd]} />;
 }
 
 function FullPhoto({ src, alt, label }: { src: StaticImageData; alt: string; label: string }) {
@@ -85,7 +31,7 @@ function FullPhoto({ src, alt, label }: { src: StaticImageData; alt: string; lab
 export default function Home() {
   return (
     <>
-      <JsonLd />
+      <JsonLdHome />
       <SiteHeader />
       <main id="top">
         <section

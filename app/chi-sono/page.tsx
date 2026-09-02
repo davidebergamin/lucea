@@ -1,20 +1,31 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import { JsonLd } from "../../components/JsonLd";
 import { SiteFooter } from "../../components/SiteFooter";
 import { SiteHeader } from "../../components/SiteHeader";
+import { breadcrumbJsonLd, pageMetadata, personJsonLd } from "../../lib/seo";
 
-export const metadata: Metadata = {
-  title: "Chi è LUCEA",
+export const metadata: Metadata = pageMetadata({
+  title: "Chi è LUCEA | Andrea Mauri, fotografo matrimonio Milano",
   description:
-    "Dietro LUCEA c'è Andrea: fotografia di matrimonio leggera, gentile, reale. Qui c'è posto per ogni storia.",
-  alternates: { canonical: "/chi-sono" }
-};
+    "Dietro LUCEA c'è Andrea Mauri: fotografia di matrimonio a Milano, leggera, gentile, reale. Reportage, zero pose forzate, posto per ogni storia.",
+  path: "/chi-sono"
+});
 
 export default function ChiSonoPage() {
   return (
     <>
       <SiteHeader />
       <main className="page-offset">
+        <JsonLd
+          data={[
+            personJsonLd,
+            breadcrumbJsonLd([
+              { name: "Home", path: "/" },
+              { name: "Chi è LUCEA", path: "/chi-sono" }
+            ])
+          ]}
+        />
         <section className="page-block">
           <div className="page-block-inner page-block-inner--narrow stack align-start">
             <h1 className="page-title chi-sono-lead-title">
