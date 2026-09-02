@@ -3,6 +3,16 @@ export const siteUrl = "https://luceafoto.com";
 export const matrimonioUrl = "https://www.matrimonio.com/fotografo-matrimonio/lucea--e155161";
 export const matrimonioUrlSecondary =
   "https://www.matrimonio.com/fotografo-matrimonio/lucea--e195078";
+export const googleBusinessUrl = "https://share.google/s30VHg3TOAi8K5awa";
+/** Sito storico Andrea — stessa attività; nessun redirect 301 (dominio in scadenza). */
+export const legacySiteUrl = "https://www.eamauri.com/";
+
+export const studioSameAs = [
+  matrimonioUrl,
+  matrimonioUrlSecondary,
+  googleBusinessUrl,
+  legacySiteUrl
+] as const;
 
 /** Foto ufficiali Lucea — cartella «Foto possibili per home page» in root. */
 const home = (n: string) => `/media/images/root/lucea-matrimonio-home-${n}.webp`;

@@ -3,8 +3,7 @@ import {
   contact,
   faqs,
   matrimonioReviews,
-  matrimonioUrl,
-  matrimonioUrlSecondary,
+  studioSameAs,
   siteUrl
 } from "./site-content";
 
@@ -100,7 +99,7 @@ export const localBusinessJsonLd = {
   ],
   vatID: `IT${contact.vat}`,
   priceRange: "950-2400 EUR",
-  sameAs: [matrimonioUrl, matrimonioUrlSecondary],
+  sameAs: [...studioSameAs],
   aggregateRating: {
     "@type": "AggregateRating",
     ratingValue: "5.0",
