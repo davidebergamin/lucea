@@ -24,7 +24,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://luceafotografie.it"),
+  metadataBase: new URL("https://luceafoto.com"),
   title: {
     default: "Lucea | Fotografia matrimonio Milano senza pose forzate",
     template: "%s | Lucea Fotografie"

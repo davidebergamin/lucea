@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { stories } from "../lib/site-content";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base = "https://luceafotografie.it";
+  const base = "https://luceafoto.com";
   const staticRoutes: MetadataRoute.Sitemap = [
     {
       url: base,

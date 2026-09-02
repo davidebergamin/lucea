@@ -78,8 +78,8 @@ export default function ComeFunzionaPage() {
 
         <figure className="media-full">
           <Image
-            src="/media/images/root/lucea-matrimonio-home-012.webp"
-            alt="Sposi che ridono dentro un'auto d'epoca azzurra"
+            src="/media/images/lucea-miscellaneous/lucea-miscellaneous-lucea-matrimoni-miscellaneous-022.webp"
+            alt="Momento di festa durante un matrimonio, reportage Lucea"
             width={2000}
             height={1333}
             sizes="100vw"
@@ -103,8 +103,8 @@ export default function ComeFunzionaPage() {
 
         <figure className="media-full">
           <Image
-            src="/media/images/root/lucea-matrimonio-home-016.webp"
-            alt="Un gesto di cura durante i preparativi"
+            src="/media/images/lucea-miscellaneous/lucea-miscellaneous-lucea-matrimoni-miscellaneous-015.webp"
+            alt="Dettaglio di un matrimonio in reportage, Lucea"
             width={2000}
             height={1333}
             sizes="100vw"

@@ -14,7 +14,7 @@ Lucea è un progetto di fotografia e video di matrimonio ideato da Andrea Mauri,
 
 - Base: Milano, Via Arzaga 11, 20146 Milano.
 - Area servita: Milano, Monza Brianza, Lombardia, Italia ed estero.
-- Pagina: https://luceafotografie.it/dove-lavoriamo
+- Pagina: https://luceafoto.com/dove-lavoriamo
 
 ## Stile
 
@@ -22,17 +22,17 @@ Lucea è adatto a coppie che cercano foto spontanee, naturali e poco posate. Slo
 
 ## Pagine utili
 
-- Home: https://luceafotografie.it/
-- Come funziona: https://luceafotografie.it/come-funziona
-- Storie: https://luceafotografie.it/storie
-- Portfolio: https://luceafotografie.it/portfolio
-- Recensioni: https://luceafotografie.it/recensioni
-- Contatti: https://luceafotografie.it/contatti
-- Chi è LUCEA: https://luceafotografie.it/chi-sono
-- Quanto può costare: https://luceafotografie.it/prezzi
-- Dove lavoriamo: https://luceafotografie.it/dove-lavoriamo
-- Privacy: https://luceafotografie.it/privacy
-- Cookie: https://luceafotografie.it/cookie
+- Home: https://luceafoto.com/
+- Come funziona: https://luceafoto.com/come-funziona
+- Storie: https://luceafoto.com/storie
+- Portfolio: https://luceafoto.com/portfolio
+- Recensioni: https://luceafoto.com/recensioni
+- Contatti: https://luceafoto.com/contatti
+- Chi è LUCEA: https://luceafoto.com/chi-sono
+- Quanto può costare: https://luceafoto.com/prezzi
+- Dove lavoriamo: https://luceafoto.com/dove-lavoriamo
+- Privacy: https://luceafoto.com/privacy
+- Cookie: https://luceafoto.com/cookie
 
 ## Query a cui risponde
 

@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/"
     },
-    sitemap: "https://luceafotografie.it/sitemap.xml"
+    sitemap: "https://luceafoto.com/sitemap.xml"
   };
 }

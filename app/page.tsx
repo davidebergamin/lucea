@@ -15,8 +15,8 @@ function JsonLd() {
     "@type": ["LocalBusiness", "ProfessionalService"],
     name: "Lucea Fotografie",
     alternateName: ["Lucea", "Lucea Fotografie"],
-    url: "https://luceafotografie.it",
-    image: "https://luceafotografie.it/media/images/root/lucea-matrimonio-home-003.webp",
+    url: "https://luceafoto.com",
+    image: "https://luceafoto.com/media/images/root/lucea-matrimonio-home-003.webp",
     email: "eamauri@gmail.com",
     telephone: "+393495799243",
     address: {

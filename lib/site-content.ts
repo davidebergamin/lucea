@@ -1,4 +1,4 @@
-export const siteUrl = "https://luceafotografie.it";
+export const siteUrl = "https://luceafoto.com";
 
 export const matrimonioUrl = "https://www.matrimonio.com/fotografo-matrimonio/lucea--e155161";
 export const matrimonioUrlSecondary =
