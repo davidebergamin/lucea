@@ -52,7 +52,7 @@ export const footerPlusItems = [
     label: "Dove lavoriamo",
     href: "/dove-lavoriamo",
     linkLabel: "Scopri di più",
-    body: "Con sede a Milano, vi raggiungiamo dove siete voi: Como, Lombardia, Italia e all'estero quando il matrimonio lo richiede."
+    body: "Con sede a Milano, vi raggiungiamo dove siete voi: in Lombardia, in Italia e all'estero quando il matrimonio lo richiede."
   },
   {
     label: "Contatti",
