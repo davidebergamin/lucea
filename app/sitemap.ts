@@ -58,18 +58,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.65
-    },
-    {
-      url: `${base}/privacy`,
-      lastModified: new Date(),
-      changeFrequency: "yearly",
-      priority: 0.3
-    },
-    {
-      url: `${base}/cookie`,
-      lastModified: new Date(),
-      changeFrequency: "yearly",
-      priority: 0.3
     }
   ];
 

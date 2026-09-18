@@ -51,8 +51,7 @@ export const metadata: Metadata = {
     "Andrea Mauri fotografo"
   ],
   alternates: {
-    canonical: "/",
-    languages: { "it-IT": "/" }
+    canonical: "/"
   },
   icons: {
     icon: "/logo/logo-lucea-mono-320.png",

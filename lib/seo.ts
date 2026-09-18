@@ -30,8 +30,7 @@ export function pageMetadata({
     title,
     description,
     alternates: {
-      canonical: path,
-      languages: { "it-IT": path }
+      canonical: path
     },
     openGraph: {
       title,

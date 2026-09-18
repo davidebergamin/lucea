@@ -1,0 +1,16 @@
+{
+  "redirects": [
+    {
+      "source": "/",
+      "has": [{ "type": "host", "value": "www.luceafoto.com" }],
+      "destination": "https://luceafoto.com/",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "www.luceafoto.com" }],
+      "destination": "https://luceafoto.com/:path*",
+      "permanent": true
+    }
+  ]
+}
