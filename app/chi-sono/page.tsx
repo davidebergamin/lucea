@@ -62,7 +62,8 @@ export default function ChiSonoPage() {
             </h2>
 
             <p className="body-copy serif-lead manifesto-lead">
-              LUCEA è uno spazio aperto a ogni storia d&apos;amore, identità, cultura e credo.
+              LUCEA è uno spazio, un progetto fotografico aperto a ogni storia d&apos;amore, identità,
+              cultura e credo.
             </p>
 
             <div className="manifesto-lines" role="presentation">
@@ -70,8 +71,9 @@ export default function ChiSonoPage() {
             </div>
 
             <p className="body-copy">
-              C&apos;è posto per ogni persona, senza distinzione di etnia, genere, orientamento
-              sessuale, identità, età, abilità o religione. Sempre con cura. Sempre con rispetto.
+              Nel nostro lavoro c&apos;è posto per ogni persona, senza distinzione di etnia, genere,
+              orientamento sessuale, identità, età, abilità o religione. Fotografiamo sempre con cura.
+              Sempre con rispetto.
             </p>
 
             <div className="manifesto-lines" role="presentation">
@@ -81,6 +83,16 @@ export default function ChiSonoPage() {
 
             <p className="body-copy serif-lead manifesto-close">
               Se questo per voi conta, siamo sulla stessa lunghezza d&apos;onda.
+            </p>
+          </div>
+        </section>
+
+        <section className="page-block page-block--tight">
+          <div className="page-block-inner page-block-inner--narrow stack align-start">
+            <p className="section-cta section-cta--start">
+              <a className="btn-primary" href="/contatti">
+                Parliamo del vostro giorno
+              </a>
             </p>
           </div>
         </section>
@@ -98,10 +110,10 @@ export default function ChiSonoPage() {
 
         <section className="page-block">
           <div className="page-block-inner page-block-inner--narrow stack align-start">
-            <p className="section-cta section-cta--start">
-              <a className="btn-primary" href="/contatti">
-                Parliamo del vostro giorno
-              </a>
+            <p className="body-copy">
+              LUCEA nasce dall&apos;esperienza fotografica di Andrea Mauri, che da anni lavora anche
+              con lo pseudonimo eamauri. LUCEA è il suo progetto dedicato alla fotografia di
+              matrimonio.
             </p>
           </div>
         </section>

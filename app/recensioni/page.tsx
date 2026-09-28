@@ -13,7 +13,7 @@ import {
 export const metadata: Metadata = pageMetadata({
   title: "Recensioni fotografo matrimonio Milano",
   description:
-    "171 recensioni Lucea su Matrimonio.com, 5.0 su 5 e 100% consigliato. Parole reali delle coppie su fotografia di matrimonio a Milano.",
+    "174 recensioni Lucea su Matrimonio.com, 5.0 su 5 e 100% consigliato. Parole reali delle coppie su fotografia di matrimonio a Milano.",
   path: "/recensioni"
 });
 
@@ -75,7 +75,7 @@ export default function RecensioniPage() {
                 </figure>
                 <div className="review-pair-body">
                   <p className="label">
-                    {review.name} · {review.date}
+                    {review.date ? `${review.name} · ${review.date}` : review.name}
                   </p>
                   <h3>{review.headline}</h3>
                   <p className="body-copy">{review.text}</p>

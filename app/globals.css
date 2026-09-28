@@ -1741,6 +1741,7 @@ textarea {
   margin: 0;
   font-size: var(--type-body);
   line-height: 1.55;
+  white-space: pre-line;
 }
 
 .footer-legal {
@@ -1953,8 +1954,15 @@ textarea {
   padding-inline: 0;
 }
 
-.story-photos {
-  padding-top: var(--space-stack-md);
+.story-photos.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-count: unset;
+  gap: var(--space-photo-grid-gap);
+}
+
+.story-photos .portfolio-item {
+  margin: 0;
 }
 
 .lightbox-trigger {
@@ -2141,6 +2149,8 @@ textarea {
   }
 
   .story-photos.portfolio-grid {
+    grid-template-columns: 1fr;
+    column-count: unset;
     padding-inline: 0;
   }
 

@@ -102,7 +102,7 @@ export const localBusinessJsonLd = {
   aggregateRating: {
     "@type": "AggregateRating",
     ratingValue: "5.0",
-    reviewCount: "171",
+    reviewCount: "174",
     bestRating: "5",
     worstRating: "1"
   }

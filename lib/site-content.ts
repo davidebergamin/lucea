@@ -46,7 +46,7 @@ export const footerPlusItems = [
     label: "Quanto può costare",
     href: "/prezzi",
     linkLabel: "Maggiori dettagli",
-    body: "Pacchetti da 950 euro a 2.400 euro, oppure personalizziamo il servizio su misura. Il preventivo nasce dal vostro giorno, non da un listino rigido."
+    body: "Proposte da 950 a 2.400 Euro, oppure progettiamo per voi un servizio completamente personalizzato. Il preventivo nasce dal vostro giorno, non da un listino rigido."
   },
   {
     label: "Dove lavoriamo",
@@ -58,12 +58,12 @@ export const footerPlusItems = [
     label: "Contatti",
     href: "/contatti",
     linkLabel: "Altro",
-    body: `${contact.address}. ${contact.phone} · ${contact.email}`
+    body: "LUCEA fotografie\ndi Andrea Mauri\nVia Arzaga 11, 20146 MILANO  |  +39.349.5799243  |  fotolucea@gmail.com"
   }
 ];
 
 export const trustStats = [
-  { value: "171", label: "recensioni" },
+  { value: "174", label: "recensioni" },
   { value: "5.0", label: "su 5" },
   { value: "100%", label: "consigliato" }
 ];
@@ -93,12 +93,12 @@ export const foundViaOptions = [
 
 export const fitList = [
   "vi sentite in imbarazzo già adesso all'idea di essere fotografati",
-  "volete una cosa semplice, spontanea, naturale",
+  "volete una cosa semplice leggera, spontanea, naturale",
   "pensate che nelle foto venite sempre male…",
-  "…e il vostro partner odia farsi fotografare",
-  "volete ricordarvi di quel giorno e di come vi siete emozionati, non solo di come eravate vestiti",
+  "…e dite che il vostro partner odia farsi fotografare",
+  "volete ricordarvi di quel giorno e di come vi siete emozionati con i vostri invitati, non solo di come eravate vestiti",
   "durante l'aperitivo volete prendervi una piccola pausa per le foto, non «andare a fare uno shooting»",
-  "volete anche le foto di rito, ma poche, divertenti e veloci",
+  "volete anche le foto di rito, ma poche, divertenti e veloci!",
   "vi siete chiesti anche voi il senso di quelle foto con l'anello in equilibrio tra le scarpe della sposa…",
   "preferite farvi una risata per tutta la durata della giornata piuttosto che mettervi in posa"
 ];
@@ -745,7 +745,7 @@ export const portfolioImages = [
 export const pricingNotes = {
   range: "Da 950 a 2.400 euro",
   lead:
-    "Pacchetti da 950 euro a 2.400, oppure personalizziamo il tuo servizio su misura. Il preventivo dipende da durata, video, album, trasferta e servizi extra.",
+    "Proposte da 950 a 2.400 Euro, oppure progettiamo per voi un servizio completamente personalizzato. Il preventivo dipende da durata, video, album, trasferta e servizi extra.",
   includes: [
     "fotografia di matrimonio in stile reportage",
     "presenza discreta e foto di rito senza catena di montaggio",
@@ -759,6 +759,14 @@ export { stories, storiesNewestFirst } from "./stories";
 
 /** Recensioni verificate su Matrimonio.com — testi Andrea 1 set 2026. Foto coppie da SwissTransfer 01a05c67. */
 export const matrimonioReviews = [
+  {
+    name: "Sabrina e Edoardo",
+    date: "",
+    headline: "Ricordi indelebili",
+    text: "Non si può non Amare il servizio di Andrea... non è “il fotografo del matrimonio”: è un partecipante attivo che diventa di famiglia. Professionale, simpatico e soprattutto sempre disposto a venire incontro e soddisfare ogni esigenza! Non potevo chiedere di meglio nel nostro giorno più felice. Sin dal primo momento che lo abbiamo incontrato non ho avuto bisogno di cercare oltre… era lui! non mi pentirò mai della scelta... anzi lo richiamerei anche domani!",
+    image: recensione("sabrina-edoardo"),
+    alt: "Sabrina e Edoardo, Tenuta Il Monticello, Pombia"
+  },
   {
     name: "Valentina e Andrea",
     date: "31 luglio 2023",

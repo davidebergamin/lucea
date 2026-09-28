@@ -100,6 +100,12 @@ export default async function StoryDetailPage({ params }: StoryPageProps) {
               <span>{story.title}</span>
             </nav>
             <h1 className="page-title">{story.title}</h1>
+            {story.location ? (
+              <p className="label">
+                {story.location}
+                {story.dateLabel ? ` · ${story.dateLabel}` : ""}
+              </p>
+            ) : null}
             <div className="stack story-copy-stack stack-after-title">
               {story.paragraphs.map((text) => (
                 <StoryParagraph key={text.slice(0, 48)} text={text} />

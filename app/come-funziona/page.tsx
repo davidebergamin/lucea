@@ -128,7 +128,7 @@ export default function ComeFunzionaPage() {
             <h2 className="section-title section-title--services">
               Foto, video, album.
               <br />
-              Solo ciò che desiderate <span className="accent">voi</span>.
+              Solo ciò che desiderate <span className="accent">voi</span>
             </h2>
             <ul className="plain-list">
               {services.map((service) => (
@@ -136,7 +136,7 @@ export default function ComeFunzionaPage() {
               ))}
             </ul>
             <p className="services-price">
-              Pacchetti da 950 euro a 2400: oppure personalizziamo il tuo servizio su misura
+              Proposte da 950 a 2.400 Euro, oppure progettiamo per voi un servizio completamente personalizzato
             </p>
             <p className="body-copy">
               Da Milano a dove siete voi, senza confini. Il dettaglio è in{" "}

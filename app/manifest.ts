@@ -14,7 +14,7 @@ export default function manifest(): MetadataRoute.Manifest {
     theme_color: "#c6843a",
     icons: [
       {
-        src: "/logo/logo-lucea-mono-320.png",
+        src: "/logo/logo-lucea-320.png",
         sizes: "320x320",
         type: "image/png"
       }

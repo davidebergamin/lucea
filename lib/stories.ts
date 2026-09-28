@@ -21,6 +21,18 @@ function coverFirst(cover: string, alt: string, photos: StoryPhoto[]): StoryPhot
   return [{ src: cover, alt }, ...rest];
 }
 
+function numberedPhotos(folder: string, filePrefix: string, alt: string, from: number, to: number): StoryPhoto[] {
+  const photos: StoryPhoto[] = [];
+  for (let index = from; index <= to; index += 1) {
+    const n = String(index).padStart(3, "0");
+    photos.push({
+      src: `/media/images/${folder}/${folder}-${filePrefix}-${n}.webp`,
+      alt
+    });
+  }
+  return photos;
+}
+
 export const stories: Story[] = [
   {
     slug: "matrimonio-anna-matte-cantu-valmorea",
@@ -348,6 +360,35 @@ export const stories: Story[] = [
       { src: "/media/images/lucea-2026-liz-luca/lucea-2026-liz-luca-lucea-matrimonio-ll-bergamo-mapello-villa-martinelli-073.webp", alt: "Matrimonio di Liz e Luca a Mapello" },
       { src: "/media/images/lucea-2026-liz-luca/lucea-2026-liz-luca-lucea-matrimonio-ll-bergamo-mapello-villa-martinelli-076.webp", alt: "Matrimonio di Liz e Luca a Mapello" },
     ]),
+  },
+  {
+    slug: "matrimonio-sabrina-edoardo-pombia",
+    title: "Due splendidi sposi che non amavano farsi fotografare!",
+    location: "Chiesa di Santa Maria della Pila, Tenuta Il Monticello, Pombia, Novara",
+    dateLabel: "",
+    image:
+      "/media/images/lucea-2026-sabrina-edoardo/lucea-2026-sabrina-edoardo-lucea-matrimonio-se-milano-tenuta-il-monticello-pombia-novara-001.webp",
+    alt: "Matrimonio di Sabrina e Edoardo a Pombia, Novara",
+    summary:
+      "Sabrina e Edoardo non amavano farsi fotografare. A Milano, poi a Pombia, il reportage è rimasto leggero e loro si sono sciolti.",
+    paragraphs: [
+      "“Premesso che non ci piace farci fotografare…” Questo è stato l’esordio di Sabrina e Edoardo quando ci siamo visti la prima volta, forse spaventati da chissà quale prestazione gli sarebbe stata richiesta.",
+      "Quante volte mi sento dire questa cosa dagli sposi, e li capisco benissimo: essere inseguiti dai fotografi il giorno del matrimonio, quando si vorrebbe soltanto passare del tempo piacevole e spontaneo con i propri invitati, rischia di essere un peso anziché un divertimento!",
+      "Per fortuna non è il nostro stile andare a richiedere prestazioni impegnative e, alla fine, gli sposi riconoscono la discrezione e la leggerezza del nostro “esserci”.",
+      "Anche Sabri e Edo se ne sono accorti subito, fin dai preparativi a casa, a Milano. Sono stati bellissimi, luminosi, sciolti, vivaci con gli invitati, senza mai dover far caso al mio obiettivo, con cui li ho cercati e fotografati nei momenti più belli: i sorrisi di Sabrina, la lacrima di commozione di Edo, la gioia di tutte le persone presenti e anche le foto in posa, che gli sposi alla fine hanno chiesto e che ci siamo divertiti a fare!",
+      "Alla fine gli sposi hanno detto: “Non si può non amare il servizio di Andrea: è un partecipante attivo che diventa di famiglia”."
+    ],
+    gallery: coverFirst(
+      "/media/images/lucea-2026-sabrina-edoardo/lucea-2026-sabrina-edoardo-lucea-matrimonio-se-milano-tenuta-il-monticello-pombia-novara-001.webp",
+      "Matrimonio di Sabrina e Edoardo a Pombia, Novara",
+      numberedPhotos(
+        "lucea-2026-sabrina-edoardo",
+        "lucea-matrimonio-se-milano-tenuta-il-monticello-pombia-novara",
+        "Matrimonio di Sabrina e Edoardo a Pombia, Novara",
+        1,
+        25
+      )
+    )
   },
 ];
 

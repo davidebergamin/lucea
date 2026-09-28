@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { ContactForm } from "../../components/ContactForm";
 import { JsonLd } from "../../components/JsonLd";
 import { SiteFooter } from "../../components/SiteFooter";
@@ -43,13 +44,24 @@ export default function ContattiPage() {
           </div>
         </section>
 
+        <figure className="media-full">
+          <Image
+            src="/media/images/lucea-2026-liz-luca/lucea-2026-liz-luca-lucea-matrimonio-ll-bergamo-mapello-villa-martinelli-037.webp"
+            alt="Momento del matrimonio di Liz e Luca a Villa Martinelli, Mapello"
+            width={2000}
+            height={1333}
+            sizes="100vw"
+            unoptimized
+          />
+        </figure>
+
         <section className="page-block page-block--tight fit-block" aria-labelledby="fit-title">
           <div className="page-block-inner page-block-inner--narrow stack align-start">
             <p className="fit-kicker">Potremmo essere i fotografi giusti per voi se</p>
             <h2 id="fit-title" className="fit-headline">
               preferite <span className="accent">ridere</span> che recitare
             </h2>
-            <p className="fit-also">Ma anche se</p>
+            <p className="fit-also">Ma anche se…</p>
             <ul className="fit-list">
               {fitList.map((item) => (
                 <li key={item}>{item}</li>
