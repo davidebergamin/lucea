@@ -93,10 +93,10 @@ export const foundViaOptions = [
 
 export const fitList = [
   "vi sentite in imbarazzo già adesso all'idea di essere fotografati",
-  "volete una cosa semplice leggera, spontanea, naturale",
+  "volete una cosa leggera, spontanea, naturale",
   "pensate che nelle foto venite sempre male…",
   "…e dite che il vostro partner odia farsi fotografare",
-  "volete ricordarvi di quel giorno e di come vi siete emozionati con i vostri invitati, non solo di come eravate vestiti",
+  "volete ricordarvi di quel giorno e di come vi siete emozionati con i vostri invitati",
   "durante l'aperitivo volete prendervi una piccola pausa per le foto, non «andare a fare uno shooting»",
   "volete anche le foto di rito, ma poche, divertenti e veloci!",
   "vi siete chiesti anche voi il senso di quelle foto con l'anello in equilibrio tra le scarpe della sposa…",

@@ -42,7 +42,7 @@ export default function ChiSonoPage() {
               </p>
               <p>
                 Lavoro da solo, se volete vivere quel giorno con semplicità, ma più spesso
-                lavoriamo in staff con colleghi fotografi e operatori video: Luciano, Yuki, Luca,
+                sono in staff con colleghi fotografi e operatori video: Luciano, Yuki, Luca,
                 Lorenzo, che condividono lo spirito di LUCEA. Discrezione, leggerezza, disponibilità
                 e spontaneità.
               </p>
@@ -62,8 +62,8 @@ export default function ChiSonoPage() {
             </h2>
 
             <p className="body-copy serif-lead manifesto-lead">
-              LUCEA è uno spazio, un progetto fotografico aperto a ogni storia d&apos;amore, identità,
-              cultura e credo.
+              LUCEA è un progetto fotografico aperto a ogni storia d&apos;amore, identità, cultura e
+              credo.
             </p>
 
             <div className="manifesto-lines" role="presentation">
@@ -112,8 +112,8 @@ export default function ChiSonoPage() {
           <div className="page-block-inner page-block-inner--narrow stack align-start">
             <p className="body-copy">
               LUCEA nasce dall&apos;esperienza fotografica di Andrea Mauri, che da anni lavora anche
-              con lo pseudonimo eamauri. LUCEA è il suo progetto dedicato alla fotografia di
-              matrimonio.
+              con lo pseudonimo <em>eamauri</em>. LUCEA è il progetto che ha dedicato alla
+              fotografia di matrimonio.
             </p>
           </div>
         </section>
