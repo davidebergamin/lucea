@@ -756,8 +756,11 @@ select:focus-visible {
 }
 
 .storie-grid {
-  column-count: 2;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   column-gap: var(--space-photo-grid-gap);
+  row-gap: clamp(28px, 4vw, 48px);
+  align-items: start;
   padding: 0 var(--space-inline) var(--space-section);
   background: var(--background);
 }
@@ -765,8 +768,7 @@ select:focus-visible {
 .storie-card {
   display: grid;
   gap: 12px;
-  margin: 0 0 clamp(28px, 4vw, 48px);
-  break-inside: avoid;
+  margin: 0;
   overflow: visible;
   color: var(--foreground);
   text-decoration: none;
@@ -788,6 +790,7 @@ select:focus-visible {
   line-height: 1.12;
   letter-spacing: 0.04em;
   text-transform: uppercase;
+  min-height: calc(1.12em * 2);
 }
 
 .fit-band {
@@ -2142,7 +2145,11 @@ textarea {
     margin-right: -0.28em;
   }
 
-  .storie-grid,
+  .storie-grid {
+    grid-template-columns: 1fr;
+    padding-inline: var(--space-inline);
+  }
+
   .portfolio-grid {
     column-count: 1;
     padding-inline: var(--space-inline);
