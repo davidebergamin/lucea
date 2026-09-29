@@ -761,7 +761,7 @@ export { stories, storiesNewestFirst } from "./stories";
 export const matrimonioReviews = [
   {
     name: "Sabrina e Edoardo",
-    date: "",
+    date: "23 agosto 2021",
     headline: "Ricordi indelebili",
     text: "Non si può non Amare il servizio di Andrea... non è “il fotografo del matrimonio”: è un partecipante attivo che diventa di famiglia. Professionale, simpatico e soprattutto sempre disposto a venire incontro e soddisfare ogni esigenza! Non potevo chiedere di meglio nel nostro giorno più felice. Sin dal primo momento che lo abbiamo incontrato non ho avuto bisogno di cercare oltre… era lui! non mi pentirò mai della scelta... anzi lo richiamerei anche domani!",
     image: recensione("sabrina-edoardo"),
@@ -792,7 +792,7 @@ export const matrimonioReviews = [
     alt: "Momento di festa all'aperto durante il matrimonio di Laura e Roberto"
   },
   {
-    name: "Annamaria",
+    name: "Annamaria e Gabriele",
     date: "14 aprile 2026",
     headline: "Sentirsi sé stessi",
     text: "Dal momento della preparazione fino ai saluti finali Andrea è stato spettacolare: empatia, disponibilità, spontaneità, professionalità, cura degli sposi e degli ospiti. Nessun obbligo di pose e niente di costruito, come sentirsi a casa.",
@@ -809,7 +809,7 @@ export const matrimonioReviews = [
   },
   {
     name: "Stefano e Alberto",
-    date: "5 dicembre 2026",
+    date: "5 dicembre 2025",
     headline: "La scelta giusta",
     text: "Siamo arrivati ad Andrea e Luciano grazie al consiglio di amici, e a nostra volta li consigliamo senza riserve. Due fratelli che lavorano in coppia con una sintonia che si vede: puntuali, presenti quando serviva, invisibili quando non serviva.",
     image: recensione("stefano-alberto"),
