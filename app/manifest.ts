@@ -14,8 +14,18 @@ export default function manifest(): MetadataRoute.Manifest {
     theme_color: "#c6843a",
     icons: [
       {
-        src: "/logo/logo-lucea-320.png",
+        src: "/logo/favicon-color-32.png",
+        sizes: "32x32",
+        type: "image/png"
+      },
+      {
+        src: "/logo/favicon-color-320.png",
         sizes: "320x320",
+        type: "image/png"
+      },
+      {
+        src: "/logo/apple-touch-icon-color.png",
+        sizes: "180x180",
         type: "image/png"
       }
     ],

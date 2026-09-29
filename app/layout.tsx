@@ -54,8 +54,12 @@ export const metadata: Metadata = {
     canonical: "/"
   },
   icons: {
-    icon: "/logo/logo-lucea-320.png",
-    apple: "/logo/logo-lucea-320.png"
+    icon: [
+      { url: "/logo/favicon-color-32.png", sizes: "32x32", type: "image/png" },
+      { url: "/logo/favicon-color-48.png", sizes: "48x48", type: "image/png" },
+      { url: "/logo/favicon-color-320.png", sizes: "320x320", type: "image/png" }
+    ],
+    apple: [{ url: "/logo/apple-touch-icon-color.png", sizes: "180x180", type: "image/png" }]
   },
   openGraph: {
     title: defaultTitle,
