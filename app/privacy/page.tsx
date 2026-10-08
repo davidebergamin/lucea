@@ -21,7 +21,7 @@ export default function PrivacyPage() {
         <section className="page-block">
           <article className="page-block-inner page-block-inner--narrow stack align-start legal-copy">
             <h1 className="page-title">Informativa privacy</h1>
-            <p className="muted-copy">Ultimo aggiornamento: 2 settembre 2026</p>
+            <p className="muted-copy">Ultimo aggiornamento: 8 ottobre 2026</p>
 
             <p className="body-copy">
               La presente informativa è resa ai sensi degli articoli 13 e 14 del Regolamento (UE)
@@ -81,8 +81,9 @@ export default function PrivacyPage() {
             <h2 className="section-title">Conservazione</h2>
             <p className="body-copy">
               I dati di contatto restano per il tempo necessario a gestire la conversazione e, se
-              nasce un incarico, per i termini civilistici e fiscali. I log tecnici restano per il
-              tempo strettamente necessario a sicurezza e diagnostica.
+              nasce un incarico, per i termini civilistici e fiscali. Le richieste senza seguito sono
+              cancellate entro 12 mesi dall&apos;ultimo contatto. I log tecnici restano per il tempo
+              strettamente necessario a sicurezza e diagnostica.
             </p>
 
             <h2 className="section-title">Destinatari</h2>
