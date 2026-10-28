@@ -48,7 +48,7 @@ export default function Home() {
               height={heroImage.height}
               priority
               sizes="100vw"
-              unoptimized
+              quality={72}
             />
           </div>
           <div className="hero-overlay" />

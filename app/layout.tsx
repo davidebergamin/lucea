@@ -55,9 +55,11 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
+      { url: "/favicon.ico", sizes: "any" },
       { url: "/logo/favicon-color-32.png", sizes: "32x32", type: "image/png" },
       { url: "/logo/favicon-color-48.png", sizes: "48x48", type: "image/png" },
-      { url: "/logo/favicon-color-320.png", sizes: "320x320", type: "image/png" }
+      { url: "/logo/favicon-color-96.png", sizes: "96x96", type: "image/png" },
+      { url: "/logo/favicon-color-192.png", sizes: "192x192", type: "image/png" }
     ],
     apple: [{ url: "/logo/apple-touch-icon-color.png", sizes: "180x180", type: "image/png" }]
   },
