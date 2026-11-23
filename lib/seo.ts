@@ -98,14 +98,7 @@ export const localBusinessJsonLd = {
   ],
   vatID: `IT${contact.vat}`,
   priceRange: "950-2400 EUR",
-  sameAs: [...studioSameAs],
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "5.0",
-    reviewCount: "174",
-    bestRating: "5",
-    worstRating: "1"
-  }
+  sameAs: [...studioSameAs]
 };
 
 export const websiteJsonLd = {
@@ -169,7 +162,6 @@ export const reviewsJsonLd = {
   "@id": studioId,
   name: "Lucea Fotografie",
   url: siteUrl,
-  aggregateRating: localBusinessJsonLd.aggregateRating,
   review: matrimonioReviews.map((review) => ({
     "@type": "Review",
     author: { "@type": "Person", name: review.name },

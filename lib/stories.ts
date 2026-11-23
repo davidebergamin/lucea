@@ -311,7 +311,7 @@ export const stories: Story[] = [
     slug: "matrimonio-sabrina-edoardo-pombia",
     title: "Due splendidi sposi che non amavano farsi fotografare!",
     location: "Chiesa di Santa Maria della Pila, Tenuta Il Monticello, Pombia, Novara",
-    dateLabel: "",
+    dateLabel: "23 agosto 2021",
     image:
       "/media/images/lucea-2026-sabrina-edoardo/lucea-2026-sabrina-edoardo-lucea-matrimonio-se-milano-tenuta-il-monticello-pombia-novara-001.webp",
     alt: "Matrimonio di Sabrina e Edoardo a Pombia, Novara",
@@ -333,6 +333,65 @@ export const stories: Story[] = [
         "Matrimonio di Sabrina e Edoardo a Pombia, Novara",
         1,
         25
+      )
+    )
+  },
+  {
+    slug: "matrimonio-stefania-lorenzo-trezzo-adda",
+    title: "Amore e leggerezza",
+    location: "Agriturismo Le Cave del Ceppo, Trezzo sull'Adda",
+    dateLabel: "2 aprile 2024",
+    image:
+      "/media/images/lucea-2024-stefania-lorenzo/lucea-2024-stefania-lorenzo-lucea-matrimonio-sl-trezzo-adda-cave-del-ceppo-019.webp",
+    alt: "Matrimonio di Stefania e Lorenzo sul lago dell'agriturismo Le Cave del Ceppo, Trezzo sull'Adda",
+    summary:
+      "Un matrimonio di inizio primavera a Trezzo sull'Adda: leggerezza, semplicità e un amore che si vedeva a occhio nudo.",
+    paragraphs: [
+      "Davanti a Stefania e Lorenzo ho sentito una vera urgenza di fotografarli, un desiderio enorme! Il loro amore era tangibile, sembrava scolpito intorno a loro, un'aura accecante. Con loro ho proprio “fotografato l'amore”.",
+      "Era una bellissima giornata di inizio primavera, quella in cui si sono sposati: molti alberi mostravano appena i primi germogli, il cielo rivelava tutta la sua profondità e le nuvole cominciavano ad apparire tridimensionali. Tutto sembrava perfetto per il loro matrimonio e per il mio occhio affamato di inquadrature e scatti particolari!",
+      "L'agriturismo “Le Cave del Ceppo”, a Trezzo sull'Adda, è stato la cornice ideale per il loro matrimonio: un luogo in cui hanno potuto vivere il desiderio di leggerezza e semplicità, la voglia di condividere la festa nell'intimità della famiglia e degli amici, e l'emozione di una giornata davvero speciale.",
+      "Speciale anche per me, per le fotografie di LUCEA, che resteranno per sempre un ricordo reale e sincero."
+    ],
+    gallery: coverFirst(
+      "/media/images/lucea-2024-stefania-lorenzo/lucea-2024-stefania-lorenzo-lucea-matrimonio-sl-trezzo-adda-cave-del-ceppo-019.webp",
+      "Matrimonio di Stefania e Lorenzo sul lago dell'agriturismo Le Cave del Ceppo, Trezzo sull'Adda",
+      numberedPhotos(
+        "lucea-2024-stefania-lorenzo",
+        "lucea-matrimonio-sl-trezzo-adda-cave-del-ceppo",
+        "Matrimonio di Stefania e Lorenzo a Trezzo sull'Adda",
+        1,
+        34
+      )
+    )
+  },
+  {
+    slug: "matrimonio-ilaria-niccolo-abbiategrasso-besate",
+    title: "Un matrimonio di sorprese",
+    location: "Convento dell'Annunciata, Abbiategrasso · Cascina Caremma, Besate",
+    dateLabel: "20 settembre 2024",
+    image:
+      "/media/images/lucea-2024-ila-nic/lucea-2024-ila-nic-lucea-matrimonio-in-abbiategrasso-cascina-caremma-besate-019.webp",
+    alt: "Ilaria e Niccolò sul Volkswagen T1 turchese, matrimonio tra Abbiategrasso e Besate",
+    summary:
+      "Da Londra ad Abbiategrasso: un Volkswagen T1 turchese, il Convento dell'Annunciata e un tramonto tra i campi di Besate.",
+    paragraphs: [
+      "Ila e Nic… Mi contattano per la prima volta da Londra, dove vivono e lavorano. E devo dire che si sono sentite subito la loro apertura e la freschezza dello scambio di idee!",
+      "Ci sono sorprese che riescono particolarmente bene. Quella organizzata da Ilaria per Niccolò, per esempio, aveva quattro ruote, una carrozzeria color turchese e ben 23 finestrini! È un Volkswagen T1 con tetto panoramico, una vera rarità, per un ingresso decisamente speciale a un matrimonio!",
+      "La cerimonia civile si è svolta negli splendidi spazi del Convento dell'Annunciata di Abbiategrasso, un luogo che ci è piaciuto davvero molto per la sua atmosfera caratteristica e intima. Poi tutti verso la Cascina Caremma, a Besate, per i festeggiamenti.",
+      "Quando ci siamo fermati con il pullmino in mezzo ai campi, il sole stava tramontando dietro le nuvole: ecco una sorpresa davvero inaspettata!",
+      "Amo sempre di più questo genere di matrimoni: liberi, aperti, scelti davvero dagli sposi in ogni aspetto. Sposi allegri e sereni, pronti ad accogliere ogni sorpresa del giorno, prevista o imprevista che sia!",
+      "Divertimento puro per le nostre fotografie e una sintonia che porta ai risultati migliori!",
+      "(Volkswagen T1 di Wolfswagen Lakecomo)"
+    ],
+    gallery: coverFirst(
+      "/media/images/lucea-2024-ila-nic/lucea-2024-ila-nic-lucea-matrimonio-in-abbiategrasso-cascina-caremma-besate-019.webp",
+      "Ilaria e Niccolò sul Volkswagen T1 turchese, matrimonio tra Abbiategrasso e Besate",
+      numberedPhotos(
+        "lucea-2024-ila-nic",
+        "lucea-matrimonio-in-abbiategrasso-cascina-caremma-besate",
+        "Matrimonio di Ilaria e Niccolò ad Abbiategrasso e Besate",
+        1,
+        29
       )
     )
   },

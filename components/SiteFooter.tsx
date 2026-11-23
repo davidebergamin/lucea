@@ -1,4 +1,4 @@
-import { footerPlusItems } from "../lib/site-content";
+import { contact, footerPlusItems } from "../lib/site-content";
 
 export function SiteFooter() {
   return (
@@ -25,6 +25,7 @@ export function SiteFooter() {
       <footer className="site-footer" data-liquid-capture-section="footer" data-liquid-capture-name="footer">
         <div className="footer-legal footer-legal--only">
           <p className="footer-links">
+            <span className="footer-vat">Lucea Fotografie · P. IVA {contact.vat}</span>
             <a className="footer-link" href="/privacy">
               Privacy
             </a>

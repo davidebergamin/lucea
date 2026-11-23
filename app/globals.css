@@ -1782,6 +1782,10 @@ textarea {
   color: var(--accent);
 }
 
+.footer-vat {
+  color: var(--muted);
+}
+
 .andrea-sign {
   margin: 8px 0 0;
   font-family: var(--font-body), Georgia, serif;
