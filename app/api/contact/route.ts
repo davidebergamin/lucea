@@ -5,13 +5,8 @@ type ContactPayload = {
   nome?: string;
   email?: string;
   telefono?: string;
-  partner?: string;
-  data?: string;
-  location?: string;
-  invitati?: string;
+  doveQuando?: string;
   messaggio?: string;
-  desideri?: string;
-  trovato?: string;
   privacy?: string;
   company?: string;
 };
@@ -26,7 +21,7 @@ export async function POST(request: Request) {
 
   if (body.company) return NextResponse.json({ ok: true });
 
-  if (!body.nome?.trim() || !body.email?.trim() || !body.messaggio?.trim() || body.privacy !== "accepted") {
+  if (!body.nome?.trim() || !body.email?.trim() || body.privacy !== "accepted") {
     return NextResponse.json({ error: "Dati incompleti" }, { status: 400 });
   }
 
@@ -45,14 +40,9 @@ export async function POST(request: Request) {
     `Nome: ${text(body.nome)}`,
     `Email: ${text(body.email)}`,
     `Telefono: ${text(body.telefono)}`,
-    `Partner: ${text(body.partner)}`,
-    `Quando: ${text(body.data)}`,
-    `Dove: ${text(body.location)}`,
-    `Invitati: ${text(body.invitati)}`,
-    `Desideri: ${text(body.desideri)}`,
-    `Trovato tramite: ${text(body.trovato)}`,
+    `Dove e quando: ${text(body.doveQuando)}`,
     "",
-    "Racconto:",
+    "Vorremmo chiedere:",
     text(body.messaggio)
   ];
 

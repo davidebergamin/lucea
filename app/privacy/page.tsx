@@ -54,9 +54,8 @@ export default function PrivacyPage() {
 
             <h2 className="section-title">Dati trattati</h2>
             <p className="body-copy">
-              Tramite il modulo o l&apos;email possono essere trattati nome, email, telefono, nome del
-              partner, data e luogo del matrimonio, numero di invitati, desideri su foto, video o
-              album, canale con cui avete trovato Lucea e il contenuto del messaggio.
+              Tramite il modulo o l&apos;email possono essere trattati nome, email, telefono, luogo e
+              data del matrimonio e il contenuto del messaggio.
             </p>
             <p className="body-copy">
               Il Sito tratta anche dati tecnici di navigazione necessari al funzionamento e alla

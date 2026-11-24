@@ -1,7 +1,6 @@
 "use client";
 
 import { FormEvent, useState } from "react";
-import { foundViaOptions } from "../lib/site-content";
 
 type FormState = "idle" | "sending" | "success" | "error";
 
@@ -42,42 +41,13 @@ export function ContactForm({ compact = false }: { compact?: boolean }) {
         <span>Telefono</span>
         <input type="tel" name="telefono" autoComplete="tel" disabled={state === "sending"} />
       </label>
-      <label className="field">
-        <span>Nome del partner</span>
-        <input name="partner" disabled={state === "sending"} />
-      </label>
-      <label className="field">
-        <span>Quando sarà?</span>
-        <input name="data" placeholder="Es. 14 settembre 2027" disabled={state === "sending"} />
-      </label>
-      <label className="field">
-        <span>Dove?</span>
-        <input name="location" placeholder="Milano, Brianza, lago, estero…" disabled={state === "sending"} />
-      </label>
-      <label className="field">
-        <span>Quanti invitati ci saranno?</span>
-        <input name="invitati" placeholder="Es. 80, 150, 250…" disabled={state === "sending"} />
+      <label className="field field-wide">
+        <span>Dove e quando?</span>
+        <input name="doveQuando" disabled={state === "sending"} />
       </label>
       <label className="field field-wide">
-        <span>Raccontate liberamente il vostro matrimonio</span>
-        <textarea name="messaggio" required disabled={state === "sending"} />
-      </label>
-      <label className="field field-wide">
-        <span>Vi piacerebbe avere…</span>
-        <input name="desideri" placeholder="Foto, video, album, altro…" disabled={state === "sending"} />
-      </label>
-      <label className="field field-wide">
-        <span>Come avete trovato LUCEA?</span>
-        <select name="trovato" defaultValue="" disabled={state === "sending"}>
-          <option value="" disabled>
-            Scegliete un&apos;opzione
-          </option>
-          {foundViaOptions.map((option) => (
-            <option key={option} value={option}>
-              {option}
-            </option>
-          ))}
-        </select>
+        <span>Vorremmo chiedere…</span>
+        <textarea name="messaggio" disabled={state === "sending"} />
       </label>
       <label className="contact-honeypot" aria-hidden="true">
         Non compilare
@@ -93,6 +63,9 @@ export function ContactForm({ compact = false }: { compact?: boolean }) {
           .
         </span>
       </label>
+      <p className="body-copy serif-lead contact-invite field-wide">
+        Anche se avete ancora pochi dettagli, scrivetemi: mi farà piacere conoscervi e capire cosa avete in mente.
+      </p>
       <button className="btn-primary field-wide" type="submit" disabled={state === "sending"}>
         {state === "sending" ? "Invio in corso…" : "Invia richiesta"}
       </button>
