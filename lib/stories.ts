@@ -313,7 +313,7 @@ export const stories: Story[] = [
     location: "Chiesa di Santa Maria della Pila, Tenuta Il Monticello, Pombia, Novara",
     dateLabel: "23 agosto 2021",
     image:
-      "/media/images/lucea-2026-sabrina-edoardo/lucea-2026-sabrina-edoardo-lucea-matrimonio-se-milano-tenuta-il-monticello-pombia-novara-001.webp",
+      "/media/images/lucea-2026-sabrina-edoardo/lucea-2026-sabrina-edoardo-lucea-matrimonio-se-milano-tenuta-il-monticello-pombia-novara-018.webp",
     alt: "Matrimonio di Sabrina e Edoardo a Pombia, Novara",
     summary:
       "Sabrina e Edoardo non amavano farsi fotografare. A Milano, poi a Pombia, il reportage è rimasto leggero e loro si sono sciolti.",
@@ -325,7 +325,7 @@ export const stories: Story[] = [
       "Alla fine gli sposi hanno detto: “Non si può non amare il servizio di Andrea: è un partecipante attivo che diventa di famiglia”."
     ],
     gallery: coverFirst(
-      "/media/images/lucea-2026-sabrina-edoardo/lucea-2026-sabrina-edoardo-lucea-matrimonio-se-milano-tenuta-il-monticello-pombia-novara-001.webp",
+      "/media/images/lucea-2026-sabrina-edoardo/lucea-2026-sabrina-edoardo-lucea-matrimonio-se-milano-tenuta-il-monticello-pombia-novara-018.webp",
       "Matrimonio di Sabrina e Edoardo a Pombia, Novara",
       numberedPhotos(
         "lucea-2026-sabrina-edoardo",
